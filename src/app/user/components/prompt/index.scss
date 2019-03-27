@@ -1,0 +1,46 @@
+@import "~assets/styles/_bootstrap";
+
+.pPrompt {
+
+	.wrap {
+		padding: rem(50px) 0 0;
+		text-align: center;
+
+		h2 {
+			font-size: $fontL;
+			line-height: rem(70px);
+			color: $grayDark;
+		}
+
+		ol {
+
+			> li {
+				margin: 0 rem(5px);
+				display: inline-block;
+				
+
+				> a {
+					padding: 0 rem(30px);
+					display: block;
+					height: rem(35px);
+					line-height: rem(33px);
+					font-size: $fontM;
+					font-weight: bold;
+					color: $mainCol;
+					background: #fff;
+					border: #ddd 1px solid;
+					border-radius: rem(5px);
+				}
+
+				&:nth-child(2) {
+
+					> a {
+						color: #fff;
+						background: #3ec074;
+						border: #3ec074 1px solid;
+					}
+				}				
+			}
+		}
+	}
+}

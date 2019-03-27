@@ -1,0 +1,110 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+}
+
+.service-page {
+	padding-bottom: rem(60px);
+	height: 100%;
+
+	.service-box {
+		width: 100%;
+		height: 100%;
+
+    &:before {
+    	position: absolute;
+    	display: block;
+    	top: 0;
+    	width: 100%;
+    	height: 100%;
+    	content: ' ';
+	    background: url('~assets/images/qm-bg.jpg') no-repeat;
+	    background-size: 100% 100%;
+    }
+
+    &:after {
+			position: absolute;
+	    left: 0;
+	    top: rem(50px);
+	    right: 0;
+    	display: block;
+	    margin: auto;
+    	content: ' ';
+    	width: rem(187px);
+    	height: rem(61px);
+	    background: url('~assets/images/qmLogo.png') no-repeat;
+	    background-size: 100%;
+    }
+
+    .list {
+    	padding-top: rem(120px);
+
+    	.item {
+    		padding-top: rem(80px);
+    		text-align: center;
+
+    		&:before {
+    			display: inline-block;
+    			content: ' ';
+    			width: rem(30px);
+    			height: rem(35px);
+			    background: url('~assets/images/qqLogo.png') no-repeat;
+			    background-size: 100%;
+			    vertical-align: middle;
+    		}
+
+    		&:after {
+			    position: absolute;
+			    top: rem(110px);
+			    right: rem(80px);
+			    display: inline-block;
+			    width: rem(80px);
+			    height: rem(80px);
+			    content: ' ';
+			    background: url('~assets/images/touch.png') no-repeat center;
+			    background-size: 100% 100%;
+			    animation: starMove 2s ease 0s infinite both;
+    		}
+
+    		&.tel {
+	    		&:before {
+	    			display: inline-block;
+	    			content: ' ';
+	    			width: rem(30px);
+	    			height: rem(35px);
+				    background: url('~assets/images/phonLogo.png') no-repeat;
+				    background-size: 100%;
+				    vertical-align: middle;
+	    		}
+    		}
+
+    		> h2 {
+    			display: inline-block;
+    			padding-left: rem(10px);
+    			color: #4682c1;
+    			font-weight: bold;
+    			vertical-align: middle;
+    		}
+
+    		> h3 {
+    			padding-top: rem(10px);
+    			color: #f39800;
+    			font-weight: bold;
+    			font-size: rem(22px);
+    		}
+
+    		> p {
+			    color: #999;
+			    font-size: rem(12px);
+			    margin-top: rem(10px);
+    		}
+    	}
+    }
+	}
+}
+
+@keyframes starMove {
+  0%{ opacity: 1; }
+  100%{ opacity: 0; }
+}

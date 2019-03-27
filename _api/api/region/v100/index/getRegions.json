@@ -1,0 +1,45 @@
+{
+  "code": 0,
+  "data":[
+    {
+      "parent_id": 1,
+      "py": "bj",
+      "region_id": 2,
+      "region_name": "北京",
+      "children": [
+        {
+          "parent_id": 2,
+          "py": "dcq",
+          "region_id": 36,
+          "region_name": "东城区",
+          "children": [
+            {
+              "parent_id": 36,
+              "py": "nhdshl",
+              "region_id": 3544,
+              "region_name": "内环到三环里"
+            }
+          ]
+        },
+        {
+          "parent_id": 2,
+          "py": "xcq",
+          "region_id": 37,
+          "region_name": "西城区"
+        }
+      ]
+    },
+    {
+      "parent_id": 1,
+      "py": "gz",
+      "region_id": 3,
+      "region_name": "广州"
+    },
+    {
+      "parent_id": 1,
+      "py": "sh",
+      "region_id": 3,
+      "region_name": "上海"
+    }
+  ]
+}

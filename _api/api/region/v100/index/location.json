@@ -1,0 +1,12 @@
+{
+  "state": "success",
+  "desc": "定位成功成功",
+  "data": {
+    "province": 2,
+    "city": 281,
+    "province_name": "广东",
+    "city_name": "广州市",
+    "district_name": "白云区",
+    "district": 2237
+  }
+}

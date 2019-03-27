@@ -1,0 +1,57 @@
+@import "~assets/styles/_bootstrap";
+
+.eCounts {
+
+	> .enters {
+		padding: 0 rem(5px);
+		background: #fff;
+
+		> li {
+			overflow: hidden;
+			padding: 0 rem(8px);
+			height: rem(40px);
+			line-height: rem(40px);
+
+			> a {
+				overflow: hidden;
+				display: block;
+			}
+
+			&:first-child {
+				border-bottom: $lineCol 1px solid;
+			}
+
+			.label {
+				margin-right: rem(10px);
+				float: left;
+				font-size: rem(20px);
+				line-height: rem(40px);
+			}
+
+			label {
+				float: left;
+			}
+
+			p {
+				float: right;
+				color: $grayDark;
+
+				> span {
+					font-size: rem(12px);
+				}
+			}
+
+			.go{
+				float: right;
+				font-size: rem(12px);
+				line-height: rem(40px);
+			}
+		}
+	}
+
+	> .note {
+		padding: rem(20px) 0;
+		color: $grayDark;
+		text-align: center;
+	}
+}

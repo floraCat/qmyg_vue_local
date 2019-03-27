@@ -1,0 +1,11 @@
+@import "~assets/styles/_bootstrap";
+
+.copy-right {
+	padding: rem(10px) 0;
+
+	> p {
+		text-align: center;
+		color: #666;
+		line-height: rem(25px);
+	}
+}

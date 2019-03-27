@@ -1,0 +1,65 @@
+@import "~assets/styles/_bootstrap";
+
+
+.eServiceDesc {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9990;
+	width: 100%;
+	background: #fff;
+
+	> h3 {
+		height: rem(50px);
+		font-size: $fontL;
+		line-height: rem(49px);
+		text-indent: rem(10px);
+		color: $blk;
+		border-bottom: $lineCol 1px solid;
+	}
+
+	ol {
+
+		> dl {
+			padding: rem(12px);
+			color: $grayDark;
+			border-bottom: $lineCol 1px solid;
+
+			> dt {
+				overflow: hidden;
+				margin-bottom: rem(10px);
+				height: rem(48px);
+				font-size: $fontL;
+				line-height: rem(48px);
+				color: $blk;
+
+				> i {
+					float: left;
+					margin-right: rem(12px);
+					width: rem(48px);
+					height: rem(48px);
+					font-size: rem(18px);
+					line-height: rem(48px);
+					text-align: center;
+					background: $mainCol;
+					border-radius: rem(24px);
+
+					&.i2{
+						font-size: rem(23px);
+					}
+
+					&:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	> .quit {
+		position: absolute;
+		top: rem(10px);
+		right: rem(10px);
+		font-size: rem(24px);
+	}
+}

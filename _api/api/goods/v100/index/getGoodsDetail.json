@@ -1,0 +1,186 @@
+﻿{
+  "state": "success",
+  "desc": "获取商品详情成功",
+  "data": {
+    "goods_id": 36918,
+    "brand_id": 2167,
+    "cat_id": 96,
+    "is_collected": true,
+    "bar_code": "6911334016619",
+    "goods_name": "双鹿 5号电池五号碱性电池5号AA电池40粒装 儿童玩具剃须刀收音机遥控挂钟鼠标键盘电池",
+    "sales_volume": 11,
+    "market_price": "55.00",
+    "promote_start_date": 0,
+    "promote_end_date": 0,
+    "goods_desc": "<div class=\"content_tpl\"><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3091/239/821710850/502592/f01f5dd9/57bfa895N0e8c3108.jpg\" /></div>\n</div><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3274/40/801973702/98675/f1a9e30b/57bfa89aN2780c52c.jpg\" /></div>\n</div><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3064/329/800001230/271222/4f39e474/57bfa89eN75b0dcc6.jpg\" /></div>\n</div><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3295/207/809380785/379925/6568cced/57bfa8a2Na300064f.jpg\" /></div>\n</div><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3172/104/794952956/432051/f756fd80/57bfa8bbN83ef1455.jpg\" /></div>\n</div><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3178/321/799708624/495075/83df095e/57bfa8bfN9728c94e.jpg\" /></div>\n</div><div class=\"formwork\">\n<div class=\"formwork_img\"><img src=\"http://img20.360buyimg.com/vc/jfs/t3010/80/1662899924/730949/ba006069/57c8dc2bNddbb99ac.jpg\" /></div>\n</div></div>",
+    "goods_thumb": "http://img13.360buyimg.com/n1/jfs/t3331/250/1327320259/181751/c6cb5da0/5822c5ebNe9fa1ef7.jpg",
+    "goods_img": "http://img13.360buyimg.com/imgzone/jfs/t3331/250/1327320259/181751/c6cb5da0/5822c5ebNe9fa1ef7.jpg",
+    "is_on_sale": 1,
+    "add_time": 1488649619,
+    "is_xiangou": 0,
+    "xiangou_num": 0,
+    "xiangou_start_date": 0,
+    "xiangou_end_date": 0,
+    "comment": 2,
+    "products": {
+      "14291": {
+        "product_id": 14291,
+        "goods_id": 36918,
+        "goods_attr": "24362|24365",
+        "product_number": 0,
+        "product_price": "55.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14292": {
+        "product_id": 14292,
+        "goods_id": 36918,
+        "goods_attr": "24362|24366",
+        "product_number": 0,
+        "product_price": "56.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14293": {
+        "product_id": 14293,
+        "goods_id": 36918,
+        "goods_attr": "24362|24367",
+        "product_number": 0,
+        "product_price": "57.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14294": {
+        "product_id": 14294,
+        "goods_id": 36918,
+        "goods_attr": "24363|24365",
+        "product_number": 0,
+        "product_price": "58.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14295": {
+        "product_id": 14295,
+        "goods_id": 36918,
+        "goods_attr": "24363|24366",
+        "product_number": 0,
+        "product_price": "58.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14296": {
+        "product_id": 14296,
+        "goods_id": 36918,
+        "goods_attr": "24363|24367",
+        "product_number": 0,
+        "product_price": "58.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14297": {
+        "product_id": 14297,
+        "goods_id": 36918,
+        "goods_attr": "24364|24365",
+        "product_number": 0,
+        "product_price": "58.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14298": {
+        "product_id": 14298,
+        "goods_id": 36918,
+        "goods_attr": "24364|24366",
+        "product_number": 0,
+        "product_price": "58.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      },
+      "14299": {
+        "product_id": 14299,
+        "goods_id": 36918,
+        "goods_attr": "24364|24367",
+        "product_number": 0,
+        "product_price": "58.00",
+        "promote_price": "0.00",
+        "product_market_price": "66.00"
+      }
+    },
+    "gallery": [
+      "http://localhost:8033/images/a1.jpg",
+      "http://localhost:8033/images/a2.jpg"
+    ],
+    "attrs": [
+    	{
+    		"attr_id": 66,
+    		"attr_name": "颜色",
+    		"data": [
+    			{
+    				"goods_attr_id": 24362,
+    				"attr_value": "5号",
+		        "attr_img_flie": "",
+		        "attr_gallery_flie": "",
+		        "attr_img_file": "",
+		        "attr_gallery_file": ""
+    			}, 
+    			{
+    				"goods_attr_id": 24363,
+    				"attr_value": "7号",
+		        "attr_img_flie": "",
+		        "attr_gallery_flie": "",
+		        "attr_img_file": "",
+		        "attr_gallery_file": ""
+    			},
+          {
+            "goods_attr_id": 24364,
+            "attr_value": "9号",
+            "attr_img_flie": "",
+            "attr_gallery_flie": "",
+            "attr_img_file": "",
+            "attr_gallery_file": ""
+          }
+    		]
+    	},
+    	{
+    		"attr_id": 103,
+    		"attr_name": "版本",
+    		"data": [
+    			{
+    				"goods_attr_id": 24365,
+    				"attr_value": "20粒装",
+		        "attr_img_flie": "",
+		        "attr_gallery_flie": "",
+		        "attr_img_file": "",
+		        "attr_gallery_file": ""
+    			}, 
+    			{
+    				"goods_attr_id": 24366,
+    				"attr_value": "40粒装",
+		        "attr_img_flie": "",
+		        "attr_gallery_flie": "",
+		        "attr_img_file": "",
+		        "attr_gallery_file": ""
+    			},
+          {
+            "goods_attr_id": 24367,
+            "attr_value": "60粒装",
+            "attr_img_flie": "",
+            "attr_gallery_flie": "",
+            "attr_img_file": "",
+            "attr_gallery_file": ""
+          }
+    		]
+    	}
+    ],
+    "brand": {
+      "brand_id": 2167,
+      "brand_name": "双鹿",
+      "brand_letter": "",
+      "brand_logo": "",
+      "brand_desc": "",
+      "is_show": 1,
+      "is_delete": 0,
+      "audit_status": 1,
+      "add_time": "1488649585"
+    }
+  }
+}

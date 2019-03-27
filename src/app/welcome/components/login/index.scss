@@ -1,0 +1,139 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+	height: 100%;
+}
+
+.login-page {
+	background: #fff;
+	height: 100%;
+  font-size: rem(14px);
+
+  .form {
+  	padding: rem(40px) rem(10px) rem(10px) rem(15px);
+
+
+  	.input-group {
+  		width: 100%;
+  		height: rem(50px);
+  		line-height: rem(50px);
+  		border-bottom: 1px solid $lineCol;
+
+  		> span {
+  			display: inline-block;
+  			width: rem(50px);
+  			font-weight: bold;
+  			font-size: rem(16px);
+  		}
+
+  		.input {
+		    position: absolute;
+		    left: rem(50px);
+		    top: 0;
+		    bottom: 0;
+		    margin: auto;
+		    padding-right: rem(30px);
+				width: rem(295px);
+		    height: rem(30px);
+		    line-height: rem(30px);
+
+		    &.pass {
+		    	width: rem(250px);
+		    }
+
+				&.active {
+					display: block;
+				}
+
+		    > input {
+		    	padding: 0 rem(5px);
+		    	width: 100%;
+		    	height: 100%;
+		    	font-size: rem(16px);
+		    	color: #666;
+		    	border: none;
+		    }
+
+		    .icon {
+		    	position: absolute;
+		    	top: 0;
+		    	bottom: 0;
+		    	right: rem(5px);
+		    	margin: auto 0;
+		    	width: rem(21px);
+		    	height: rem(21px);
+
+					&:before {
+						font-size: rem(21px);
+						color: #ddd;
+					}
+		    }
+  		}
+
+	    > .icon {
+			  position: absolute;
+			  right: rem(5px);
+			  bottom: 0;
+			  top: 0;
+			  margin: auto 0;
+			  width: rem(24px);
+			  height: rem(24px);
+
+	    	&:before {
+	    		font-size: rem(24px);
+	    		color: #ddd;
+	    	}
+
+	    	&.active {
+	    		&:before {
+	    			color: #EC5151;
+	    		}
+	    	}
+	    }
+  	}
+
+  	.tips {
+	    padding: rem(15px) 0;
+	    width: 100%;
+	    text-align: right;
+
+	    > a {
+		    color: #666;
+	    }
+  	}
+
+  	.login-submit {
+  		padding-top: rem(20px);
+
+  		> button {
+	  		display: block;
+	  		width: 100%;
+	  		height: rem(50px);
+	  		line-height: rem(50px);
+	  		background: #EC5151;
+	  		text-align: center;
+	  		font-size: rem(18px);
+	  		color: #fff;
+	  		border: none;
+	  		border-radius: rem(5px);
+	  		cursor: pointer;
+  		}
+  	}
+  }
+
+  .register {
+    display: block;
+    padding-top: rem(10px);
+  	color: #EC5151;
+  	text-align: center;
+  }
+
+	.footer {
+		position: absolute;
+		bottom: rem(10px);
+		width: 100%;
+		text-align: center;
+		color: #666;
+	}
+
+}

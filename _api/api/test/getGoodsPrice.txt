@@ -1,0 +1,13 @@
+{
+  "state": "success",
+  "desc": "«Î«Û≥…π¶",
+  "data": {
+    "min_buy_number": 1,
+    "shop_price": "59.90",
+    "goods_number": 0,
+    "ygcoin_p": "1.49",
+    "ygcoin_b": "10.43",
+    "is_shipping": -1,
+    "shipping_fee": ""
+  }
+}

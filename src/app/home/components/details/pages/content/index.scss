@@ -1,0 +1,44 @@
+@import "~assets/styles/_bootstrap";
+
+.eContent {
+
+	> .tabs {
+		display: flex;
+		height: rem(56px);
+		border-bottom: $lineCol 1px solid;
+
+		> li {
+			flex : 1;
+			padding: rem(17px) 0;
+			
+			> span {
+				display: block;
+				line-height: rem(21px);
+				text-align: center;
+			}
+
+			&:first-child {
+
+				> span {
+					border-right: $lineCol 1px solid;
+				}
+			}
+
+			&.on {
+				color: $mainCol;
+			}
+		}
+	}
+
+	> .showBodys {
+
+		.swiper-wrapper {
+			height: auto!important;
+		}
+
+		.unit {
+			padding: rem(10px);
+			min-height: 50vh;
+		}
+	}
+}

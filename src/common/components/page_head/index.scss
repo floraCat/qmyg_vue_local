@@ -1,0 +1,65 @@
+@import "~assets/styles/_bootstrap";
+
+.page-head {
+  position: fixed;
+  top: 0;
+  padding: rem(10px);
+  width: 100%;
+  height: rem(65px);
+  background: #F6F6F9;
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 1000;
+
+  .search {
+    position: absolute;
+    right: rem(10px);
+    width: rem(320px);
+    height: rem(45px);
+    display: block;
+    border-radius: rem(4px);
+    background: #fff;
+
+    .icon-search {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      bottom: 0;
+      left: rem(10px);
+
+      &:before {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: rem(20px);
+        height: rem(20px);
+        content: ' ';
+        background: url('~assets/images/svg/icon-sea.svg') no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .search-text {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      bottom: 0;
+      left: rem(40px);
+      margin: auto 0;
+      width: 100%;
+      height: 100%;
+      line-height: rem(45px);
+
+
+      > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: rem(15px);
+        color: #666;
+      }
+    }
+  }
+
+}

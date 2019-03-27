@@ -1,0 +1,189 @@
+@import "~assets/styles/_bootstrap";
+
+.eSetShop {
+
+	> section > label {
+		float: left;
+		margin-right: rem(6px);
+		font-size: $fontM;
+	}
+
+	> .name {
+		overflow: hidden;
+		margin-bottom: rem(12px);
+		padding: rem(10px) rem(15px);
+		line-height: rem(38px);
+		background: #fff;
+
+		> input {
+			float: left;
+			padding: rem(3px) rem(8px);
+			width: rem(255px);
+			height: rem(38px);
+			font-size: rem(12px);
+			line-height: rem(36px);
+			border: #ddd 1px solid;
+			border-radius: rem(5px);
+		}
+	}
+
+	> .head {
+		padding: rem(20px) rem(15px);
+		margin-bottom: rem(12px);
+		overflow: hidden;
+		line-height: rem(74px);
+		background: #fff;
+
+		> ol {
+			float: left;
+			overflow: hidden;
+
+			> span {
+				padding-left: rem(80px);
+				float: left;
+				color: #50b0ef;
+			}
+
+			> .upload {
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin-right: rem(5px);
+				width: rem(165px);
+				height: rem(74px);
+
+				// .mask {
+				// 	position: absolute;
+				// 	z-index: 9;
+				// 	top: 0;
+				// 	left: 0;
+				// 	display: none;
+				// 	width: 100%;
+				// 	height: 100%;
+
+				// 	&.show {
+				// 		display: none;
+				// 	}
+				// }
+
+				.cropper > img {
+					margin: 0;
+					width: rem(74px);
+				}
+			}
+		}
+	}
+
+	.tb {
+		overflow: hidden;
+		padding: 0 rem(15px);
+		height: rem(50px);
+		line-height: rem(50px);
+		background: #fff;
+
+		> label {
+			float: left;
+			margin-right: rem(30px);
+		}
+
+		> span {
+			float: left;
+			overflow: hidden;
+			width: rem(230px);
+			color: $grayLight;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	.notice {
+		border-bottom: $lineCol 1px solid;
+
+		> a {
+			display: block;
+
+			> .go {
+				float: right;
+				font-size: rem(14px);
+				line-height: rem(50px);
+			}
+		}
+	}
+
+	.time {
+		margin-bottom: rem(20px);
+	}
+
+	> .btn2 {
+		margin: 0 auto;
+		display: block;
+		width: rem(260px);
+		height: rem(50px);
+		line-height: rem(50px);
+		color: #fff!important;
+		text-align: center;
+		background: $mainCol;
+		border-radius: rem(5px);
+	}
+}
+
+.shopNotice {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: $bgCol;
+	transition: left .4s;
+
+	&.show {
+		left: 0;
+	}
+
+	> .hd {
+		margin-bottom: rem(12px);
+		height: rem(55px);
+		line-height: rem(55px);
+		text-align: center;
+		background: #fff;
+
+		> h5 {
+			font-size: $fontL;
+		}
+
+		> .return {
+			position: absolute;
+			z-index: 100;
+			top: 0; 
+			left: 0;
+			width: rem(55px);
+			height: rem(55px);
+			font-size: rem(16px);
+			line-height: rem(55px);
+		}
+	}
+
+	> .txt {
+		margin-bottom: rem(35px);
+		padding: rem(10px);
+		width: 100%;
+		height: rem(94px);
+		background: #fff;
+		border: none;
+		border-top: $grayLight 1px solid;
+		border-bottom: $grayLight 1px solid;
+	}
+
+	> .btn {
+		display: block;
+		margin:0 auto rem(25px);
+		width: rem(255px);
+		height: rem(42px);
+		line-height: rem(42px);
+		text-align: center;
+		color: #fff!important;
+		background: $mainCol;
+		border-radius: rem(5px);
+	}
+}

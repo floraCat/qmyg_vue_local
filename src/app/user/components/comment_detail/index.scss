@@ -1,0 +1,169 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+.comment-detail-page {
+	height: 100%;
+
+	.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: rem(60px);
+		height: 100%;
+
+		.order-info {
+			height: rem(110px);
+			padding: rem(10px);
+	    border-top: 1px solid $lineCol;
+	    border-bottom: 1px solid $lineCol;
+			background: #fff;
+
+			.item-left {
+				display: inline-block;
+				width: rem(84px);
+				height: rem(84px);
+				border: 1px solid #e8e8e8;
+
+				> img {
+					display: block;
+					margin: auto;
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+
+			.item-right {
+				position: absolute;
+				top: 0;
+				left: rem(94px);
+				padding: rem(10px);
+				height: 100%;
+
+				.title {
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+				}
+			}
+		}
+
+		.comment {
+			padding-top: rem(20px);
+
+			.comment-main {
+				padding: 0 rem(10px);
+				background: #fff;
+
+				.comment-head {
+					height: rem(50px);
+					line-height: rem(50px);
+
+					.tit, .level {
+						display: inline-block;
+						vertical-align: middle;
+					}
+
+					.level {
+						padding-left: rem(10px);
+
+						.icon-star1 {
+							font-size: rem(24px);
+							vertical-align: middle;
+
+							&:before {
+								color: #999;
+
+							}
+							&.on {
+								&:before {
+									color: #ec5151;
+								}
+							}
+						}
+					}
+				}
+
+				.comment-input {
+					width: 100%;
+
+					> textarea {
+						padding: rem(10px) rem(10px) rem(30px) rem(10px);
+						width: 100%;
+						color: #666;
+						font-size: rem(14px);
+						border: none;
+						border-bottom: 1px solid $lineCol;
+					}
+
+					> span {
+				    position: absolute;
+				    bottom: rem(10px);
+				    right: rem(15px);
+				    color: #999;
+					}
+				}
+
+				.comment-photo {
+					height: rem(50px);
+					line-height: rem(50px);
+
+					.tit, .photo {
+						display: inline-block;
+						vertical-align: middle;
+					}
+
+					.tit {
+						font-size: rem(14px);
+					}
+
+					.photo {
+						padding-left: rem(10px);
+
+						.icon-photo {
+							font-size: rem(40px);
+					    border: 1px solid $lineCol;
+					    vertical-align: middle;
+					    color: #999;
+						}
+
+						> input {
+					    position: absolute;
+					    top: 0;
+							width: rem(40px);
+					    height: rem(40px);
+					    opacity: 0;
+						}
+					}
+
+				}
+			}
+
+			.button {
+				padding-top: rem(20px);
+
+				> button {
+			    display: block;
+			    margin: 0 auto;
+			    width: rem(350px);
+			    height: rem(45px);
+			    line-height: rem(45px);
+			    color: #fff;
+			    font-size: rem(16px);
+			    border: none;
+			    border-radius: rem(5px);
+			    background: #EC5151;
+			    cursor: pointer;
+				}
+			}
+		}
+
+	}
+
+}

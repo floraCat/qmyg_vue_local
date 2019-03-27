@@ -1,0 +1,263 @@
+@import "~assets/styles/_bootstrap";
+
+.eMyGood {
+
+	.tabs {
+		padding: rem(7px) 0;
+		text-align: center;
+		background: #fff;
+
+		> a {
+			margin: 0 rem(2px);
+			display: inline-block;
+			width: rem(60px);
+			height: rem(30px);
+			line-height: rem(28px);
+			text-align: center;
+			color: $mainCol;
+			border: $mainCol 1px solid;
+			border-radius: rem(5px);
+
+			&.active {
+				color: #fff;
+				background: $mainCol;
+			}
+		}
+	}
+
+	.lists {
+		z-index: 99;
+		padding: rem(4px);
+		// height: rem(490px)!important;
+		background: $bgCol;
+
+		li {
+			overflow: hidden;
+			margin-bottom: rem(6px);
+			padding: rem(15px) rem(12px) rem(15px) 0;
+			background: #fff;
+
+			&.active {
+
+				.check {
+
+					> span {
+						background: $mainCol;
+
+						> .icon {
+							display: block;				
+
+							&:before {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+
+			.check{
+				float: left;
+				padding: rem(30px) rem(4px) 0;
+				text-align: center;
+
+				> span {
+					display: block;
+					width: rem(20px);
+					height: rem(20px);
+					background: #eee;
+					border-radius: rem(10px);
+
+					> .icon {
+						display: none;
+						font-size: rem(20px);
+						line-height: rem(20px);
+					}
+				}
+			}
+
+			> .img {
+				float: left;
+				width: rem(82px);
+				height: rem(82px);
+
+				 > img {
+				 	width: rem(82px);
+					height: rem(82px);
+				 }
+			}
+
+			> ol {
+				margin-left: rem(130px);
+				line-height: rem(22px);
+
+				> .ttl {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					display: block;
+					font-size: $fontM;
+					color: #666;
+				}
+
+				.lt {
+					float: left;
+				}
+
+				.rt {
+					float: right;
+				}
+
+				p {
+					overflow: hidden;
+					font-size: $fontS;
+					color: $grayLight;
+
+					label {
+						display: inline;
+					}
+				}
+
+				.p1 {
+
+					label {
+						color: $grayDark;
+					}
+
+					em {
+						color: $mainCol;
+					}
+				}
+			}
+		}
+	}
+
+	.btn_add {
+		position: fixed;
+		z-index: 100;
+		bottom: rem(-45px);
+		left: 0;
+		width: 100%;
+		height: rem(45px);
+		font-size: rem(18px);
+		line-height: rem(45px);
+		text-align: center;
+		background: #fff;
+		border-top: $lineCol 1px solid;
+		box-shadow: 3px 0 3px #aaa;
+
+		&.active {
+			bottom: 0;
+		}
+
+		> a {
+			display: block;
+		}
+
+		span {
+			display: inline-block;
+			padding-left: rem(20px);
+		}
+
+		.icon {
+			position: absolute;
+			margin-left: rem(-75px);
+			left: 50%;
+			top: rem(4px);
+			font-size: rem(35px);
+
+			&:before {
+				color: $mainCol;
+			}
+		}
+	}
+}
+
+.handleCancelAgent {
+	position: fixed;
+	z-index: 100;
+	bottom: rem(-46px);
+	left: 0;
+	overflow: hidden;
+	padding: rem(10px) rem(18px) rem(10px) rem(20px);
+	width: 100%;
+	height: rem(46px);
+	font-size: $fontM;
+	line-height: rem(26px);
+	color: $grayLight;
+	background: #fff;
+	border-top: $lineCol 1px solid;
+	box-shadow: rem(3px) 0 rem(3px) #aaa;
+
+	&.active {
+		bottom: 0;
+	}
+
+	.check {
+		overflow: hidden;
+		float: left;
+		margin-right: rem(20px);
+
+		> span {
+			float: left;
+			margin:rem(3px) rem(5px);
+			width: rem(20px);
+			height: rem(20px);
+			line-height: rem(20px);
+			text-align: center;
+			background: #eee;
+			border-radius: rem(10px);
+
+			> .icon {
+				display: none;
+				line-height: rem(20px);
+			}
+		}
+
+		&.active {
+
+			> span {
+				background: $mainCol;
+
+				> .icon{
+					display: block;
+
+					&:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		> label {
+			float: left;
+		}
+	}
+
+	.cancel {
+		float: left;
+	}
+
+	.btn {
+		float: right;
+		display: block;
+		width: rem(80px);
+		height: rem(26px);
+		line-height: rem(24px);
+		color: $grayDark!important;
+		text-align: center;
+		border: $grayDark 1px solid;
+		border-radius: rem(5px);
+	}
+
+}
+
+.DialogMgGood {
+
+	.head h3 {
+		display: none;
+	}
+
+	.item:last-child {
+		color: $mainCol!important;
+	}
+}

@@ -1,0 +1,331 @@
+@import "~assets/styles/_bootstrap";
+
+.location-open {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.city-page {
+  $padding      : rem(10px);
+  $scroll-width : rem(12px);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: rem(100px);
+  z-index: 1400;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  &.open {
+    display: block;
+  }
+
+  .header-menu {
+  	height: rem(50px);
+  	line-height: rem(50px);
+  	border-bottom: 1px solid #eae9e9;
+  	background: #fff;
+
+  	> h3 {
+  		margin: 0;
+  		padding: 0;
+  		color: $blk;
+  		text-align: center;
+  	}
+  }
+
+  .scroller {
+    position: absolute;
+    top: 0;
+    right: $scroll-width;
+    display: table;
+    height: 100%;
+    width: auto;
+    font-size: rem(12px);
+    color: #000;
+    z-index: 1300;
+
+    .scroller-inner {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .point {
+      display: block;
+      padding: rem(5px) 0;
+      line-height: rem(12px);
+      text-align: center;
+      font-weight: bolder;
+      transform: scale(.8);
+    }
+  }
+
+  .body {
+    display: block;
+    overflow: hidden;
+    padding-bottom: rem(55px);
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+  }
+
+  .city-search {
+    padding: rem(8px) 0;
+    background: #e7e7eb;
+    color: #999;
+
+    .sea-link {
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      height: rem(30px);
+      line-height: rem(30px);
+      text-align: center;
+      font-size: rem(15px);
+      border-radius: rem(4px);
+      background: #fff;
+      cursor: pointer;
+
+      &:before {
+        display: inline-block;
+        margin-right: rem(5px);
+        width: rem(16px);
+        height: rem(16px);
+        content: ' ';
+        background: url('~assets/images/svg/search.svg') no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .search-main {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: all .5s;
+      opacity: 0;
+      z-index: 1700;
+
+      .search-body {
+      	display: none;
+      }
+
+      &.in {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: 2000;
+
+        .search-close {
+          position: fixed;
+          display: block;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: ' ';
+          background: rgba(0, 0, 0, .3);
+        }
+
+	      .search-body {
+	        position: fixed;
+	        display: block;
+	        left: 0;
+	        top: 0;
+	        right: 0;
+	        padding: rem(10px) rem(7.5px);
+	        z-index: 1800;
+	        background: #e7e7eb;
+	        border: rem(4px) solid #fff;
+
+	        &:before {
+	          position: absolute;
+	          display: inline-block;
+	          left: rem(15px);
+	          top: 0;
+	          bottom: 0;
+	          margin: auto;
+	          width: rem(16px);
+	          height: rem(16px);
+	          content: ' ';
+	          background: url('~assets/images/svg/search.svg') no-repeat;
+	          background-size: 100%;
+	        }
+
+	        .keyword {
+	          display: inline-block;
+	          padding-left: rem(30px);
+	          width: rem(275px);
+	          height: rem(35px);
+	          line-height: rem(35px);
+	          font-size: rem(15px);
+	          color: $grayDark;
+	          border: none;
+	          border-radius: rem(4px);
+	        }
+
+	        .btn-submit {
+	          display: inline-block;
+	          width: rem(70px);
+	          height: rem(35px);
+	          line-height: rem(35px);
+	          font-size: rem(17px);
+	          color: #fff;
+	          border: none;
+	          border-radius: rem(4px);
+	          background: #EC5151;
+	          outline: 0;
+	          cursor: pointer;
+	        }
+	      }
+	    }
+    }
+
+  }
+
+  .header {
+    position: relative;
+    z-index: 1500;
+    display: block;
+    padding: 0 $padding;
+    padding-right: $scroll-width;
+    width: 100%;
+    height: rem(45px);
+    line-height: rem(45px);
+    font-size: rem(13px);
+    font-weight: bold;
+    background-color: #fff;
+    @include clearfix;
+
+    .toggle {
+      display: inline-block;
+      float: right;
+      height: rem(45px);
+      line-height: rem(45px);
+      font-size: rem(12px);
+      font-weight: normal;
+      color: $grayDark;
+    }
+
+    a.closelist {
+      display: inline-block;
+      float: right;
+      font-weight: normal;
+      font-size: rem(13px);
+      color: #399ef3;
+      cursor: pointer;
+    }
+  }
+
+  .inner {
+    display: block;
+    margin-top: rem(-45px);
+    padding-top: rem(45px);
+    width: 100%;
+    height: 100%;
+
+    .wrap {
+      display: block;
+      overflow: scroll;
+      // padding-right: $scroll-width; // scroller width
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .list-wrap {
+    display: block;
+    margin-bottom: rem(5px);
+    padding-top: rem(10px);
+    @include clearfix;
+  }
+
+  .hot-list {
+    display: block;
+    @include clearfix;
+
+    .caption {
+      display: block;
+      padding: 0 $padding;
+      height: rem(30px);
+      line-height: rem(30px);
+      font-size: rem(13px);
+      font-weight: normal;
+      color: $grayDark;
+    }
+
+    .list-inner {
+      display: block;
+      padding: 0 $padding - rem(5px);
+      @include clearfix;
+
+      .item {
+        display: inline-block;
+        float: left;
+        margin-bottom: rem(10px);
+        padding: 0 rem(5px);
+        width: percentage(1/3);
+
+        > a {
+          display: block;
+          border: 1px solid #eee;
+          height: rem(35px);
+          line-height: rem(35px);
+          text-align: center;
+          font-size: rem(14px);
+          color: $blk;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .list {
+    display: block;
+    border-top: 1px solid #eee;
+    @include clearfix;
+
+    .caption {
+      display: block;
+      padding: 0 $padding;
+      height: rem(23px);
+      line-height: rem(23px);
+      font-size: rem(13px);
+      font-weight: normal;
+      color: $grayDark;
+    }
+
+    .list-inner {
+      display: block;
+      padding: 0;
+      background-color: #fff;
+      @include clearfix;
+
+      .item {
+        display: block;
+        margin: 0 0 0 rem(10px);
+        border-bottom: 1px solid #eee;
+        height: rem(40px);
+        line-height: rem(40px);
+        font-size: rem(14px);
+        color: $blk;
+
+        &:last-of-type {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

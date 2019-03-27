@@ -1,0 +1,195 @@
+@import "~assets/styles/_bootstrap";
+
+.eShopIndex {
+	padding: 0 0 rem(5px);
+
+	.head {
+		padding: rem(9px);
+		background: $mainCol;
+		color: #fff;
+
+		.back {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: rem(40px);
+			height: rem(63px);
+			font-size: rem(21px);
+			line-height: rem(63px);
+			text-align: center;
+
+			&:before {
+				color: #fff;
+			}
+		}
+
+		> ol {
+			overflow: hidden;
+			margin-left: rem(36px);
+
+			.img {
+				float: left;
+				width: rem(45px);
+				height: rem(45px);
+				background: #fff;
+				border-radius: 50%;
+
+				> img {
+					width: rem(45px);
+					height: rem(45px);
+				}
+			}
+
+			> h5 {
+				margin-left: rem(55px);
+				font-size: rem(15px);
+				line-height: rem(24px);
+			}
+
+			> p {
+				margin-left: rem(55px);
+				color: #ccc;
+			}
+		}
+
+		> ul {
+			overflow: hidden;
+			position: absolute;
+			top: rem(12px);
+			right: 0;
+			width: rem(108px);
+
+			> .icon {
+				margin-top: rem(4px);
+				float: left;
+				width: rem(33px);
+				height: rem(33px);
+				background: url(~assets/images/svg/shop_resign.svg) no-repeat center;
+				background-size: rem(33px);
+			}
+
+			> span {
+				display: block;
+				margin-left: rem(39px);
+			}
+		}
+	}
+
+	.tabs {
+		padding: rem(10px) 0;
+		display: flex;
+
+		li {
+			flex: 1;
+			font-size: rem(12px);
+			text-align: center;
+			color: $mainCol;
+
+			> i {
+				display: inline-block;
+				width: rem(42px);
+				height: rem(20px);
+				line-height: rem(20px);
+				color: #fff;
+				text-align: center;
+				background: $mainCol;
+				border-radius: rem(5px);
+			}
+		}
+	}
+
+	.notes {
+		overflow: hidden;
+		height: rem(34px);
+		line-height: rem(34px);
+		background: #ec5151;
+
+		i {
+			float: left;
+			width: rem(34px);
+			font-size: rem(20px);
+			line-height: rem(34px);
+			text-align: center;
+
+			&:before {
+				color: #fff;
+			}
+		}
+
+		.slides {
+			margin-left: rem(34px);
+			width: auto;
+			height: rem(24px);
+			font-size: rem(13px);
+
+			.swiper-slide {
+				color: #fff;
+				background: #ec5151;
+			}
+		}
+	}
+
+	.lists {
+		margin-top: rem(15px);
+		padding-bottom: rem(15px);
+		overflow: hidden;
+		background: #fff;
+
+		> li {
+			float: left;
+			padding: rem(5px) rem(10px);
+			width: 33.3%;
+
+			> .img {
+				margin: 0 auto;
+				display: block;
+				width: rem(105px);
+				height: rem(105px);
+
+				> img {
+					width: rem(105px);
+					height: rem(105px);
+				}
+			}
+
+			h6 {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				height: rem(26px);
+				line-height: rem(26px);
+			}
+
+			p {
+				overflow: hidden;
+				padding-right: rem(5px);
+
+				> .lt {
+					float: left;
+
+					> em {
+						color: $mainCol;
+					}
+				}
+
+				> .rt {
+					float: right;
+
+					> em {
+						color: $mainCol;
+					}
+				}
+			}
+		}
+	}
+
+	.more {
+		margin-bottom: rem(20px);
+		display: block;
+		height: rem(48px);
+		line-height: rem(48px);
+		text-align: center;
+		color: $grayDark;
+		background: rgb(232,222,222);
+	}
+}

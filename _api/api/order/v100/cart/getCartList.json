@@ -1,0 +1,60 @@
+{
+	"state":"success",
+	"code": 0,
+	"data": [
+		{
+			"shop_name": "深圳全民易购",
+			"goods_list": [
+				{
+					"shop_name": "aaaaaaaaaaaaaaaaaaa",
+					"goods_thumb":"http://localhost:8033/images/a2.jpg",
+					"goods_price": 99.00,
+					"goods_number": 5,
+					"goods_id": 9527,
+					"ygcoin": 21.50
+				}
+			]
+		},
+		{
+			"shop_name": "apple旗舰店",
+			"goods_list": [
+				{
+					"shop_name": "bbbbbbbbbbbbbbbbbbbbbb",
+					"goods_thumb":"http://localhost:8033/images/a2.jpg",
+					"goods_price": 999.00,
+					"goods_number": 1,
+					"goods_id": 9536,
+					"ygcoin": 81.50,
+					"specs": [
+						{
+							"attr": "颜色",
+							"value": "土豪金"
+						},
+						{
+							"attr": "容量",
+							"value": "32G"
+						}
+					]
+				},
+				{
+					"shop_name": "ccccccccccccccccc",
+					"goods_thumb":"http://localhost:8033/images/a2.jpg",
+					"goods_price": 998.00,
+					"goods_number": 10,
+					"goods_id": 9520,
+					"ygcoin": 99.50,
+					"specs": [
+						{
+							"attr": "颜色",
+							"value": "灰色"
+						},
+						{
+							"attr": "尺寸",
+							"value": "M码"
+						}
+					]
+				}
+			]
+		}
+	]
+}

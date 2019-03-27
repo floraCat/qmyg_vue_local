@@ -1,0 +1,21 @@
+﻿{
+	"state":"success",
+	"data":[
+		{
+			"ad_link":"#",
+			"ad_code":"http://localhost:8033/images/1.jpg"
+		},
+		{
+			"ad_link":"#",
+			"ad_code":"http://localhost:8033/images/1.jpg"
+		},
+		{
+			"ad_link":"#",
+			"ad_code":"http://localhost:8033/images/1.jpg"
+		},
+		{
+			"ad_link":"#",
+			"ad_code":"http://localhost:8033/images/1.jpg"
+		}
+	]
+}

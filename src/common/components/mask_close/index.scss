@@ -1,0 +1,44 @@
+@import "~assets/styles/_bootstrap";
+
+
+.addrMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+
+  > .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $blk;
+    opacity: .8;
+  }
+
+  > .quit {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: rem(45px);
+    padding-top: rem(30px);
+    font-size: $fontS;
+    color: #fff;
+    text-align: center;
+
+    > i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      
+      &:before {
+        font-size: rem(22px);
+        color: #fff;
+      }
+    }
+  }
+}

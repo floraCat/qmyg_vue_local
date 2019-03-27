@@ -1,0 +1,19 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+	height: 100%;
+	background: #fff;
+}
+
+
+.mfindpwd-page {
+	height: 100%;
+
+	.footer {
+		position: absolute;
+		bottom: rem(10px);
+		width: 100%;
+		text-align: center;
+		color: #666;
+	}
+}

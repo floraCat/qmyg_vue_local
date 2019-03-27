@@ -1,0 +1,52 @@
+@import "~assets/styles/_bootstrap";
+
+.eTopic {
+	margin-bottom: rem(10px);
+
+	> .img {
+		display: block;
+		width: 100%;
+		height: rem(100px);
+
+		> img {
+			width: 100%;
+			height: rem(100px);
+		}
+	}
+
+	> ol {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		max-height: rem(328px);
+
+		> .item {
+			float: left;
+			overflow: hidden;
+			width: rem(105px);
+			font-size: rem(13px);
+			margin: rem(10px) rem(10px) 0;
+
+			> img {
+				width: rem(105px);
+				height: rem(105px);
+			}
+
+			> p {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				line-height: 18px;
+				padding-top: rem(5px);
+			}
+
+			> span {
+				display: block;
+				line-height: 26px;
+				text-align: center;
+				color: $mainCol;
+			}
+		}
+	}
+}
+

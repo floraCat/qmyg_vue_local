@@ -1,0 +1,125 @@
+@import "~assets/styles/_bootstrap";
+
+$col-orange  : #ec7451;
+
+.eAddGood {
+	font-size: $fontS;
+
+	> header {
+		height: rem(45px);
+		line-height: rem(45px);
+		color: #fff;
+		text-align: center;
+		background: $col-orange;
+
+		> h1 {
+			font-size: $fontL;
+		}
+
+		> .return {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: rem(45px);
+			font-size: rem(18px);
+			line-height: rem(45px);
+			text-align: center;
+
+			&:before {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.navGood {
+	height: rem(76px);
+
+	> .list {
+		overflow: hidden;
+		height: rem(76px);
+	}
+
+	.item {
+		float: left;
+		display: block;
+		padding-top: rem(10px);
+		width: rem(66px);
+		height: rem(76px);
+		text-align: center;
+		background: #fff;
+
+		&.first {
+			width: rem(76px);
+			border-right: $lineCol 1px solid;
+		}
+
+		&.active {
+			border-bottom: 1.5px solid $col-orange;
+		}
+
+		> .img {
+			margin: 0 auto;
+			width: rem(40px);
+			height: rem(40px);
+
+			> img {
+				width: rem(40px);
+				height: rem(40px);
+			}
+		}
+
+		> span {
+		}
+	}
+}
+
+.listGood {
+	margin-top: rem(10px);
+
+	.scroller {
+		height: rem(545px);
+	}
+
+	section .swiper-slide {
+		background: #fff!important;
+	}
+
+	section {
+		overflow: hidden;
+		margin-bottom: rem(10px);
+		background: #fff;
+		border-bottom: $lineCol 1px solid;
+
+		a {
+			float: left;
+			display: block;
+			padding: rem(10px) rem(10px) rem(5px);
+			width: rem(110px);
+			border-right: $lineCol 1px solid;
+
+			> .img {
+				margin: 0 auto;
+				width: rem(80px);
+				height: rem(80px);
+
+				> img {
+					width: rem(80px);
+					height: rem(80px);
+				}
+			}
+
+			> p {
+				overflow: hidden;
+				height: rem(30px);
+				line-height: rem(30px);
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			> span {
+				color: $col-orange;
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+	background: #fff;
+}
+
+.mfindpwd-two {
+  font-size: rem(14px);
+
+  .form {
+  	padding: rem(30px) rem(10px) rem(10px) rem(15px);
+
+
+  	.input-group {
+  		width: 100%;
+  		height: rem(50px);
+  		line-height: rem(50px);
+  		border-bottom: 1px solid $lineCol;
+
+  		> span {
+  			display: inline-block;
+  			width: rem(80px);
+  			font-size: rem(16px);
+  		}
+
+  		.input {
+		    position: absolute;
+		    left: rem(80px);
+		    top: 0;
+		    bottom: 0;
+		    margin: auto;
+				width: rem(265px);
+		    height: rem(30px);
+		    line-height: rem(30px);
+
+				&.active {
+					display: block;
+				}
+
+
+		    &.pass {
+		    	width: rem(180px);
+		    }
+
+		    > input {
+		    	padding: 0 rem(5px);
+		    	width: 100%;
+		    	height: 100%;
+		    	font-size: rem(16px);
+		    	color: #666;
+		    	border: none;
+		    }
+
+		    .icon {
+		    	position: absolute;
+		    	top: 0;
+		    	bottom: 0;
+		    	right: rem(5px);
+		    	margin: auto 0;
+		    	width: rem(21px);
+		    	height: rem(21px);
+
+					&:before {
+						font-size: rem(21px);
+						color: #ddd;
+					}
+		    }
+
+  		}
+
+	    > .icon {
+			  position: absolute;
+			  right: rem(5px);
+			  bottom: 0;
+			  top: 0;
+			  margin: auto 0;
+			  width: rem(24px);
+			  height: rem(24px);
+
+	    	&:before {
+	    		font-size: rem(24px);
+	    		color: #ddd;
+	    	}
+	    }
+
+			.phone-code {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    margin: auto 0;
+		    width: rem(100px);
+		    height: rem(30px);
+		    text-align: center;
+		    cursor: pointer;
+		    background: #EC5151;
+		    color: #fff;
+		    border-radius: rem(5px);
+			}
+
+  	}
+
+
+  	.login-submit {
+  		padding-top: rem(20px);
+
+  		> button {
+	  		display: block;
+	  		margin: 0 auto;
+	  		width: 100%;
+	  		height: rem(50px);
+	  		background: #EC5151;
+	  		text-align: center;
+	  		font-size: rem(18px);
+	  		color: #fff;
+	  		border: none;
+	  		border-radius: rem(5px);
+	  		cursor: pointer;
+  		}
+  	}
+  }
+
+}

@@ -1,0 +1,777 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+  background: #F6F6F9;
+}
+
+.supply_chain {
+  width: 100%;
+  font-family: simhei;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+  }
+
+  .clearfix:after {
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    display: block;
+  }
+  
+  .line_box {
+    position: absolute;
+    opacity: 0;
+    transition: all 0s;
+
+    > div {
+      width: rem(150px);
+      min-height: rem(1px);
+
+      > div {
+        float: left;
+        width: rem(10px);
+        height: rem(3px);
+        margin-right: rem(5px);
+        background-color: #23356d;
+      }
+    }
+
+    &:nth-child(1) {
+      left: 19%;
+      top: 28%;
+      transform: rotate(75deg);
+    }
+
+    &:nth-child(2) {
+      left: calc(50% - 4.7rem);
+      top: 31%;
+      transform: rotate(90deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-75deg);
+      right: 19%;
+      top: 28%;
+    }
+  }
+
+  .line_box.on {
+    top: 0%;
+    opacity: 1;
+    transition: all .5s;
+
+    &:nth-child(1) {
+      transform: rotate(75deg);
+      left: 9%;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(90deg);
+      left: calc(50% - 4.7rem);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-75deg);
+      right: 9%;
+    }
+  }
+
+  >.first_part{
+    width: 100%;
+    min-height: 100px;
+
+    >.first_top {
+      width: 100%;
+      min-height: 50px;
+      cursor: pointer;
+
+      > p {
+        position: absolute;
+        left: 0;
+        top: rem(20px);
+        width: 100%;
+        line-height: rem(30px);
+        text-align: center;
+
+        > a {
+          display: inline-block;
+          min-width: 20px;
+          height: 100%;
+          font-size: rem(18px);
+          color: #fff;
+          margin: 0 auto;
+          border-bottom: 1px solid #fff;
+
+          > img {
+            display: inline;
+            width: rem(20px);
+            vertical-align: middle;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      >.logo {
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        width: 40%;
+        min-height: 20px;
+      }
+
+      >.words {
+        position: absolute;
+        left: 0;
+        top: 65%;
+        width: 100%;
+        min-height: 50px;
+        color: #fff;
+        text-align: center;
+
+        > p {
+          &:first-child {
+            height: rem(50px);
+            font-size: rem(32px);
+
+            > span {
+              position: absolute;
+              top: rem(-10px);
+              font-weight: 900;
+
+              &:nth-child(1) {
+                left: 18%;
+                animation: jump .8s linear 0.8s infinite alternate;
+              }
+
+              &:nth-child(2) {
+                left: 27%;
+                animation: jump .8s linear 1s infinite alternate;
+              }
+
+              &:nth-child(3) {
+                left: 36%;
+                animation: jump .8s linear 1.2s infinite alternate;
+              }
+
+              &:nth-child(4) {
+                left: 45%;
+                animation: jump .8s linear 1.4s infinite alternate;
+              }
+
+              &:nth-child(5) {
+                left: 54%;
+                animation: jump .8s linear 1.6s infinite alternate;
+              }
+
+              &:nth-child(6) {
+                left: 63%;
+                animation: jump .8s linear 1.8s infinite alternate;
+              }
+
+              &:nth-child(7) {
+                left: 72%;
+                animation: jump .8s linear 2s infinite alternate;
+              }
+            }
+          }
+
+          &:last-child {
+            font-size: rem(16px);
+          }
+        }
+      }
+    }
+
+    >.first_mid {
+      background: linear-gradient(to bottom, rgba(20,31,69,1) 0%,rgba(13, 13, 23,1) 50%,rgba(24,37,75,1) 100%);
+      height: rem(550px);
+
+      > div {
+        padding-top: rem(15px);
+        text-align: center;
+
+        > p {
+          color: #fff;
+          font-size: 14px;
+          margin-bottom: 3px;
+
+          &:nth-child(1) {
+            color: #ffc200;
+            font-size: rem(21px);
+            margin-bottom: rem(10px);
+          }
+        }
+      }
+
+      > ul {
+        width: 100%;
+        height: rem(425px);
+
+        > li {
+          position: absolute;
+          right: -100%;
+          width: 100%;
+          height: rem(75px);
+          color: #fff;
+          font-size: rem(13px);
+          text-align: center;
+          background-image: url(~assets/images/supply_chain/supply_words_bg.png);
+          background-repeat: no-repeat;
+          background-size: auto rem(360px);
+          transition: all .5s;
+          
+          &.on {
+            right: 0;
+          }
+
+          &.active {
+            right: 100%;
+          }
+
+          > div {
+            width: 100%;
+            padding-left: rem(32px);
+
+            &:first-child {
+              font-size: rem(18px);
+              font-weight: 900;
+              margin-top: rem(15px);
+            }
+          }
+
+          &:nth-child(1) {
+            top: rem(10px);
+            background-position: center rem(1px);
+            transition-delay: .2s;
+          }
+          transition-delay: .2s;
+
+          &:nth-child(2) {
+            top: rem(90px);
+            background-position: center rem(-70px);
+            transition-delay: .4s;
+          }
+
+          &:nth-child(3) {
+            top: rem(170px);
+            background-position: center rem(-142px);
+            transition-delay: .8s;
+          }
+
+          &:nth-child(4) {
+            top: rem(250px);
+            background-position: center rem(-215px);
+            transition-delay: 1s;
+          }
+
+          &:nth-child(5) {
+            top: rem(330px);
+            background-position: center rem(-286px);
+            transition-delay: 1.2s;
+          }
+        }
+      }
+    }
+
+    >.first_bot {
+      width: 100%;
+      min-height: 100px;
+
+      > div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: rem(50px);
+        font-size: rem(30px);
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+
+  >.second_part {
+    width: 100%;
+    min-height: 100px;
+
+    >.second_top {
+      width: 100%;
+      min-height: 50px;
+
+      >.logo {
+        position: absolute;
+        left: 30%;
+        top: 11%;
+        width: 40%;
+        min-height: 20px;
+      }
+
+      >.words {
+        position: absolute;
+        top: 53%;
+        left: 0;
+        font-family: simHei;
+        font-size: rem(30px);
+        color: #fff;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    >.second_mid {
+      width: 100%;
+      min-height: 450px;
+      background: linear-gradient(to bottom, rgba(20,31,69,1) 0%,rgba(13, 13, 23,1) 50%,rgba(24, 36, 78,1) 100%);
+      
+      .mid_div {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+      }
+
+      >.mid_first {
+        right: rem(5px);
+        top: 0;
+        width: rem(195px);
+        height: rem(100px);
+        padding: rem(17px) 0 0 rem(30px);
+        background-image: url(~assets/images/supply_chain/supply_bg2.png);
+
+        > p {
+          color: #fff;
+          font-size: rem(17px);
+          line-height: rem(23px);
+          text-align: center;
+        }
+      }
+
+      >.mid_second {
+        left: rem(2px);
+        top: rem(23px);
+        width: rem(290px);
+        height: rem(250px);
+        background-image: url(~assets/images/supply_chain/supply_bg1.png);
+
+        > div {
+          position: absolute;
+          min-height: 10px;
+          transform: scale(0,0);
+          transition: all 0s;
+          transform-origin: bottom center;
+
+          &.on {
+            opacity: 1;
+            transition: all .5s;
+            transform: scale(1,1);
+          }
+
+          > img {
+            width: 100%;
+            height: auto;
+          }
+
+          &:nth-child(1) {
+            left: 19%;
+            top: 29%;
+            width: 24%;
+          }
+
+          &:nth-child(2) {
+            left: 39%;
+            top: 40%;
+            width: 24%;
+          }
+
+          &:nth-child(3) {
+            right: 9%;
+            top: 42%;
+            width: 30%;
+          }
+
+          &:nth-child(4) {
+            left: 67%;
+            top: 70%;
+            width: 18%;
+          }
+
+          &:nth-child(5) {
+            left: 37%;
+            top: 61%;
+            width: 30%;
+          }
+
+          &:nth-child(6) {
+            left: 17%;
+            top: 71%;
+            width: 21%;
+          }
+
+          &:nth-child(7) {
+            left: 12%;
+            top: 50%;
+            width: 25%;
+          }
+        }
+      }
+
+      >.mid_third {
+        width: 100%;
+        height: rem(780px);
+        padding-top: rem(295px);
+
+        > div {
+          &:first-child {
+            width: 48%;
+            height: 78%;
+            margin: 0 auto;
+            border-radius: 78%/48%;
+            animation: bgStar 1.5s ease 0s infinite both;
+          }
+
+          &:nth-child(2) {
+            left: 0;
+            top: 36%;
+            width: 100%;
+            background-image: url(~assets/images/supply_chain/supply_phone.png);
+            height: rem(440px);
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+
+            > div {
+              width: 100%;
+              height: 100%;
+
+              > div {
+                text-align: center;
+                line-height: rem(25px);
+                transition: all 0s;
+                transform: scale(0,0);
+                transform-origin: bottom center;
+
+                &.on {
+                  opacity: 1;
+                  transition: all .4s;
+                  transform: scale(1,1);
+                }
+
+                > p {
+                  font-size: rem(20px);
+                  text-shadow: 0 0 10px #000;
+                  color: #fff;
+
+                  &.special {
+                    font-size: rem(14px);
+                    padding-top: rem(45px);
+                  }
+                }
+
+                &:nth-child(1) {
+                  left: rem(40px);
+                  top: 0%;
+                  height: rem(107px);
+                  width: rem(115px);
+                  background-image: url(~assets/images/supply_chain/supply_bg6.png);
+                  padding: rem(18px) 0 0 rem(3px);
+                }
+
+                &:nth-child(2) {
+                  top: -65px;
+                  right: rem(15px);
+                  width: rem(80px);
+                  min-height: rem(10px);
+                }
+
+                &:nth-child(3) {
+                  left: 6%;
+                  top: rem(230px);
+                  width: rem(65px);
+                  height: rem(65px);
+                  background-image: url(~assets/images/supply_chain/supply_bg4.png);
+                  background-size: rem(45px) auto;
+                  background-position: center 24%;
+                }
+
+                &:nth-child(4) {
+                  right: 6%;
+                  top: rem(127px);
+                  width: rem(65px);
+                  height: rem(65px);
+                  background-image: url(~assets/images/supply_chain/supply_bg5.png);
+                  background-size: rem(45px) auto;
+                  background-position: center 24%;
+                }
+
+                &:nth-child(5) {
+                  left: calc(50% - 7.3rem);
+                  top: rem(300px);
+                  width: rem(263px);
+                  min-height: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      >.mid_forth {
+        width: 100%;
+        min-height: 120px;
+
+        >.words_box {
+          position: absolute;
+          left: 0;
+          top: -8%;
+          width: 100%;
+          min-height: 20px;
+          color: #274b6c;
+          font-size: rem(35px);
+          font-weight: 900;
+          text-align: center;
+        }
+
+        >.big_box {
+          width: 100%;
+          height: rem(500px);
+          padding-top: rem(45px);
+
+          > div {
+            &:first-child {
+              width: rem(131px);
+              height: rem(135px);
+              margin: rem(102px) 0 0 rem(67px);
+              border-radius: 78%/48%;
+              -webkit-animation: bgStar 1.5s ease 0s infinite both;
+            }
+
+            &.mid_div {
+              left: 0;
+              top: rem(-92px);
+              width: 100%;
+              height: rem(550px);
+              background-image: url(~assets/images/supply_chain/supply_bg9.png);
+              background-size: 100% auto;
+
+              > div {
+                width: 100%;
+                height: 100%;
+
+                > div {
+                  position:absolute;
+                  text-align: center;
+
+                  &.mid_div_first {
+                    right: rem(64px);
+                    top: 37.1%;
+                    width: rem(37px);
+                    min-height: 10px;
+                    -webkit-animation: handShake 1.5s ease 0s infinite both;
+                  }
+
+                  &.mid_div_second {
+                    left: 0;
+                    bottom: 18%;
+                    width: 70%;
+                    min-height: 20px;
+
+                    > p {
+                      color: transparent;
+                      background: linear-gradient(to right, rgb(252,255,255) 0%,rgb(124,177,217) 70%,rgb(15,112,185) 100%);
+                      -webkit-background-clip: text;
+                      font-weight: 900;
+                      font-size: 22px;
+                    }
+                  }
+
+                  &.mid_div_third {
+                    left: rem(40px);
+                    bottom: 7.5%;
+                    color: rgb(112,113,118);
+                    font-weight: 900;
+                    font-size: rem(35px);
+                  }
+
+                  &.mid_div_forth {
+                    left: 0;
+                    bottom: 7%;
+                    width: 100%;
+
+                    > p {
+                      color: #fff;
+                      font-size: rem(20px);
+                      font-weight: 900;
+                      text-indent: 2.5em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      >.mid_fifth {
+        min-height: rem(500px);
+
+        >.fifth_first {
+          width: 100%;
+          height: rem(430px);
+          padding-top: rem(45px);
+          text-align: center;
+
+          > div {
+            &:first-child {
+              width: 24%;
+              height: rem(160px);
+              margin: rem(50px) 0 0 rem(93px);
+              border-radius: 24%/78%;
+              -webkit-animation: bgStar 1.5s ease 0s infinite both;
+            }
+            
+            &.mid_div {
+              left: 0;
+              top: -18%;
+              width: 100%;
+              background-image: url(~assets/images/supply_chain/supply_bg10.png);
+              height: rem(500px);
+              background-size: 100% auto;
+
+              > div {
+                width: 100%;
+                height: 100%;
+
+                >.mid_div_first {
+                  position: absolute;
+                  right: 0;
+                  width: 47%;
+                  min-height: 100px;
+                  top: 17%;
+                  opacity: 0.3;
+                }
+
+                >.mid_div_second {
+                  position: absolute;
+                  right: 0;
+                  top: 25%;
+                  width: 41%;
+                  min-height: 20px;
+
+                  > p {
+                    color: #fff;
+                    font-size: rem(18px);
+                    line-height: rem(25px);
+
+                    &:first-child {
+                      color: #748d91;
+                      margin-bottom: rem(8px);
+                    }
+                  }
+                }
+              }
+            }
+
+            &.words_box {
+              height: rem(138px);
+              width: 100%;
+              background-image: url(~assets/images/supply_chain/supply_bg8.png);
+              background-repeat: no-repeat;
+              background-size: auto 100%;
+              background-position: center;
+              margin-top: rem(30px);
+              padding-top: rem(65px);
+
+              > p {
+                font-size: rem(20px);
+                font-weight: 900;
+                color: #121b3c;
+                text-shadow: 0 0 7px #1836a5;
+                line-height: rem(25px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    >.second_bot {
+      width: 100%;
+      min-height: 100px;
+
+      >.logo {
+        position: absolute;
+        left: 30%;
+        top: -25%;
+        width: 40%;
+        min-height: 20px;
+      }
+
+      >.words {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        width: 100%;
+        font-size: rem(30px);
+        color: #fff;
+        text-align: center;
+
+        span {
+          padding: 0 rem(10px);
+        }
+      }
+    }
+  }
+
+  >.third_part {
+    width: 100%;
+    font-size: rem(12px);
+    color: #a9a9a9;
+    text-align: center;
+    line-height: rem(20px);
+    margin: rem(10px) auto;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: rem(-10px);
+  }
+  100% {
+    top: rem(10px);
+  }
+}
+
+@keyframes bgStar {
+  0% {
+    box-shadow: 0 0 130px rgb(113, 130, 187);
+  }
+  50% {
+    box-shadow: 0 0 130px rgb(221, 222, 224);
+  }
+  100% {
+    box-shadow: 0 0 130px rgb(113, 130, 187);
+  }
+}
+
+@keyframes handShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+    right: rem(60px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

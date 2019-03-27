@@ -1,0 +1,76 @@
+@import "~assets/styles/public";
+
+.app {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+.appNote {
+	position: relative;
+	padding: 0 rem(12px);
+	height: rem(30px);
+	line-height: rem(30px);
+	color: #ff9b00;
+	background: #fff3e5;
+
+	> span {
+		position: absolute;
+		top: rem(6px);
+		left: rem(12px);
+		font-size: rem(18px);
+
+		&:before {
+			color: #ff9b00;
+		}
+	}
+
+	> p {
+		padding-left: rem(25px);
+	}
+
+	> i {
+		position: absolute;
+		right: rem(10px);
+		top: rem(10px);
+		font-size: 10px;
+
+		&:before {
+			color: $blk;
+		}
+	}
+}
+
+/*列表没有内容时显示*/
+.noContent {
+	padding-top: rem(100px);
+	color: $grayLight;
+	text-align: center;
+
+	> p {
+		font-size: rem(16px);
+	}
+
+	.brand {
+		margin-top: rem(270px);
+		padding-left: rem(41px);
+		width: 100%;
+		line-height: rem(31px);
+
+		> i {
+			position: absolute;
+			left: 50%;
+			top: 0;
+			margin-left: rem(-100px);
+			font-size: rem(31px);
+		}
+	}
+}

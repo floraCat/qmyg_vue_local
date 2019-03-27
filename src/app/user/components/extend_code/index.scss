@@ -1,0 +1,148 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+  height: 100%;
+  background: #fff;
+}
+
+#user_extend {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+
+  .swiper-container {
+    width: 100%;
+    padding: rem(20px) 0;
+    background-color: #f0f0f0;
+  }
+
+  .swiper-slide {
+    width: rem(188px) !important;
+    height: rem(325px) !important;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+  }
+
+  #qr_canvas, #head_canvas, #pic_canvas, #font_canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+  }
+
+  #head_canvas, #pic_canvas {
+    width: 40px;
+    height: 40px;
+  }
+
+  #canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 414px;
+    height: 736px;
+    opacity: 0;
+  }
+
+  .extend_main {
+    width: 100%;
+    background-color: #f0f0f0;
+
+    > div {
+      width: 100%;
+      min-height: rem(30px);
+      font-size: $fontL;
+      color: #333;
+      padding-top: rem(15px);
+      background-color: #fff;
+      border-radius: 20px 20px 0 0;
+      text-align: center;
+
+      > div {
+        width: 100%;
+        height: rem(50px);
+        display: flex;
+        margin: rem(8px) auto;
+
+        > span {
+          height: 100%;
+          flex: 1;
+          margin: rem(7px);
+          border-radius: 5px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-position: center;
+
+          &:nth-child(1) {
+            background-image: url(~assets/pictures/small_pic_01.jpg);
+          }
+
+          &:nth-child(2) {
+            background-image: url(~assets/pictures/small_pic_02.jpg);
+          }
+
+          &:nth-child(3) {
+            background-image: url(~assets/pictures/small_pic_03.jpg);
+          }
+
+          &:nth-child(4) {
+            background-image: url(~assets/pictures/small_pic_04.jpg);
+          }
+
+          &:nth-child(5) {
+            background-image: url(~assets/pictures/small_pic_05.jpg);
+          }
+
+          &:nth-child(6) {
+            background-image: url(~assets/pictures/small_pic_06.jpg);
+          }
+        }
+      }
+
+      > button {
+        font-size: $fontM;
+        color: #fff;
+        margin-top: rem(25px);
+        padding: rem(8px) rem(50px);
+        background-color: #ec5151;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .extend_show {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    font-size: rem(18px);
+    color: #fff;
+    text-align: center;
+    padding: rem(60px) 10% 10%;
+    background-color: rgba(0,0,0,.65);
+
+    > img {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    > p {
+      line-height: rem(30px);
+      text-shadow: 0 0 10px #f0f0f0;
+      cursor: pointer;
+
+      &.waiting {
+        padding-top: rem(210px);
+      }
+    }
+  }
+}

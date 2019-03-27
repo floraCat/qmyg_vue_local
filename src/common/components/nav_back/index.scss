@@ -1,0 +1,25 @@
+@import "~assets/styles/_bootstrap";
+
+
+.hdBack {
+  position: absolute;
+  display: inline-block;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	width: rem(36px);
+  height: 100%;
+
+  &:before {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: rem(20px);
+    height: rem(20px);
+    content: ' ';
+    background: url('~assets/images/svg/icon-back.svg') no-repeat;
+    background-size: 100%;
+  }
+}

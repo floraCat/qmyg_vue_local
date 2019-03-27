@@ -1,0 +1,135 @@
+@import "~assets/styles/_bootstrap";
+
+.keyFilter {
+	position: absolute;
+	z-index: 1100;
+	top: rem(10px); 
+	right: 0;
+	width: rem(55px);
+	height: rem(45px);
+	font-size: rem(16px);
+	line-height: rem(45px);
+	text-align: center;
+}
+
+.eAddGood {
+	background: $bgCol;
+
+	.scroller {
+		height: rem(545px);
+	}
+	
+	&.hasFoot {
+
+		.scroller {
+			height: rem(473px);
+		}
+	}
+
+	> .page-head {
+		position: relative;
+
+		> .search {
+			width: rem(274px);
+			margin-right: rem(46px);
+		}
+	}
+
+	> .eImglist > ul > li > a > span > s:before {
+		position: absolute;
+		left: rem(-24px);
+		content: '原价';
+	}
+
+	> .eImglist > p.note {
+		padding-bottom: rem(20px);
+		height: rem(60px);
+		margin-bottom: 0;
+	}
+
+}
+
+.handleAddGood {
+	position: fixed;
+	z-index: 99;
+	bottom: rem(-72px);
+	left: 0;
+	overflow: hidden;
+	padding: rem(18px) rem(18px) rem(18px) rem(20px);
+	width: 100%;
+	height: rem(72px);
+	font-size: $fontM;
+	line-height: rem(36px);
+	color: $grayLight;
+	background: #fff;
+	border-top: $lineCol 1px solid;
+	transition: bottom .4s;
+
+	&.active {
+		bottom: 0;
+	}
+
+	.check {
+		overflow: hidden;
+		float: left;
+		margin-right: rem(20px);
+
+		> span {
+			float: left;
+			margin:rem(8px) rem(5px);
+			width: rem(20px);
+			height: rem(20px);
+			line-height: rem(20px);
+			text-align: center;
+			background: #eee;
+			border-radius: rem(10px);
+
+			> .icon {
+				display: none;
+				line-height: rem(20px);
+			}
+		}
+
+		&.active {
+
+			> span {
+				background: $mainCol;
+
+				> .icon{
+					display: block;
+
+					&:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		> label {
+			float: left;
+		}
+	}
+
+	> p {
+		float: left;
+
+		> em {
+			padding-left: rem(5px);
+			color: $mainCol;
+			font-weight: bold;
+		}
+	}
+
+	.btn {
+		float: right;
+		display: block;
+		width: rem(120px);
+		height: rem(36px);
+		line-height: rem(36px);
+		color: #fff!important;
+		text-align: center;
+		background: $mainCol;
+		border-radius: rem(5px);
+	}
+
+}

@@ -1,0 +1,72 @@
+@import "~assets/styles/_bootstrap";
+
+.eFoot {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10000;
+	display: flex;
+	padding:rem(6px) 0;
+	width: 100%;
+	height: rem(52px);
+	font-size: rem(12px);
+	background: #fff;
+	box-shadow: 1px rem(5px) rem(15px) rgba(50, 50, 50, .3);
+	
+	> li {
+		flex : 1;
+		text-align: center;
+		
+		.nav {
+			display: block;
+			font-size: $fontS;
+			line-height: rem(20px);
+			color: $grayDark;
+
+			> i {
+				display: block;
+				font-size: rem(21px);
+				height: rem(23px);
+				text-align: center;
+
+				&.i2 {
+					display: none;
+				}
+			}
+		}
+
+		.router-link-exact-active.nav > span, &.on .nav > span {
+			color: $mainCol;
+		}
+
+		.cart {
+			position: relative;
+		}
+
+		.num {
+			position: absolute;
+			top: rem(-8px);
+			left: 50%;
+			margin-left: rem(5px);
+			width: rem(20px);
+			height: rem(20px);
+			line-height: rem(20px);
+			color: #fff;
+			text-align: center;
+			font-style: normal;
+			background: $mainCol;			
+			border-radius: rem(10px);
+		}
+	}
+}
+
+.router-link-exact-active .i1, .on .i1 {
+	display: none!important;
+}
+.router-link-exact-active .i2, .on .i2{
+	display: block!important;
+
+	&:before {
+		color: $mainCol;
+	}
+}

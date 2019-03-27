@@ -1,0 +1,21 @@
+@import "~assets/styles/_bootstrap";
+
+.eBanner {
+
+	&.refresh {
+
+		img {
+			opacity: .3;
+		}
+	}
+}
+
+.banner_btn {
+  width: 100%;
+  min-height: rem(10px);
+  display: block;
+
+  > img {
+  	width: 100%;
+  }
+}

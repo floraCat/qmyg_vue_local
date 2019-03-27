@@ -1,0 +1,98 @@
+@import "~assets/styles/_bootstrap";
+
+.pSeller {
+
+	> .head {
+		display: block;
+		width: 100%;
+		height: rem(160px);
+		text-align: center;
+		color: #fff;
+		background: url(~assets/images/sce_bg1.jpg) no-repeat 0 0;
+		background-size: 100% 100%;
+
+		> h2 {
+			padding-top: rem(10px);
+			font-size: rem(16px);
+			font-weight: bold;
+			line-height: rem(50px);
+		}
+
+		> em {
+			font-size: rem(32px);
+			line-height: rem(55px);
+		}
+
+		> p {
+
+		}
+	}
+
+	> .tabs {
+		padding: rem(20px) rem(10px);
+		display: flex;
+		line-height: rem(22px);
+		text-align: center;
+		background: #fff;
+		margin-bottom: rem(12px);
+
+		> a {
+			flex: 1;
+
+			> span {
+				display: block;
+			}
+
+			> i {
+				font-size: $fontL;
+			}
+		}
+	}
+
+	> .enters {
+		padding: rem(10px);
+		overflow: hidden;
+		background: #fff;
+
+		> li {
+			float: left;
+			padding: rem(20px);
+			width: 33%;
+			text-align: center;
+
+			> a {
+				display: block;
+				line-height: rem(26px);
+
+				> img {
+					margin: 0 auto;
+					width: rem(36px);
+					height: rem(36px);
+				}
+			}
+		}
+	}
+}
+
+.dialog_seller {
+
+	.head {
+
+		> h3 {
+			display: none;
+		}
+
+		> p {
+			padding: 0 rem(5px) 0 rem(8px);
+			text-align: left;
+		}
+		
+	}	
+
+	.dialog-body {
+
+		> .item:last-child {
+			color: #4ec2e8;
+		}
+	}
+}

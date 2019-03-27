@@ -1,0 +1,215 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+#user_account {
+  width: 100%;
+  height: 100%;
+
+  .account_top {
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    background-color: #ec5151;
+
+    .money {
+      width: 100%;
+      padding-top: rem(135px);
+      overflow: hidden;
+      text-align: center;
+      border-bottom: 1px solid #f18979;
+
+      &:before {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: rem(-50px);
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: rem(135px);
+        content: ' ';
+        background: url('~assets/images/user_account_bg.png') center bottom no-repeat;
+        background-size: 100%;
+      }
+
+      .money-num {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+
+        > p {
+          color: #fff;
+          font-size: $fontL;
+        }
+
+        > p:nth-child(3){
+          font-size: rem(18px);
+        }
+
+      }
+    }
+
+    .items {
+      background: #ae3431;
+
+      .item {
+        padding: 0 rem(10px);
+        color: #fff;
+        font-size: rem(16px);
+        height: rem(55px);
+        line-height: rem(55px);
+        border-bottom: 1px solid #f18979;
+
+        &:before {
+          display: inline-block;
+          margin-right: rem(5px);
+          width: rem(3px);
+          height: 60%;
+          content: ' ';
+          vertical-align: middle;
+        }
+
+        &.item-01 {
+          &:before {
+            background: #440062;
+          }
+        }
+
+        &.item-02 {
+          &:before {
+            background: #5763f5;
+          }
+        }
+
+        &.item-03 {
+          &:before {
+            background: #57f5e1;
+          }
+        }
+
+        > a {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          bottom: 0;
+          right: rem(10px);
+          margin: auto;
+          padding: 0 rem(10px);
+          height: rem(25px);
+          line-height: rem(25px);
+          font-size: rem(16px);
+          color: #ed5050;
+          background: #fff;
+          border-radius: rem(5px);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 100%;
+
+    &:after {
+      display: block;
+      clear: both;
+      content: ' ';
+    }
+
+    .item {
+      float: left;
+      padding-left: rem(10px);
+      width: 50%;
+      height: rem(55px);
+      line-height: rem(55px);
+      vertical-align: middle;
+      border-bottom: 1px solid $lineCol;
+
+      &:before {
+        display: inline-block;
+        content: ' ';
+        margin-right: rem(5px);
+        width: rem(26px);
+        height: rem(26px);
+        vertical-align: middle;
+      }
+
+      &.item-01 {
+
+        &:before {
+          background: url('~assets/images/purse-icon2.png') no-repeat;
+          background-size: 100%;
+        }
+
+        &:after {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto 0;
+          height: 60%;
+          content: ' ';
+          vertical-align: middle;
+          border-right: 1px solid #ddd;
+        }
+      }
+
+      &.item-02 {
+        &:before {
+          background: url('~assets/images/purse-icon1.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+
+  .account_bot {
+    width: 100%;
+    min-height: 10px;
+    background-color: #fff;
+
+    > li {
+      padding: rem(3px) 0;
+      width: 100%;
+      min-height: 20px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #F6F6F9;
+      }
+
+      > a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: $fontM;
+        padding: rem(10px) rem(15px);
+
+        &:after {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          bottom: 0;
+          right: rem(20px);
+          margin: auto 0;
+          width: rem(10px);
+          height: rem(10px);
+          content: '';
+          border-top: 1px solid #a9a9a9;
+          border-right: 1px solid #a9a9a9;
+          transform: rotate(45deg);
+          transform-origin: 50% 50%;
+        }
+      }
+    }
+  }
+}

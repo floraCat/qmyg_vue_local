@@ -1,0 +1,165 @@
+@import "~assets/styles/_bootstrap";
+
+.pAddr {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	z-index: 9990;
+	padding-top: rem(50px);
+	width: 100%;
+	height: 100%;
+	font-size: $fontM;
+	color: $blk;
+	background: #fff;
+	transition: right .4s;
+
+	&.open {
+		right : 0;
+	}
+
+	> .head {
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+		height: rem(50px);
+		line-height: rem(50px);
+		background: #fff;
+		border-bottom: $lineCol 1px solid;
+
+		> span {
+			display:block;
+			width:rem(80px);
+			font-size:$fontL;
+			color:$grayLight;
+
+			> i {
+				float: left;
+				width: rem(30px);
+				height: rem(50px);
+				font-size: rem(18px);
+				line-height: rem(50px);
+				text-align: center;
+			}
+		}
+	}
+
+	> .Lt {
+		position: absolute;
+		left: 0;
+		padding-bottom: rem(50px);
+		width: rem(102px);
+		height: 100%;
+		text-align: center;
+		background: rgba(246, 246, 249, 1);
+		overflow: hidden;
+
+		> .swiper-wrapper {
+			height: auto;
+		}
+
+		li {
+			height: rem(52px);
+			font-size: $fontL;
+			line-height: rem(52px);
+
+			&.on {
+				color: $bgCol;
+				background: $grayDark;
+			}
+		}
+
+	}
+
+	> .Rt {
+		position: absolute;
+		left: rem(102px);
+		padding-bottom: rem(50px);
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		overflow: hidden;
+
+		> .swiper-wrapper {
+			height: auto;
+		}
+
+		dl {
+
+			&:before {
+				position: absolute;
+				top: rem(11px);
+				right: rem(8px);
+				font-size: rem(22px);
+			}
+
+			dt {
+				position: relative;
+				padding: 10px;
+				height: rem(46px);
+				line-height: rem(26px);
+				border-bottom: $lineCol 1px solid;
+
+				> i {
+					position: absolute;
+					top: 0;
+					right: rem(110px);
+					height: 100%;
+					font-size: rem(15px);
+					line-height: rem(46px);
+				}
+			}
+
+			dd {
+				overflow: hidden;
+				height: 0;
+				padding: 0 rem(12px);
+				color: $grayDark;
+				//transition: height .4s;
+
+				> p {
+					position: relative;
+					height: rem(48px);
+					line-height: rem(48px);
+					text-indent: rem(15px);
+					border-bottom: $lineCol 1px solid;
+
+					&.on {
+						color: $mainCol;
+						i {
+							display: block;
+						}
+					}
+
+					> i {
+						position: absolute;
+						top: 0;
+						right: rem(110px);
+						display: none;
+						height: 100%;
+						//transition: all .4s;
+
+						&:before {
+							font-size: rem(24px);
+							line-height: rem(48px);
+							color: $mainCol;
+						}
+					}
+				}
+			}
+
+			&.open dt {
+				color: $mainCol;
+
+				> i {
+					transform:rotate(90deg);
+				}
+			}
+
+			&.open dd {
+				height:auto;
+			}
+		}
+	}
+}

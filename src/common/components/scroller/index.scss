@@ -1,0 +1,85 @@
+@import "~assets/styles/_bootstrap";
+
+.eSwiperLoad {
+	margin-top: rem(2px);
+	height: 100%;
+	overflow: hidden;
+
+	> .swiper-wrapper{
+		margin-top: rem(-60px)!important;
+	}
+
+	.swiper-slide {
+		height: auto;
+		background: $bgCol;
+		transition: all .2s;
+	}
+}
+
+.pScroller {
+	width: 100%;
+	height: rem(60px);
+	line-height: rem(60px);
+	color: $grayLight;
+	text-align: center;
+}
+
+.pReflesh {
+	margin-top: 0;
+	transition: marginTop .4s;
+
+	> p {
+		display: none;
+		width: rem(375px);
+
+		&.show {
+			display: inline-block;
+		}
+	}
+}
+
+.pLoadMore {
+
+	> span {
+		display: none;
+
+		&.show {
+			display: inline-block;
+			font-size: rem(14px);
+
+		}
+	}
+}
+
+.pScroller {
+
+	/*箭头标签*/
+	.arrow {
+		width: rem(20px);
+		height: rem(20px);
+		filter: $grayLight;
+		stroke: $grayLight;
+		transform: translateZ(0) rotate(0deg);
+		transition: transform .2s;
+
+		&.up {
+			transform: translateZ(0) rotate(180deg);
+		}
+	}
+
+	/*刷新标签*/
+	.spinner {
+		display: none;
+		margin-top: rem(15px);
+		width: rem(30px);
+		height: rem(30px);
+		filter: $grayLight;
+		stroke: $grayLight;
+
+		&.show {
+			display: inline-block;
+		}
+	}
+}
+
+

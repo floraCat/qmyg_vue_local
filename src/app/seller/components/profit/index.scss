@@ -1,0 +1,56 @@
+@import "~assets/styles/_bootstrap";
+
+.eProfit {
+
+	> .head {
+		padding-top: rem(60px);
+		margin-bottom: rem(12px);
+		height: rem(220px);
+		color: #fff;
+		text-align: center;
+		background:$mainCol url(~assets/images/pur-bg.png) no-repeat bottom;
+		background-size: 100% auto;
+
+		> h6 {
+			font-size: $fontM;
+		}
+
+		> em {
+			display: block;
+			font-size: rem(42px);
+			height: rem(54px);
+			line-height: rem(54px);
+		}
+	}
+
+	> .enters {
+
+		> a {
+			overflow: hidden;
+			padding: 0 rem(10px) 0 rem(15px);
+			display: block;
+			height: rem(50px);
+			line-height: rem(50px);
+			background: #fff;
+
+			&.lineB {
+				border-bottom: $lineCol 1px solid;
+			}
+
+			&.mgB {
+				margin-bottom: rem(12px);
+			}
+
+			> label {
+				float: left;
+				font-size: $fontM;
+			}
+
+			> .icon {
+				float: right;
+				font-size: rem(14px);
+				line-height: rem(50px);
+			}
+		}
+	}
+}

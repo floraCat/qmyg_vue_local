@@ -1,0 +1,71 @@
+@import "~assets/styles/_bootstrap";
+
+
+.dropdown-page {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  .dropdown-toggle {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    padding: 0 12px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-color: #fff;
+    border: none;
+    color: #333;
+  }
+
+  .icon {
+    vertical-align: middle;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+    a {
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: 400;
+      line-height: 1.42857143;
+      color: #333;
+      white-space: nowrap;
+    }
+
+  }
+
+}

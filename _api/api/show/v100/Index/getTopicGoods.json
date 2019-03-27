@@ -1,0 +1,13 @@
+{
+	"state":"success",
+	"data":[
+		{
+			"title":{"href":"http://localhost:1988/#/list/3","img":"http://localhost:8033/images/l2.jpg"},
+			"goods_list":[
+				{"link":"http://localhost:1988/#/details/9928","goods_thumb":"http://localhost:8033/images/a2.jpg","goods_name":"11谷蝶全棉卡通三件套床上用品四件套纯棉1","shop_price":"111.00"},
+				{"link":"http://localhost:1988/#/details/9928","goods_thumb":"http://localhost:8033/images/a2.jpg","goods_name":"12谷蝶全棉卡通三件套床上用品四件套纯棉1","shop_price":"222.00"},
+				{"link":"http://localhost:1988/#/details/9928","goods_thumb":"http://localhost:8033/images/a2.jpg","goods_name":"13谷蝶全棉卡通三件套床上用品四件套纯棉1","shop_price":"333.00"}
+			]
+		}
+	]
+}

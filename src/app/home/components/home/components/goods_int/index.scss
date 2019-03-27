@@ -1,0 +1,85 @@
+@import "~assets/styles/_bootstrap";
+
+.eg_goods_int{
+  width: 100%;
+  min-height: rem(10px);
+
+    > a{
+    width: 100%;
+    min-height: rem(10px);
+    display: block;
+    margin-bottom: rem(1px);
+
+    > img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .goods_int_one{
+    width: 100%;
+    min-height: rem(10px);
+
+    > li{
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+
+      > a{
+        width: 100%;
+        min-height: rem(10px);
+        display: block;
+
+        > img{
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    li:first-child, li:nth-child(2){
+      border-bottom: 1px solid #ccc;
+    }
+
+    li:nth-child(3), li:first-child{
+      > a{
+        border-right: 1px solid #ccc;
+      }
+    }
+
+    li:nth-child(3), li:last-child{
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  .goods_int_two{
+    width: 100%;
+    min-height: rem(10px);
+    display: flex;
+
+    > li{
+      flex: 1;
+
+      > a{
+        padding: rem(7px);
+        width: 100%;
+        min-height: rem(10px);
+        display: block;
+
+        > img{
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    li:not(:last-child){
+      > a{
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "~assets/styles/_bootstrap";
+
+.pLogistic {
+	background: #fff;
+
+	.express {
+		overflow: hidden;
+		padding: rem(10px);
+		border-bottom: $bgCol 10px solid;
+
+		> img {
+			float: left;
+			width: rem(50px);
+			height: rem(50px);
+		}
+
+		> p {
+			margin: rem(15px) rem(10px) rem(15px) rem(60px);
+		}
+	}
+
+	.track {
+		padding: 0 rem(10px);
+
+		> h5 {
+			height: rem(30px);
+			line-height: rem(30px);
+			font-size: $fontM;
+			border-bottom: $lineCol 1px solid;
+		}
+
+		> ul {
+			padding-left: rem(15px);
+			padding-top: rem(10px);
+
+			li {
+				padding: 0 rem(10px) rem(10px) rem(12px);
+				border-left: $lineCol 1px solid;
+
+				> i {
+					position: absolute;
+					top: rem(6px);
+					left: rem(-4px);
+					width: rem(8px);
+					height: rem(8px);
+					background: #e5e5e5;
+					border-radius: rem(4px);
+				}
+
+				> p {
+					padding-bottom: rem(10px);
+					line-height: rem(22px);
+					border-bottom: $lineCol 1px solid;
+
+					time {
+						display: block;
+					}
+				}
+
+				&:first-child {
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: rem(-1px);
+						width: rem(6px);
+						height: rem(6px);
+						border-left: #fff 1px solid;
+					}
+				}
+
+				&:last-child {
+					border-left: none;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: rem(6px);
+						height: rem(6px);
+						border-left: #e5e5e5 1px solid;
+					}
+				}
+			}
+		}
+	}
+}

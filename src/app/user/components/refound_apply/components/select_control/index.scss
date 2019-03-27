@@ -1,0 +1,49 @@
+@import "~assets/styles/_bootstrap";
+
+.pSelect {
+	padding: rem(5px);
+	height: rem(36px);
+	border: #ddd 1px solid;
+	border-radius: rem(5px);
+
+	h5 {
+		height: 100%;
+		font-size: $fontM;
+		line-height: rem(24px);
+		text-indent: rem(5px);
+	}
+
+	i {
+		position: absolute;
+		top:rem(2px);
+		right:rem(2px);
+		width: rem(30px);
+		text-align: center;
+		line-height: rem(30px);
+		transform: rotate(90deg);
+	}
+
+	ol {
+		position: absolute;
+		z-index: 99;
+		top: rem(35px);
+		left: 0;
+		width: 100%;
+		background: #fbfbfb;
+		border: $lineCol 1px solid;
+		border-top: none;
+
+		> li {
+			height: rem(36px);
+			line-height: rem(36px);
+			color: $grayDark;
+			text-indent: rem(15px);
+			border-bottom: $lineCol 1px solid;
+
+			&.active {
+				background: #ade1f5;
+				color: #000;
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@import "~assets/styles/_bootstrap";
+
+.eDetails {
+	position: relative;
+	padding-top: rem(59px);
+	background-color: #fff;
+	overflow: hidden;
+
+	> .header-title {
+		z-index: 3000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.pAddr {
+		width: rem(330px);
+	}
+}
+
+.pTabs {
+	position: absolute;
+	top: 0;
+	z-index: 3000;
+	display: flex;
+	left: 50%;
+	margin-left: rem(-125px);
+	width: rem(250px);
+	height: rem(54px);
+	background: #fff;
+
+	> li {
+		padding: 0 rem(5px);
+		font-size: rem(16px);
+		line-height: rem(53px);
+		text-align: center;
+		flex: 1;
+
+		> a {
+			display: block;
+		}
+
+		> a.router-link-exact-active, &.on > a {
+			height: rem(55px);
+			font-weight: bold;
+			color: $blk;
+			border-bottom: $grayDark 1px solid;
+		}
+	}
+}

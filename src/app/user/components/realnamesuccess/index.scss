@@ -1,0 +1,55 @@
+@import "~assets/styles/_bootstrap";
+
+.realnamesuccess-wrapper {
+	min-height: 100vh;
+	background: #fff;
+
+	.content {
+
+		.prompt{
+			width: 100%;
+
+			> img {
+				display: block;
+				width: 100%;
+				height: auto;
+				vertical-align: top;
+			}
+		}
+
+		.approve {
+			padding: 0 rem(30px) rem(30px);
+			background: #eee;
+
+			.title {
+				padding: rem(20px) 0;
+			}
+
+			.approve-box {
+				padding: rem(10px) 0px;
+				background: url(~assets/images/profile/approve-succeed-bg-head.png) no-repeat left top,url(~assets/images/profile/approve-succeed-bg-buttom.png) no-repeat left bottom;
+				background-size: 100% auto;
+
+				> ul {
+					padding: rem(20px);
+					background: #fff;
+
+					> li {
+						height: rem(30px);
+						line-height: rem(30px);
+						font-size: rem(13px);
+
+						> i {
+							display: inline-block;
+							height: rem(30px);
+					    line-height: rem(30px);
+					    margin-right: rem(10px);
+							font-size: rem(18px);
+					    vertical-align: top;
+						}
+					}
+				}
+			}
+		}
+	}
+}

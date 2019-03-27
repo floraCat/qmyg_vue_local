@@ -1,0 +1,72 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+	height: 100%;
+}
+
+.agreement-share-page {
+	background: #fff;
+	min-height: 100%;
+
+	.protocol {
+		padding: rem(20px);
+
+		.head {
+			> i {
+				float: right;
+			}
+		}
+
+		.jl-box-text-xy {
+		 	padding: 0;
+
+		 	&.p-stress {
+		 		padding: rem(20px) 0;
+		 		border-bottom: 1px solid #e8e8e8;
+		 	}
+
+		 	.jl-box-text-xy-head {
+		    margin: rem(5px) 0 rem(3px);
+		    font-weight: bold;
+		    font-size: 14px;
+		 	}
+
+		 	p {
+		 		padding-top: rem(5px);
+		 		line-height: rem(25px);
+		 		font-size: rem(13px);
+		 		text-indent: rem(20px);
+
+		 		> span:nth-child(1) {
+		 			color: #000;
+		 			font-weight: bold;
+		 		}
+		 	}
+		}
+
+
+		.protocol-button {
+			> button {
+		    display: block;
+		    margin: 0 auto;
+		    width: 80%;
+		    height: rem(50px);
+		    border: none;
+		    border-radius: rem(5px);
+		    background: #f95353;
+		    color: #fff;
+		    cursor: pointer;
+			}
+		}
+	}
+
+
+	.footer {
+		position: absolute;
+		bottom: rem(10px);
+		width: 100%;
+		text-align: center;
+		color: #666;
+	}
+
+}

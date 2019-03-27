@@ -1,0 +1,164 @@
+@import "~assets/styles/_bootstrap";
+
+.keyFilter {
+	position: absolute;
+	top: rem(10px);
+	right: 0;
+	width: rem(55px);
+	height: rem(45px);
+	font-size: rem(16px);
+	line-height: rem(45px);
+	text-align: center;
+	z-index: 1100;
+}
+
+.eList {
+	background: $bgCol;
+
+	> .page-head {
+		position: relative;
+
+		> .search {
+			width: rem(274px);
+			margin-right: rem(46px);
+		}
+	}
+
+	.pAddr {
+		width: rem(330px);
+	}
+
+	> .eImglist > ul > li > a > span > s:before {
+		position: absolute;
+		left: rem(-24px);
+		content: '原价';
+	}
+
+	> .eImglist > p.note {
+		padding-bottom: rem(20px);
+		height: rem(60px);
+		margin-bottom: 0;
+	}
+
+	.listStyle2 {
+
+		>ul {
+
+			li {
+				width: auto;
+
+				> a {
+					overflow: hidden;
+					padding: rem(20px) rem(15px) rem(20px) rem(20px);
+					width: rem(375px);
+
+					> .img {
+						float: left;
+						margin: 0;
+						width: rem(125px);
+						height: rem(125px);
+						border: $lineCol 1px solid;
+
+						> img {
+							width: rem(125px);
+							height: rem(125px);
+						}
+					}
+
+					> ol {
+						margin: 0 0 0 rem(145px);
+
+						p.ttl {
+							height: auto;
+							max-height: rem(72px);
+							font-size: $fontL;
+							line-height: rem(24px);
+							margin: 0;
+						}
+
+						p.info {
+							display: block;
+							padding: rem(8px) 0;
+							font-size: $fontS;
+						}
+
+						p.price {
+
+							> .fl {
+								width: 100%;
+								margin-bottom: rem(3px);
+							}
+
+							> .fr {
+								width: 100%;
+							}
+
+							em {
+								font-size: rem(20px);
+							}
+
+							u {
+								display: inline-block!important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.listStyle3 {
+
+		ul {
+			li {
+				width: 100%;
+
+				> a {
+					width: 100%;
+
+					> .img {
+						width: rem(280px);
+						height: rem(280px);
+						margin: rem(20px) auto rem(30px);
+
+						> img {
+							width: rem(280px);
+							height: rem(280px);
+						}
+					}
+
+					> ol {
+						padding: 0 rem(20px);
+
+						p.ttl {
+							height: auto;
+							font-size: rem(18px);
+							line-height: rem(28px);
+						}
+
+						p.price {
+							padding: rem(5px) 0 rem(20px) 0;
+
+							> .fl {
+								font-size: rem(22px);
+							}
+
+							> .fr {
+								float: left;
+								margin: rem(2px) 0 0 rem(8px);
+								font-size: $fontL;
+
+								u {
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

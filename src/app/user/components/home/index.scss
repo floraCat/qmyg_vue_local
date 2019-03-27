@@ -1,0 +1,271 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+	background: #F6F6F9;
+}
+
+.user-page {
+	position: relative;
+	padding-bottom: rem(52px);
+	width: 100%;
+
+	.nav-list {
+		padding: rem(25px) 0 rem(18) 0;
+		width: 100%;
+		display: flex;
+		border-bottom: 1px solid #dedede;
+		background: #fff;
+
+		.item {
+			width: 20%;
+			border-right: 1px solid $lineCol;
+			text-align: center;
+
+			&:last-child {
+				border-right: none;
+			}
+
+			> a {
+				display: block;
+				margin: auto;
+				width: rem(48px);
+				height: rem(45px);
+
+				.icon {
+					font-size: rem(24px);
+					color: #666;
+				}
+
+				> h3 {
+					font-size: rem(13px);
+					font-weight: normal;
+				}
+
+				.num {
+					position: absolute;
+			    top: rem(-7px);
+					right: 0;
+			    margin-left: rem(2px);
+			    padding: 0 rem(4px);
+			    min-width: rem(18px);
+			    height: rem(18px);
+			    line-height: rem(18px);
+			    color: #fff;
+			    font-size: rem(13px);
+			    background: #EC5151;
+			    border-radius: rem(9px);
+
+				}
+			}
+
+		}
+	}
+
+	.user_menu {
+		width: 100%;
+		min-height: 10px;
+		padding-top: rem(12px);
+
+		b {
+			display: inline-block;
+			width: rem(36px);
+			height: rem(36px);
+			vertical-align: middle;
+			margin-right: rem(5px);
+			background-image: url(~assets/images/sprites/images/icon_userpage.png);
+			background-repeat: no-repeat;
+			background-size: rem(33px) auto;
+
+			&.icon_user_shouyi {
+				background-position: center rem(-207px);
+			}
+
+			&.icon_user_qianbao {
+				background-position: center rem(-354px);
+			}
+
+			&.icon_user_tuandui {
+				background-position: center rem(-315px);
+			}
+
+			&.icon_user_tuigaung {
+				background-position: center rem(-166px);
+			}
+
+			&.icon_user_ruzhu {
+				background-position: center rem(-279px);
+			}
+
+			&.icon_user_gongying {
+				background-position: center rem(-100px);
+			}
+
+			&.icon_user_kaidian {
+				background-position: center rem(-241px);
+			}
+
+			&.icon_user_hehuo {
+				background-position: center rem(-132px);
+			}
+
+			&.icon_user_dingdan {
+				background-position: center rem(-29px);
+			}
+
+			&.icon_user_bangzhu {
+				background-position: center rem(-66px);
+			}
+
+			&.icon_user_kefu {
+				background-position: center rem(3px);
+			}
+		}
+
+		.clearfix:after, .clearfix:before {
+		  content: "";
+		  display: table;
+		}
+
+		.clearfix:after {
+		  visibility: hidden;
+		  height: 0;
+		  font-size: 0;
+		  content: ".";
+		  clear: both;
+		  display: block;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			background-color: transparent;
+	    white-space: nowrap;
+		}
+
+		>.user_menus_top {
+			display: flex;
+			width: 100%;
+			height: rem(54px);
+			padding: rem(6px);
+			background-color: #fff;
+			box-shadow: 0 3px 10px #9a9a9a;
+
+			> div {
+				flex: 1;
+				width: 50%;
+				height: 100%;
+				background-color: transparent;
+				overflow: hidden;
+
+				&:first-child {
+					border-right: 1px solid #e0e0e0;
+				}
+
+				> div {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: transparent;
+
+					> a {
+						font-size: rem(16px);
+						color: #c7c027;
+						font-weight: 900;
+						line-height: rem(42px);
+					}
+				}
+			}
+		}
+
+		> ul {
+			width: 100%;
+			min-height: 10px;
+			padding: rem(6px) rem(6px) rem(12px);
+			margin-top: rem(12px);
+
+			> li {
+				float: left;
+				width: 33.333%;
+				height: rem(88px);
+
+				> div {
+					width: 80%;
+					height: 80%;
+					margin: 10%;
+					background-color: #fff;
+					border-radius: 5px;
+
+					> div {
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						background-color: transparent;
+
+						&:first-child {
+							width: 90%;
+							height: 90%;
+							margin: 4% 5%;
+						}
+					}
+
+					a {
+						font-size: rem(14px);
+						border-radius: 5px;
+						padding-top: rem(6px);
+				    box-shadow: 3px 3px 10px #9a9a9a;
+
+				    > b {
+				    	display: block;
+				    	margin: 0 auto;
+				    }
+					}
+				}
+			}
+		}
+
+		> p {
+			font-size: rem(14px);
+			text-align: center;
+			padding-bottom: rem(12px);
+
+			&:before, &:after {
+		    position: absolute;
+		    top: rem(10px);
+		    display: block;
+				width: rem(155px);
+		    height: 1px;
+		    background-color: #a9a9a9;
+		    content: '';
+			}
+
+			&:before {
+				left: 0;
+			}
+
+			&:after {
+				right: 0;
+			}
+		}
+	}
+
+	.recommend {
+		padding: rem(10px) 0;
+		width: 100%;
+		overflow: hidden;
+
+		.ad-pic {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.layout-list {
+			padding-top: rem(10px);
+		}
+	}
+}

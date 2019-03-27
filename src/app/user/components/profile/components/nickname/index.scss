@@ -1,0 +1,94 @@
+@import "~assets/styles/_bootstrap";
+
+.nickname-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 100;
+
+	.header {
+		display: flex;
+		padding-right: rem(55px);
+		border-bottom: 1px solid #eae9e9;
+
+		> i {
+			flex: 0 0 rem(55px);
+			width: rem(55px);
+			line-height: rem(55px);
+
+			&:after{
+				content: "";
+		    display: block;
+		    width: 0.75rem;
+		    height: 0.75rem;
+		    border-bottom: 2px solid #848383;
+		    border-left: 2px solid #848383;
+		    position: absolute;
+		    top: 50%;
+		    margin-top: -0.5rem;
+		    left: 50%;
+		    margin-left: -0.5rem;
+		    -webkit-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		    -webkit-transform-origin: 50% 50%;
+		    transform-origin: 50% 50%;
+			}
+		}
+
+		.title {
+			flex: 1;
+			height: rem(55px);
+			line-height: rem(55px);
+			font-size: rem(18px);
+			text-align: center;
+		}
+	}
+
+	.content {
+		padding: rem(30px) rem(20px) 0;
+
+		.title {
+			height: rem(30px);
+			line-height: rem(30px);
+			margin-bottom: rem(20px);
+			text-align: center;
+			font-size: rem(16px);
+		}
+
+		.input {
+
+			> input {
+				display: block;
+				width: 100%;
+				height: rem(42px);
+				line-height: rem(40px);
+				border: 1px solid #eae9e9;
+				border-radius: rem(5px);
+				text-align: center;
+				font-size: rem(16px);
+				overflow: hidden;
+			}
+		}
+
+		.btn {
+			padding-top: rem(100px);
+
+			> button {
+				display: block;
+				width: 100%;
+				height: rem(42px);
+		    line-height: rem(42px);
+		    margin-bottom: rem(20px);
+		    background: #EC5151;
+		    text-align: center;
+		    font-size: rem(16px);
+		    color: #fff;
+		    border: none;
+		    border-radius: rem(5px);
+			}
+		}
+	}
+}

@@ -1,0 +1,252 @@
+@import "~assets/styles/_bootstrap";
+
+.winFilter {
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: rem(330px);
+	height: 100%;
+	font-size: $fontL;
+	color: $blk;
+	transition: left .4s;
+
+	&.open {
+		left : rem(45px);
+	}
+
+ 	> .main {
+ 		position: absolute;
+ 		top: 0;
+ 		right: 0;
+ 		z-index: 2100;
+ 		overflow-y: scroll;
+ 		width: 100%;
+ 		height: 100%;
+ 		background: $bgCol;
+
+ 		> .mode {
+ 			overflow: hidden;
+ 			padding: rem(30px);
+ 			background: #fff;
+ 			border-bottom: $lineCol 1px solid;
+
+			h5 {
+				float: left;
+				height: rem(36px);
+				font-size: $fontL;
+				line-height: rem(36px);
+ 				text-align: center;
+ 			}
+
+			.btnSwitch{
+				position:relative;
+				float: right;
+				overflow:hidden;
+				width:rem(70px);
+				height:rem(36px);
+				background:#eee;
+				border-radius: rem(18px);
+
+				> .slider {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: rem(36px);
+					height: rem(36px);
+					background: $grayLight;
+					border-radius: rem(18px);
+
+					&.on {
+						left: auto;
+						right: 0;
+						background: $mainCol;
+					}
+				}
+			}
+ 		}
+
+		> .select {
+			overflow: hidden;
+			margin-bottom: rem(10px);
+			min-height: rem(46px);
+			line-height: rem(46px);
+			background: #fff;
+
+			> .key {
+				display: block;
+				overflow: hidden;
+				padding: 0 rem(10px) 0 rem(15px);
+
+				h5 {
+					float: left;
+					font-size: rem(16px);
+				}
+
+				> p {
+					position: relative;
+					float: right;
+					padding-right: rem(20px);
+					font-size: $fontS;
+					line-height: rem(46px);
+					color: $grayDark;
+
+					> i {
+						position: absolute;
+						top: 0;
+						right: 0;
+						height: 100%;
+						font-size: rem(14px);
+						line-height: rem(46px);
+					}
+				}
+			}
+
+			.pAddr {
+				left: rem(45px);
+			}
+
+			&.open {
+
+				> .key > p > i {
+					transform:rotate(90deg);
+				}
+
+				> .pBrand {
+					height: auto;
+				}
+			}
+		}
+
+		> .tab {
+			overflow: hidden;
+			padding: rem(6px);
+			background: #fff;
+
+			li {
+				float:left;
+				padding: rem(6px);
+				width: 50%;
+
+				> a {
+					display: block;
+					height: rem(37px);
+					font-size: rem(15px);
+					line-height: rem(35px);
+					text-align: center;
+					border:$lineCol 1px solid;
+					border-radius: rem(5px);
+				}
+
+				a.jsConfirm {
+					color: #fff;
+					background: $mainCol;
+				}
+			}
+		}
+
+		> .tab1 li.on a{
+			overflow: hidden;
+			color: $mainCol;
+			border: $mainCol 1px solid;
+
+			&:before {
+				position: absolute;
+				bottom: 0;
+				right: -1px;
+				height: rem(24px);
+				font-size: rem(18px);
+				color: $mainCol;
+			}
+		}
+
+		> .tab2 {
+			background: transparent;
+
+			li a{
+				height: rem(46px);
+				font-size: rem(16px);
+				line-height: rem(44px);
+				background: #fff;
+			}
+		}
+
+		> .slide {
+			background: #fff;
+			padding: rem(10px) rem(10px) rem(10px) rem(15px);
+			margin-bottom: rem(10px);
+
+			> h5 {
+				font-size: $fontL;
+				margin-bottom: rem(10px);
+			}
+
+			> .range {
+
+				> input {
+					width: rem(100px);
+					height: rem(35px);
+					padding: rem(3px) rem(8px);
+					line-height: rem(35px);
+					border: $lineCol 1px solid;
+					border-radius: rem(5px);
+				}
+
+				> span {
+					display: inline-block;
+					width: rem(25px);
+					height: rem(35px);
+					font-size: rem(22px);
+					line-height: rem(35px);
+					text-align: center;
+				}
+			}
+		}
+
+ 	}
+}
+
+.pBrand {
+	height: 0;
+
+	> ul {
+		padding: 0 rem(11px);
+	}
+
+	li {
+		height: rem(48px);
+		font-size: $fontM;
+		line-height: rem(48px);
+		color: $grayDark;
+		border-top: $lineCol 1px solid;
+
+		&.all {
+			padding: 0 rem(12px);
+		}
+
+		&.on {
+			color: $mainCol;
+
+			i {
+				display: block;
+			}
+		}
+
+		i {
+			position: absolute;
+			top: 0;
+			right: rem(11px);
+			display: none;
+			height: 100%;
+
+			&:before {
+				font-size: rem(28px);
+				line-height: rem(46px);
+				color: $mainCol;
+			}
+		}
+	}
+}
+
+
+

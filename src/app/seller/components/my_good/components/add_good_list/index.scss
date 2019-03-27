@@ -1,0 +1,190 @@
+@import "~assets/styles/_bootstrap";
+
+.eAddGoodList {
+	margin-bottom: rem(20px);
+	font-size: $fontM;
+
+	li {
+
+		&.active {
+
+			.p2 span {
+				background: $mainCol;
+
+				> i {
+					transform: rotate(45deg);
+					transition: transform .1s;
+
+					&:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.ttl {
+			overflow: hidden;
+			margin-bottom: rem(15px);
+			min-height: rem(23px);
+			max-height: rem(46px);
+			display: -webkit-box;
+			line-height: rem(23px);
+			overflow-text: ellipsis; 
+			-webkit-line-clamp: 2;
+		}
+
+		.p2 {
+			overflow: hidden;
+			margin-bottom: rem(20px);
+
+			> em {
+				float: left;
+				font-size: rem(20px);
+				color: $mainCol;
+			}
+
+			> span {
+				float: right;
+				display: block;
+				width: rem(26px);
+				height: rem(26px);
+				line-height: rem(24px);
+				text-align: center;
+				border: $mainCol 1px solid;
+				border-radius: rem(13px);
+
+				> i {
+					display: inline-block;
+					line-height: rem(24px);
+					font-size: rem(14px);
+					font-weight: bold;
+					transform: rotate(0deg);
+					transition: transform .1s;
+
+					&:before {
+						color: $mainCol;
+					}
+				}
+
+				&.active {
+					background: $mainCol;
+
+					> i:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.p3 {
+		overflow: hidden;
+		font-size: $fontS;
+
+		> i {
+			float: left;
+			padding: 0 rem(8px);
+			height: rem(20px);
+			line-height: rem(20px);
+			color: #fff;
+			background: $mainCol;
+			border-radius: rem(10px);
+		}
+
+		> span {
+			float: right;
+			color: $grayLight;
+		}
+	}
+
+	.img {
+		overflow: hidden;
+		display: block;
+		border: $lineCol 1px solid;
+		border-radius: rem(5px);
+	}
+
+	&.style3 {
+
+		li {
+			float: left;
+			width: 50%;
+			padding: rem(5px);
+
+			.img {
+				margin: 0 auto;
+				display: block;
+				padding: rem(15px) rem(10px);
+				background: #fff;
+				width: rem(145px);
+				height: rem(145px);
+				
+
+				> img {
+					display: block;
+					width: rem(145px);
+					height: rem(145px);
+				}
+			}
+
+			ol {
+				padding: rem(10px) rem(10px) 0;
+
+				.ttl {
+					height: rem(46px);
+				}
+			}
+		}
+	}
+
+	&.style2 {
+
+		li {
+			overflow: hidden;
+			margin-top: rem(3px);
+			padding: rem(15px) rem(15px) rem(15px) rem(10px);
+			background: #fff;
+
+			.img {
+				float: left;
+				width: rem(102px);
+				height: rem(102px);
+
+				> img {
+					width: rem(102px);
+					height: rem(102px);
+				}
+			}
+
+			ol {
+				margin-left: rem(115px);
+			}
+		}
+	}
+	
+	&.style1 {
+
+		li {
+			margin-bottom: rem(10px);
+			padding: rem(15px);
+			background: #fff;
+
+			.img {
+				width: rem(345px);
+				height: rem(345px);
+
+				> img {
+					width: rem(345px);
+					height: rem(345px);
+				}
+			}
+
+			ol {
+				padding-top: rem(15px);
+			}
+		}
+	}
+}
+
+
+

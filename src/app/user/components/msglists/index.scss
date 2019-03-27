@@ -1,0 +1,70 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+.msg-page {
+	position: relative;
+	height: 100%;
+
+	.msg-box {
+		height: 100%;
+	}
+
+	.msg-list {
+		height: 100%;
+		background: #fff;
+
+		.item {
+			padding: rem(13px);
+			border-bottom: 1px solid #eae9e9;
+
+			.item-pic {
+				display: inline-block;
+				width: rem(40px);
+				height: rem(40px);
+
+				> img {
+					width: 100%;
+					height: 100%;
+					border: none;
+					border-radius: 50%;
+				}
+
+				> span {
+					position: absolute;
+					top: 0;
+					right: 0;
+					display: block;
+					width: rem(18px);
+					height: rem(18px);
+					line-height: rem(16px);
+					color: #fff;
+					font-size: rem(12px);
+					text-align: center;
+					border-radius: 50%;
+			    background: #f91c1c;
+				}
+			}
+
+			.item-title {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: rem(60px);
+				padding: rem(20px) 0;
+				margin: auto 0;
+				font-weight: bold;
+				color: #333;
+
+				> span {
+					display: block;
+					font-weight: normal;
+					color: #666;
+				}
+			}
+		}
+	}
+}

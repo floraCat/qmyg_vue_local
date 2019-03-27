@@ -1,0 +1,145 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+.express-page {
+	height: 100%;
+
+	.express-box {
+		position: absolute;
+		top: rem(60px);
+		left: 0;
+		right: 0;
+		// height: 100%;
+
+		.no-express {
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    width: rem(214px);
+	    height: rem(80px);
+	    text-align: center;
+	    opacity: 0;
+
+			&:before {
+				display: block;
+				margin: auto;
+				width: rem(100px);
+				height: 100%;
+				content: ' ';
+				background: url('~assets/images/NoLogistics.gif') no-repeat;
+				background-size: 100%;
+			}
+
+			> h3 {
+				color: #333;
+				font-weight: bold;
+			}
+		}
+
+	}
+
+
+	.express-list {
+		padding-top: rem(5px);
+		width: 100%;
+		height: 100%;
+
+		.item {
+			padding: rem(5px) rem(10px);
+
+			.content {
+				display: block;
+				padding: rem(10px);
+				border: 1px solid $lineCol;
+				background: #fff;
+
+				&:after {
+					display: block;
+					content: ' ';
+					clear: both;
+				}
+
+				.top {
+					> h2 {
+						font-size: rem(14px);
+					}
+
+					.add_comment {
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
+
+				.bot {
+					display: block;
+					width: 100%;
+					height: auto;
+
+					&:after {
+						display: block;
+						content: ' ';
+						clear: both;
+					}
+				}
+
+
+				.pic {
+					float: left;
+					margin-top: rem(10px);
+					width: rem(72px);
+					height: rem(72px);
+
+					> img {
+						width: 100%;
+						height: 100%;
+						border: 1px solid $lineCol;
+					}
+				}
+
+				.exp-right {
+					float: left;
+					padding: rem(10px) rem(10px) 0 rem(10px);
+					width: rem(260px);
+
+					.time {
+						font-size: rem(13px);
+					}
+
+					.desc {
+						font-size: rem(12px);
+				    color: #999;
+				    padding: rem(10px) 0;
+					}
+
+					.icon {
+						position: absolute;
+				    right: 0;
+				    top: 0;
+				    bottom: 0;
+
+				    &:before {
+					    position: absolute;
+					    top: rem(-20px);
+					    bottom: 0;
+					    right: 0;
+					    margin: auto;
+					    width: rem(16px);
+					    height: rem(16px);
+					    color: #e3e3e3;
+					    font-size: rem(22px);
+				    }
+					}
+				}
+			}
+		}
+	}
+
+}

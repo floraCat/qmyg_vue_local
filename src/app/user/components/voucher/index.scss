@@ -1,0 +1,47 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+.voucher-page {
+	height: 100%;
+
+	.voucher-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: rem(60px);
+		height: 100%;
+
+		.voucher-list {
+			height: 100%;
+
+			.item {
+				padding: rem(20px);
+				border-bottom: 1px solid $lineCol;
+				background: #fff;
+
+				> p {
+					line-height: rem(25px);
+
+					> span {
+						padding-right: rem(5px);
+						color: #999;
+
+						&.money {
+					    padding-right: rem(5px);
+					    font-size: rem(22px);
+					    color: #16cfa3;
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+
+}

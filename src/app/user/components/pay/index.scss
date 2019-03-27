@@ -1,0 +1,69 @@
+@import "~assets/styles/_bootstrap";
+
+.pay-wrapper {
+
+	.content {
+
+		.pay-money {
+			background: #fff;
+			height: rem(50px);
+			line-height: rem(50px);
+			padding: 0 rem(10px);
+			margin-bottom: rem(10px);
+			font-size: rem(16px);
+
+			> em {
+				float: right;
+  			color: #ec5051;
+			}
+		}
+
+		.pay-mode {
+			background: #fff;
+
+			> p {
+				height: rem(50px);
+				line-height: rem(50px);
+				padding: 0 rem(10px);
+				font-size: rem(16px);
+				border-bottom: 1px solid #eae9e9;
+			}
+
+			.pay-list {
+
+				.pay-item {
+					border-bottom: 1px solid #eae9e9;
+
+					> a {
+						display: flex;
+						padding: rem(10px);
+
+						.pay-icon {
+							flex: 0 0 rem(36px);
+							width: rem(36px);
+							height: rem(36px);
+
+							> img {
+								display: block;
+								width: 100%;
+								height: 100%;
+							}
+						}
+
+						.pay-text {
+							flex: 1;
+							height: rem(36px);
+							line-height: rem(36px);
+							padding-left: rem(15px);
+						}
+
+						> i {
+							line-height: rem(36px);
+							font-size: rem(18px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

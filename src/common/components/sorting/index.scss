@@ -1,0 +1,54 @@
+@import "~assets/styles/_bootstrap";
+
+.eSort {
+	display:flex;
+	margin: 0 0 rem(3px);
+	height: rem(54px);
+	line-height: rem(54px);
+	font-size: rem(14px);
+	text-align: center;
+	background: #fff;
+
+	> li {
+		flex:1;
+
+		&.on {
+			color: $mainCol;
+
+			> i:before {
+				color: $mainCol;
+			}
+		}
+
+		> i {
+			position:absolute; 
+			top:rem(20px); 
+			left:75%; 
+			width:0; 
+			height:0; 
+		}
+	}
+
+	> li.style {
+		position: relative;
+
+		> span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			width: 100%;
+			height: 100%;
+			line-height: rem(54px);
+			text-align: center;
+
+			&.show {
+				display: block;
+			}
+
+			&:before {
+				font-size: rem(36px);
+			}
+		}
+	}
+}

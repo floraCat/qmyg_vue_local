@@ -1,0 +1,105 @@
+@import "~assets/styles/_bootstrap";
+
+.add-address-wrapper {
+	min-height: 100vh;
+  background: #fff;
+
+	.content {
+    padding: rem(20px);
+
+    .input-wrapper {
+      display: flex;
+      padding: rem(10px) 0;
+      border-bottom: 1px solid #e0e0e0;
+      &.bottom {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      &.top {
+        padding-top: 0;
+      }
+
+      .title-box {
+        height: rem(36px);
+        line-height: rem(36px);
+        font-size: rem(15px);
+        text-align: right;
+
+        > span {
+          color: #c60a1e;
+        }
+      }
+
+      .input-box {
+        flex: 1;
+        height: rem(36px);
+        position: relative;
+        color: #666;
+        &.input-region {
+          max-width: rem(225px);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        > input {
+          width: 100%;
+          height: rem(36px);
+          padding: 0 rem(35px) 0 0;
+          font-size: rem(15px);
+          color: #666;
+          border: none;
+        }
+
+        > i {
+          position: absolute;
+          top: 0;
+          width: rem(30px);
+          height: rem(36px);
+          line-height: rem(36px);
+          text-align: center;
+          color: #999;
+          font-size: rem(20px);
+        }
+
+        .icon-close2 {
+          right: 0;
+        }
+
+        .region {
+          line-height: rem(36px);
+        }
+      }
+
+      .icon {
+
+        > i {
+          display: inline-block;
+          width: rem(24px);
+          height: rem(36px);
+          line-height: rem(36px);
+          text-align: right;
+          font-size: rem(22px);
+        }
+      }
+    }
+
+    .submit {
+      padding-top: rem(30px);
+
+      > button {
+        display: block;
+        width: 100%;
+        height: rem(42px);
+        line-height: rem(42px);
+        background: #EC5151;
+        text-align: center;
+        font-size: rem(16px);
+        color: #fff;
+        border: none;
+        border-radius: rem(4px);
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,209 @@
+@import "~assets/styles/_bootstrap";
+
+
+.eSidebar {
+	z-index: 2100;
+	position: fixed;
+	top: rem(54px);
+	width: rem(191px);
+	height: 100%;
+	right: 0;
+	font-size: rem(12px);
+	color: #fff;
+	background: #323544;
+	transition: right .2s;
+
+	> .head {
+			overflow: hidden;
+			padding: rem(10px);
+
+			> .img {
+				float: left;
+				width: rem(48px);
+				height: rem(48px);
+				border: 2px solid #42485a;
+				border-radius: rem(24px);
+
+				> img {
+					width: rem(44px);
+					height: rem(44px);
+					border-radius: rem(22px);
+				}
+			}
+
+			> ol {
+				margin: rem(3px) 0 0 rem(58px);
+				font-size: rem(12px);
+
+				> span {
+					font-size: $fontS;
+				}
+
+				> p {
+					margin-top: rem(7px);
+					color: #547599;
+					line-height: rem(19px);
+
+					> label {
+						display: inline;
+						padding-left: rem(15px);
+					}
+
+					> i {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 15px;
+						height: 100%;
+						font-size: $fontS;
+						line-height: rem(19px);
+						text-align: center;
+
+						&:before {
+							color: #547599;
+						}
+					}
+				}
+			}
+		}
+
+		> .labels1 {
+			overflow: hidden;
+			margin-bottom: rem(10px);
+			width: 101%;
+
+			> a {
+				float: left;
+				padding: rem(12px) 0;
+				display: block;
+				width: 50%;
+				color: #fff;
+				text-align: center;
+				background: #42485a;
+				border-right: #323544 1px solid;
+				border-bottom: #323544 1px solid;
+
+				> i {
+					display: block;
+					height: rem(20px);
+					font-size: rem(16px);
+					line-height: rem(20px);
+
+					&:before {
+						color: #fff;
+					}
+
+					&.txt {
+						font-size: rem(10px);
+					}
+				}
+			}
+		}
+
+		> .labels2 {
+
+			> a {
+				display: block;
+				margin-bottom: rem(5px);
+				height: rem(44px);
+				color: #fff;
+				line-height: rem(44px);
+				border-top: 1px solid #252731;
+				border-bottom: 1px solid #252731;
+
+				> span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: rem(38px);
+					height: rem(44px);
+					font-size: rem(15px);
+					line-height: rem(44px);
+					text-align: center;
+
+					&:before {
+						color: #fff;
+					}
+				}
+
+				> label {
+					padding-left: rem(40px);
+				}
+
+				> i {
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: rem(24px);
+					height: rem(44px);
+					font-size: rem(16px);
+					line-height: rem(44px);
+					text-align: center;
+
+					&:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		> .goBtns {
+			overflow: hidden;
+			padding: rem(10px) rem(10px) rem(25px);
+
+			> a {
+				position: relative;
+				line-height: rem(20px);
+
+				&.return {
+					float: left;
+
+					> i:before {
+						color: #547599;
+					}
+
+					> span {
+						color: #547599;
+					}
+				}
+
+				&.enter {
+					float: right;
+				}
+
+				> i {
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin-right: rem(5px);
+					width: rem(20px);
+					height: rem(20px);
+					font-size: rem(20px);
+					line-height: rem(20px);
+					text-align: center;
+
+					&:before {
+						color: #fff;
+					}
+				}
+
+				> span {
+					padding-left: rem(24px);
+					color: #fff;
+				}
+			}
+		}
+
+		> .service {
+			display: block;
+			margin: 0 auto;
+			width: rem(66px);
+			height: rem(26px);
+			line-height: rem(24px);
+			text-align: center;
+			color: #547599!important;
+			border: #547599 1px solid;
+			border-radius: rem(5px);
+		}
+	//}
+}

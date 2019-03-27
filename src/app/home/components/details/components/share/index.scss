@@ -1,0 +1,126 @@
+@import "~assets/styles/_bootstrap";
+
+.eShare {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9990;
+	width: 100%;
+	height: 100%;
+
+	> .note {
+		position: absolute;
+		top: rem(155px);
+		left: 50%;
+		margin-left: rem(-100px);
+		width: rem(155px);
+		font-size: rem(18px);
+		line-height: rem(30px);
+		color: #fff;
+		text-align: center;
+
+		> b {
+			padding: 0 rem(8px);
+		}
+	}
+
+	> .arrow {
+		position: absolute;
+		top: rem(50px);
+		right: rem(20px);
+		width: rem(105px);
+		height: rem(140px);
+	}
+
+	> .tranMask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: 000;
+		opacity: .2;
+	}
+
+	> .main {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		color: $blk;
+		background: #F5F4F0;
+		border-top-left-radius: rem(10px);
+		border-top-right-radius: rem(10px);
+
+		> h3 {
+			margin: rem(-10px) auto 0;
+			width: rem(200px);
+			height: rem(60px);
+			font-size: rem(18px);
+			line-height: rem(45px);
+			color: #fff;
+			text-align: center;
+			background: url(~assets/images/biaoti_bg.png) no-repeat;
+			background-size: 100%;
+		}
+
+		> p {
+			padding: rem(15px);
+			line-height: rem(24px);
+			background: url(~assets/images/neirong_bg.png) no-repeat;
+			background-size: 100% 100%;
+
+			> .cen {
+				margin-bottom: rem(3px);
+				display: block;
+				text-align: center;
+			}
+
+			em {
+				font-size: rem(18px);
+				font-weight: bold;
+				color: $mainCol;
+			}
+
+			> b {
+				float: left;
+				font-size: rem(18px);
+			}
+
+			> span.last {
+				display: block;
+				margin-left: rem(75px);
+			}
+		}
+
+		> ul {
+			overflow: hidden;
+			display: flex;
+			padding: rem(6px) 0 rem(10px);
+			margin: 0 auto;
+			width: rem(288px);
+
+			> li {
+				float: left;
+				flex: 1;
+				text-align: center;
+
+				> img {
+					margin: 0 auto;
+					width: rem(40px);
+					height: rem(40px);
+					border-radius: rem(20px);
+				}
+			}
+		}
+
+		> .cancel {
+			display: block;
+			height: rem(40px);
+			font-size: rem(18px);
+			line-height: rem(40px);
+			color: #fff;
+			text-align: center;
+			background: $mainCol;
+		}
+	}
+}

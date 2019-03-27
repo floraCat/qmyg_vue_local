@@ -1,0 +1,46 @@
+@import "~assets/styles/_bootstrap";
+
+.eBeanDesc {
+	position: fixed;
+	top: rem(35px);
+	left: 50%;
+	z-index: 9990;
+	margin-left: rem(-150px);
+	width: rem(300px);
+
+	> h3 {
+		height: rem(50px);
+		font-size: rem(18px);
+		line-height: rem(50px);
+		color: #fff;
+		text-align: center;
+		background: #0e90c9;
+	}
+
+	> .body {
+		padding: rem(13px) rem(5px) rem(10px);
+		background: #fff;
+
+		> dl {
+			font-size: $fontS;
+
+			> dt {
+				padding: 0 rem(5px);
+				margin-bottom: rem(8px);
+				height: rem(32px);
+				font-weight: bold;
+				line-height: rem(32px);
+				color: $blk;
+				border-bottom: $lineCol 1px solid;
+			}
+
+			> dd {
+				padding: 0 rem(5px);
+				margin-bottom: rem(10px);
+				line-height: rem(22px);
+				color: $grayDark;
+			}
+
+		}
+	}
+}

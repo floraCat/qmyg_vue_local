@@ -1,0 +1,1005 @@
+@import "~assets/styles/_bootstrap";
+
+.eInfo {
+
+	border-bottom: $bgCol rem(68px) solid;
+	right:0;
+	transition: right .2s;
+
+	&.hasSidebar {
+		right: rem(191px);
+		transition: right .6s;
+
+		> .personal_info_btn {
+			top: rem(160px);
+			right: rem(206px);
+		}
+	}
+
+	> .fixHead {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		padding: rem(9px) rem(12px);
+		width: 100%;
+		height: rem(48px);
+		background: #fff;
+		opacity: 0;
+		box-shadow: 0 0 10px #868686;
+		transition: all .6s;
+
+		&.show {
+			z-index: 2000;
+			opacity: 1;
+		}
+
+		> img {
+			float: left;
+			height: rem(30px);
+		}
+
+		> ol {
+			overflow: hidden;
+			float: right;
+
+			> .share {
+				float: left;
+				width: rem(48px);
+				font-size: rem(22px);
+				line-height: rem(30px);
+				text-align: center;
+			}
+
+			> .user {
+				position: relative;
+				float: left;
+				margin-top: rem(5px);
+				padding: 0 rem(8px);
+				height: rem(21px);
+				font-size: $fontL;
+				line-height: rem(21px);
+				color: $grayDark;
+				border-left: #999 1px solid;
+
+				> .new {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: rem(10px);
+					height: rem(10px);
+					background: $mainCol;
+					border-radius: rem(5px);
+				}
+			}
+		}
+	}
+
+	> .imgBtm {
+		overflow: hidden;
+		padding: 0 rem(20px);
+		height: rem(33px);
+		font-size: $fontM;
+		line-height: rem(33px);
+		color: #fff;
+		background: $grayDark;
+
+		> .fl {
+			float: left;
+
+			> span {
+				float: left;
+				margin-right: rem(20px);
+			}
+		}
+
+		> .fr {
+			float: right;
+
+			> span {
+				float: left;
+				margin-right: rem(7px);
+				transition: color .4s;
+			}
+
+			> ol {
+				position: relative;
+				float: left;
+				overflow: hidden;
+				margin-top: rem(8px);
+				width: rem(20px);
+				height: rem(22px);
+
+				> i{
+					position: absolute;
+					padding:rem(1px);
+					overflow: hidden;
+					width: 100%;
+					font-size: rem(17px);
+					transition: top .24s;
+
+					&:before {
+						color: #fff;
+					}
+
+					&.saved {
+						top: -100%;
+
+						&:before {
+							color: $mainCol;
+						}
+					}
+				}
+			}
+
+			&.on {
+
+				span {
+					color: $mainCol;
+				}
+
+				i {
+				 	top: 100%;
+
+				 	&.saved {
+				 		top: 0;
+				 	}
+				 }
+			}
+		}
+	}
+
+	> .info {
+		padding: rem(12px);
+		border-bottom: #ccc 1px solid;
+
+		> h1 {
+			margin-bottom: rem(12px);
+			font-size: $fontL;
+			line-height: 24px;
+			color: $blk;
+		}
+
+		> .price {
+			margin-bottom: rem(5px);
+			font-size: $fontL;
+			line-height: rem(28px);
+			color: $grayLight;
+
+			> em {
+				margin-right: rem(25px);
+				color: $mainCol;
+				font-weight: bold;
+
+				> i {
+					font-size: 20px;
+				}
+			}
+		}
+
+		> .post {
+			overflow: hidden;
+
+			> label {
+				float: left;
+				margin-right: rem(15px);
+				color: $grayLight;
+			}
+		}
+
+		> .share {
+			position: absolute;
+			bottom: rem(15px);
+			right: rem(15px);
+			display: block;
+			padding: 0 rem(10px);
+			height: rem(33px);
+			font-size: $fontM;
+			line-height: rem(33px);
+			color: #fff;
+			background: $mainCol;
+			border-radius: rem(5px);
+
+			> i {
+				margin-right: rem(5px);
+
+				&:before {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	> .dou {
+		padding: rem(12px);
+		border-bottom: $lineCol 1px solid;
+
+		> i {
+			float: left;
+			margin-top: rem(12px);
+			padding: 0 rem(3px);
+			height: rem(25px);
+			color: $mainCol;
+			line-height: rem(23px);
+			border: $mainCol 1px solid;
+			border-radius: 5px;
+		}
+
+		> ol {
+			margin-left: rem(60px);
+			color: $grayDark;
+			font-size: $fontM;
+			font-weight: bold;
+			line-height: rem(24px);
+
+			> p em {
+				color: $mainCol;
+			}
+		}
+	}
+
+	> .ewm {
+		position: relative;
+		padding: rem(12px);
+		border-bottom: $lineCol 1px solid;
+
+		> p {
+			font-size: $fontS;
+			font-weight: bold;
+			color: $grayDark;
+
+			> em{
+				color: #2ebce8;
+			}
+		}
+
+		> span {
+			position: absolute;
+			top: rem(10px);
+			right: rem(35px);
+			color: $blk;
+			line-height: rem(21px);
+
+			> i {
+				float: left;
+				margin-right: rem(5px);
+				padding-left: rem(5px);
+				font-size: 21px;
+				border-left: $blk 1px solid;
+
+				&:before {
+					color: $blk;
+				}
+			}
+
+			> label {
+				float: left;
+			}
+		}
+	}
+
+	> .enter {
+
+		> a {
+			position: relative;
+			overflow: hidden;
+			display: block;
+			padding: rem(12px);
+			font-size: $fontM;
+			border-bottom: $lineCol 1px solid;
+
+			> label {
+				margin-right: rem(12px);
+				float: left;
+				color: $grayLight;
+			}
+
+			> p {
+				float: left;
+			}
+
+			> i {
+				position: absolute;
+				top: 0;
+				right: rem(10px);
+				height: 100%;
+				font-size: rem(15px);
+				line-height: rem(44px);
+			}
+		}
+	}
+
+	> .support {
+		overflow: hidden;
+		padding: rem(18px) rem(12px);
+		line-height: rem(20px);
+		color: $grayLight;
+
+		> a {
+			> label {
+				float: left;
+				margin-right: rem(10px);
+			}
+
+			>span {
+				float: left;
+				margin-right: rem(5px);
+
+				> i {
+					float: left;
+					display: inline-block;
+					width: rem(22px);
+					height: rem(22px);
+					margin: 0 rem(5px);
+					font-size: rem(16px);
+					line-height: rem(22px);
+					text-align: center;
+					background: $mainCol;
+					border-radius: rem(11px);
+
+					&:before {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	> .comment {
+		display: block;
+		padding: rem(13px) rem(12px);
+		font-size: $fontM;
+		line-height: rem(20px);
+		color: $grayDark;
+		border-top: $bgCol 5px solid;
+		border-bottom: $lineCol 1px solid;
+
+		> label {
+			float: left;
+			margin-right: rem(12px);
+		}
+
+		> p{
+			color: $blk;
+
+			> em {
+				margin-left: rem(10px);
+				color: $mainCol;
+			}
+		}
+
+		> span {
+			position: absolute;
+			top: 0;
+			right: rem(30px);
+			height: rem(47px);
+			line-height: rem(47px);
+
+			> em {
+				color: $mainCol;
+				margin-right: rem(5px);
+			}
+		}
+
+		> i {
+			position: absolute;
+			top: 0;
+			right: rem(13px);
+			width: rem(15px);
+			height: rem(47px);
+			font-size: rem(16px);
+			line-height: rem(47px);
+			text-align: center;
+		}
+	}
+
+	> .comment2 {
+		padding: rem(12px);
+		border-bottom: $bgCol 5px solid;
+
+		> .top {
+			overflow: hidden;
+			line-height: rem(22px);
+			color: $grayLight;
+
+			> ul {
+				float: left;
+				overflow: hidden;
+				margin-right: rem(3px);
+
+				> li {
+					float: left;
+					margin-right: rem(2px);
+
+					> i {
+						font-size: 22px;
+					}
+
+					> .i2 {
+						display: none;
+					}
+
+					&.on {
+
+						> .i1 {
+							display: none;
+						}
+
+						> .i2 {
+							display: block!important;
+
+							&:before {
+								color: $mainCol;
+							}
+						}
+					}
+				}
+			}
+
+			> label {
+				float: left;
+			}
+
+			> span {
+				float: right;
+				font-size: $fontS;
+			}
+		}
+
+		> p {
+			margin: rem(15px) 0;
+			color: $blk;
+		}
+
+		> .btns {
+			overflow: hidden;
+
+			> a {
+				float: left;
+				display: block;
+				margin: 0 1%;
+				width: 48%;
+				height: rem(43px);
+				font-size: $fontM;
+				line-height: rem(41px);
+				color: $blk;
+				text-align: center;
+				border: $lineCol 1px solid;
+				border-radius: 5px;
+			}
+		}
+	}
+
+	> .pSimilar {
+		padding: 0 rem(15px) rem(15px);
+
+		> h3 {
+			height: rem(46px);
+			font-size: $fontL;
+			line-height: rem(46px);
+			text-align: center;
+		}
+
+		> ul {
+			overflow: hidden;
+
+			> li {
+				float: left;
+				padding: rem(3px);
+				width: 50%;
+
+				> a {
+					display: block;
+					padding: rem(20px);
+					border: $lineCol 1px solid;
+
+					> img {
+						width: rem(125px);
+						height: rem(125px);
+					}
+
+					> p {
+						margin: rem(15px) 0;
+						height: rem(46px);
+						line-height: rem(23px);
+						overflow: hidden;
+						text-overflow: ellipsis;
+						word-break:break-all;
+						display:-webkit-box;
+						-webkit-box-orient:vertical;
+						-webkit-line-clamp:2;
+					}
+
+					> span {
+						display: block;
+						overflow: hidden;
+
+						> em {
+							float: left;
+							color: $mainCol;
+						}
+
+						> s {
+							float: right;
+							font-size: 12px;
+							color: $grayLight;
+						}
+					}
+				}
+			}
+		}
+
+		> .btn {
+			display: block;
+			margin-top: rem(15px);
+			height: rem(43px);
+			font-size: $fontM;
+			color: #fff;
+			line-height: rem(43px);
+			text-align: center;
+			background: $mainCol;
+			border-radius: rem(4px);
+		}
+	}
+
+	> .pFoot {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+		display: flex;
+		height: rem(68px);
+		background: #fafafc;
+		border-top: $lineCol 1px solid;
+		padding: rem(10px) rem(6px);
+		-webkit-transform: translateZ(0);
+
+		> li {
+			padding: 0 rem(6px);
+			float: left;
+
+			> a {
+				display: block;
+				height: rem(48px);
+				font-weight: bold;
+				color: #fff;
+				line-height: rem(48px);
+				text-align: center;
+				border-radius: rem(5px);
+
+				&.service {
+					width: rem(52px);
+					color: $mainCol;
+					line-height: rem(20px);
+
+					.icon {
+						display: block;
+						font-size: rem(24px);
+					}
+
+					span {
+						display: block;
+						font-size: rem(12px);
+						font-weight: normal;
+					}
+				}
+
+				&.agent {
+					width: rem(65px);
+					background: #6d9e46;
+				}
+
+				&.addCart {
+					width: rem(97px);
+					background: #f4a213;
+					border: 1px solid #e19511;
+				}
+
+				&.buyNow {
+					width: rem(97px);
+					background: $mainCol;
+					border: 1px solid #df4141
+				}
+			}
+		}
+	}
+
+	.pAddr {
+		padding-top: 0;
+
+		> .head {
+			display: none;
+		}
+	}
+
+	.detailMask {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: $blk;
+		opacity: 0;
+		transition: all .2s;
+
+		&.show {
+			z-index: 2000;
+			opacity: .5;
+			transition: all .5s;
+		}
+
+		&.upup {
+			z-index: 9998;
+		}
+	}
+}
+
+.infoBanner {
+	width: rem(375px);
+	height: rem(375px);
+}
+
+.pCart {
+	position: fixed;
+	top: 73%;
+	left: rem(20px);
+	width: rem(40px);
+	z-index: 1000;
+	height: rem(40px);
+	font-size: rem(24px);
+	line-height: rem(40px);
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	border-radius: 50%;
+
+	&:before {
+		color: #fff;
+	}
+
+	> .cartSum {
+		position: absolute;
+		top: rem(-5px);
+		right: rem(-5px);
+		display: none;
+		width: rem(20px);
+		height: rem(20px);
+		font-size: rem(12px);
+		line-height: rem(20px);
+		color: #fff;
+		text-align: center;
+		background: $mainCol;
+		border-radius: 50%;
+
+		&.show {
+			display: block;
+		}
+	}
+}
+
+.fly_item {
+	  position: absolute;
+	  overflow: hidden;
+    z-index: 9990;
+    width: 30px;
+    height: 30px;
+     border: 1px solid #ccc;
+    border-radius: 100%;
+    visibility: hidden;
+    opacity: .9
+}
+
+.noteAddCart {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 9990;
+	margin-top: rem(-25px);
+	margin-left: rem(-85px);
+	width: rem(170px);
+	height: rem(50px);
+	font-size: $fontL;
+	line-height: rem(50px);
+	text-align: center;
+	color: #fff;
+	background: rgba(0,0,0,.6);
+	border-radius: rem(8px);
+	transform:scale(0);
+	transition: all 0;
+
+	&.show {
+		transform:scale(1);
+		transition: all .4s;
+	}
+}
+
+.noteMainContent {
+	margin-bottom: rem(20px);
+	height: rem(30px);
+	font-size: $fontS;
+	line-height: rem(30px);
+	text-align: center;
+}
+
+	.loading-icon {
+    display: inline-block;
+    width: rem(38px);
+    height: rem(38px);
+    vertical-align: baseline;
+    vertical-align: middle;
+    animation: mymove 1s steps(6) infinite;
+    background: url(~assets/images/svg/loading.svg);
+    background-size: 100%;
+	}
+
+	.loading-text {
+		margin: 0;
+	}
+
+
+@keyframes mymove
+{
+	0% {-webkit-transform:rotate(0deg);}
+	50% {-webkit-transform:rotate(180deg);}
+	100% {-webkit-transform:rotate(360deg);}
+}
+
+.personal_info_btn{
+    position: fixed;
+    top: rem(100px);
+    right: rem(15px);
+    z-index: 1000;
+    padding:rem(6px) rem(8px);
+    width: rem(40px);
+    height: rem(40px);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: all .4s;
+
+    > i {
+    	font-size: rem(26px);
+
+    	&:before {
+    		color: #fff;
+    	}
+    }
+}
+
+.pib_rotate{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  > div {
+  	position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 100%;
+    -webkit-animation: pib_rotate 1s 0s linear infinite;
+    animation: pib_rotate 1s 0s linear infinite;
+
+    &:nth-child(2) {
+    	-webkit-animation-delay: -.4s;
+  		animation-delay: -.4s;
+    }
+
+    &:nth-child(3) {
+	    -webkit-animation-delay: -.2s;
+	    animation-delay: -.2s;
+		}
+  }
+}
+@keyframes pib_rotate {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes pib_rotate {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.detailClose {
+	position: fixed;
+	z-index: 9;
+	top: 73%;
+	right: rem(20px);
+	display: block;
+	width: rem(40px);
+	height: rem(40px);
+	color: #fff;
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	border-radius: rem(20px);
+
+	> i {
+		display: block;
+		margin-top: rem(3px);
+		font-size: rem(20px);
+		line-height: rem(14px);
+
+		&:before {
+			color: #fff;
+		}
+	}
+
+	> span {
+		font-size: rem(12px);
+		color: #fff;
+	}
+}
+
+.detailOrder {
+	position: fixed;
+	z-index: 1;
+	top: rem(90px);
+	left: rem(1px);
+	padding: rem(3px);
+	width: rem(373px);
+	height: rem(44px);
+	background: rgba(0,0,0,.5);
+	border: #8c8c8c 2px solid;
+	border-radius: rem(22px);
+	opacity: 0;
+	transition : all .5s;
+
+	&.show {
+		z-index: 1800;
+		opacity: 1;
+	}
+
+	> .img {
+		float: left;
+		margin-right: rem(15px);
+		width: rem(34px);
+		height: rem(34px);
+		background: #fff;
+		border-radius: rem(17px);
+
+		> img {
+			width: rem(34px);
+			height: rem(34px);
+			border-radius: rem(17px);
+		}
+	}
+
+	> p {
+		overflow: hidden;
+		overflow-text: ellipsis;
+		max-width: rem(300px);
+		font-size: $fontM;
+		font-weight: bold;
+		line-height: rem(34px);
+		color: #fff;
+		white-space: nowrap;
+
+		> em {
+			padding: 0 rem(2px);
+			font-weight: normal;
+			color: $mainCol;
+		}
+	}
+}
+
+.pOutOfStock {
+	display: none;
+
+	&.show {
+		display: block;
+	}
+
+	.note {
+		position: fixed;
+		bottom: rem(68px);
+		left: 0;
+		width: 100%;
+		height: rem(36px);
+		line-height: rem(36px);
+		color: #b37336;
+		text-align: center;
+		background: #e9e098;
+		opacity: .9;
+	}
+
+	.btn {
+		position: fixed;
+		bottom: rem(8px);
+		right: rem(16px);
+		display: block;
+		width: rem(210px);
+		height: rem(49px);
+		font-size: rem(18px);
+		font-weight: bold;
+		color: #fff!important;
+		line-height: rem(49px);
+		text-align: center;
+		background: #bbb;
+		letter-spacing: rem(4px);
+		border-radius: rem(5px);
+	}
+}
+
+.dialog_agent {
+
+	h3 {
+		display: none;
+	}
+
+	.item:last-child {
+		color: $mainCol!important;
+	}
+}
+
+
+/*-----------弹窗过渡效果---------------*/
+
+/*易购豆提现*/
+.transBeanDesc-enter-active, .transBeanDesc-leave-active {
+	transition: transform 0.4s;
+	transform: scale(1);
+}
+.transBeanDesc-enter, .transBeanDesc-leave-active {
+	transition: transform 0s;
+	transform: scale(0);
+}
+
+/*售后说明*/
+.transServiceDesc-enter-active, .transServiceDesc-leave-active {
+	transition: bottom 0.4s;
+	bottom: 0!important;
+}
+.transServiceDesc-enter, .transServiceDesc-leave-active {
+	transition: bottom 0.4s;
+	bottom: -70%!important;
+}
+
+/*侧栏*/
+.transSidebar-enter-active, .transSidebar-leave-active {
+	transition: right 0.4s;
+	right: 0!important;
+}
+.transSidebar-enter, .transSidebar-leave-active {
+	transition: right 0.4s;
+	right: -50%!important;
+}
+
+/*规格选择*/
+.transGoodSelect-enter-active, .transGoodSelect-leave-active {
+	transition: bottom 0.4s;
+	bottom: 0!important;
+}
+.transGoodSelect-enter, .transGoodSelect-leave-active {
+	transition: bottom 0.4s;
+	bottom: -100%!important;
+}
+

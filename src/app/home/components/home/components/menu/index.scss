@@ -1,0 +1,57 @@
+@import "~assets/styles/_bootstrap";
+
+.eg_menu{
+  width: 100%;
+  min-height: rem(20px);
+
+  &.refresh {
+
+    img {
+      opacity: .3;
+    }
+  }
+
+  ul{
+    width: 100%;
+    padding: rem(8px) rem(8px) rem(14px);
+
+    li{
+      float: left;
+      width: 20%;
+      height: auto;
+      background: $bgCol;
+
+      a{
+        width: 100%;
+        height: 100%;
+        font-size: rem(11px);
+        text-align: center;
+        background-size: rem(40px) auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        padding-top: rem(15px);
+
+        img{
+          width: 60%;
+          height: auto;
+          margin: 0 auto rem(10px);
+        }
+      }
+    }
+  }
+}
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  display: block;
+}

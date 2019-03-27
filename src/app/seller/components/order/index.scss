@@ -1,0 +1,168 @@
+@import "~assets/styles/_bootstrap";
+
+.app {
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+.eOrders {
+	font-size: $fontS;
+
+	.wraper {
+		background: $bgCol;
+	}
+
+	.search {
+		padding: rem(15px) 0;
+
+		> input {
+			margin: 0 auto;
+			display: block;
+			width: rem(334px);
+			height: rem(36px);
+			line-height: rem(36px);
+			background: #fff;
+			border-radius: rem(18px);
+			padding: rem(3px) rem(10px);
+			border: none;
+		}
+	}
+
+	.tabs {
+		display: flex;
+		margin-bottom: rem(2px);
+		height: rem(46px);
+		line-height: rem(46px);
+		text-align: center;
+		background: #fff;
+
+		> li {
+			flex: 1;
+
+			&.active {
+				color: $mainCol;
+				border-bottom: $mainCol 2px solid;
+			}
+		}
+	}
+
+	.lists {
+
+		ul {
+			padding: 0 rem(10px);
+		}
+
+		li {
+			margin-top: rem(15px);
+			padding: rem(15px) rem(10px);
+			line-height: rem(28px);
+			background: #fff;
+			border-radius: rem(10px);
+
+			> header {
+				overflow: hidden;
+				margin-bottom: rem(5px);
+				font-size: rem(12px);
+
+				> i {
+					float: left;
+					margin-right: rem(5px);
+					padding: 0 rem(10px);
+					height: rem(28px);
+					font-size: $fontS;
+					color: #fff;
+					text-align: center;
+					background: #f9a005;
+					border-radius: rem(5px);
+				}
+
+				> span {
+					float: left;
+				}
+
+				> time {
+					float: right;
+				}
+			}
+
+			> article {
+				overflow: hidden;
+				padding: rem(6px) 0;
+				margin: 0 rem(10px);
+				border-top: $lineCol 1px solid;
+				border-bottom: $lineCol 1px solid;
+
+				> img {
+					float: left;
+					width: rem(82px);
+					height: rem(82px);
+				}
+
+				> section {
+					margin-left: rem(90px);
+					line-height: rem(16px);
+
+					> h4 {
+						color: #085c92;
+					}
+
+					label {
+						display: inline;
+					}
+
+					> aside {
+						margin-top: rem(5px);
+						color: $mainCol;
+
+						> label {
+							display: inline-block;
+							margin-right: rem(5px);
+							width: rem(80px);
+							height: rem(20px);
+							line-height: rem(20px);
+							text-align: center;
+							color:#fff;
+							background: $mainCol;
+							border-radius: rem(4px);
+						}
+					}
+				}
+			}
+
+			> footer {
+				margin: rem(5px) rem(10px) 0;
+				line-height: rem(20px);
+
+				> address {
+					font-style: normal;
+				}
+			}
+		}
+	}
+}
+
+.noContent {
+	padding-top: rem(100px);
+	color: $grayLight;
+	text-align: center;
+
+	> p {
+		font-size: rem(16px);
+	}
+
+	.brand {
+		margin-top: rem(270px);
+		padding-left: rem(41px);
+		width: 100%;
+		line-height: rem(31px);
+
+		> i {
+			position: absolute;
+			left: 50%;
+			top: 0;
+			margin-left: rem(-100px);
+			font-size: rem(31px);
+		}
+	}
+}

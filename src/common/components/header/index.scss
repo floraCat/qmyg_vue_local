@@ -1,0 +1,137 @@
+@import "~assets/styles/_bootstrap";
+
+.eg_header_wrap {
+  position: absolute;
+  left: 0;
+  height: rem(40px);
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 98%);
+  z-index: 2;
+
+	&:before {
+    position: absolute;
+		display: block;
+    width: 100%;
+    height: 100%;
+		content: ' ';
+		background: #fff;
+    opacity: 0;
+    z-index: 2;
+	}
+
+	.header_top_add {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: rem(40px);
+	  z-index: 2;
+
+		.eg_search_boxs {
+	    padding-top: rem(5px);
+	    padding-left: rem(64px);
+	    padding-right: rem(50px);
+	    width: 100%;
+	    height: rem(30px);
+
+			.eg_sbox {
+			  position: relative;
+			  display: inline-block;
+			  width: 100%;
+			  height: rem(30px);
+			  border-radius: rem(8px);
+			  background: rgba(255, 255, 255, .6);
+			  cursor: pointer;
+
+			  > img {
+			    display: inline-block;
+			    margin-top: rem(3px);
+			    margin-left: rem(5px);
+					height: rem(24px);
+			    width: auto;
+			  }
+
+				> span {
+				  display: inline-block;
+				  height: rem(30px);
+				  line-height: rem(30px);
+				  font-size: rem(14px);
+				  color: #fff;
+				  vertical-align: top;
+				}
+
+			}
+
+		}
+
+		.eg_city {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  padding-left: rem(10px);
+		  height: 100%;
+
+			.city-name {
+			  display: block;
+			  padding-top: rem(19px);
+			  height: 100%;
+			  font-size: rem(14px);
+			  color: #fff;
+			  background: url(~assets/images/ctiy_up.png) no-repeat center rem(5px);
+			  background-size: auto rem(20px);
+
+			  > span {
+			  	display: block;
+			  	padding-top: rem(3px);
+			    max-width: rem(50px);
+			    height: 100%;
+			    line-height: rem(16px);
+			    overflow: hidden;
+			    text-align: center;
+			  }
+			}
+
+		}
+
+		.search_news {
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  padding-right: rem(10px);
+		  height: 100%;
+
+		  .eg_news_btn {
+		    position: relative;
+		    display: inline-block;
+		    padding-top: rem(20px);
+		    height: 100%;
+	    	color: #fff;
+		    font-size: rem(14px);
+		    vertical-align: top;
+		    text-align: center;
+				background: url(~assets/images/header_news2.png) no-repeat center rem(5px);
+		    background-size: auto rem(20px);
+
+		    &:link {
+		    	color: #fff;
+		    }
+
+		    > span {
+			    position: absolute;
+			    display: block;
+			    top: rem(2px);
+			    right: rem(-8px);
+			    width: rem(18px);
+			    height: rem(18px);
+					color: #fff;
+			    font-size: rem(12px);
+			    line-height: rem(16px);
+			    text-align: center;
+			    background: #EC5151;
+			    border-radius: 50%;
+		    }
+		  }
+		}
+
+	}
+}

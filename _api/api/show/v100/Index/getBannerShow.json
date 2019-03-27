@@ -1,0 +1,8 @@
+{
+	"state":"success",
+	"data":[
+		{"goods_id":"1","ad_code":"http://localhost:8033/images/i2.jpg","ad_link":"#"},
+		{"goods_id":"1","ad_code":"http://localhost:8033/images/i2.jpg","ad_link":"#"},
+		{"goods_id":"1","ad_code":"http://localhost:8033/images/i2.jpg","ad_link":"#"}
+	]
+}

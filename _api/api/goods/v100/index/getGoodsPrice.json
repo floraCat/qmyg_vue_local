@@ -1,0 +1,10 @@
+{
+	"state":"success",
+	"data":{
+		"shipping_fee":"10",
+		"goods_number":100000,
+		"shop_price":50,
+		"ygcoin_p":100,
+		"ygcoin_b":200
+	}
+}

@@ -1,0 +1,31 @@
+@import "~assets/styles/_bootstrap";
+
+.eg_gotop{
+  position: fixed;
+  z-index: 990;
+  right: rem(10px);
+  bottom: rem(75px);
+  width: rem(40px);
+  height: rem(40px);
+  background-color: rgba(0,0,0,0.8);
+	border-radius: 50%;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  &:after {
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 0.4rem);
+    top: calc(50% - 0.3rem);
+    content: "";
+    width: rem(12px);
+    height: rem(12px);
+    border-bottom: rem(1px) solid #fff;
+    border-left: rem(1px) solid #fff;
+    transform: rotate(135deg);
+    transform-origin: 50% 50%;
+  }
+}

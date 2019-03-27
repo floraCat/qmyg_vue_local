@@ -1,0 +1,160 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+  background: #F6F6F9;
+}
+
+.search {
+  position: relative;
+  padding: rem(10px);
+	width: 100%;
+	height: 100%;
+
+	.icon-del {
+		position: absolute;
+
+    &:before {
+      display: inline-block;
+      content: ' ';
+
+    }
+	}
+
+
+	.icon-del {
+		top: rem(13px);
+		right: 0;
+		width: rem(36px);
+		height: rem(37px);
+
+    &:before {
+			position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+      width: rem(20px);
+      height: rem(20px);
+      background: url('~assets/images/svg/icon-del.svg') no-repeat;
+      background-size: 100%;
+    }
+	}
+
+
+  .search-nav {
+  	position: relative;
+  	width: 100%;
+  	height: rem(45px);
+  	line-height: rem(45px);
+  	z-index: 1100;
+
+  	.input-group {
+			position: absolute;
+			left: rem(36px);
+			width: rem(245px);
+			height: 100%;
+
+      .dropdown {
+        display: inline-block;
+        width: rem(70px);
+        height: 100%;
+      }
+
+			.keyword {
+				position: absolute;
+        left: rem(66px);
+				width: rem(180px);
+				height: 100%;
+				font-size: rem(15px);
+				color: #666;
+				border: none;
+			}
+  	}
+
+  	.button {
+	    position: absolute;
+	    right: 0;
+	    display: block;
+	    width: rem(72px);
+	    height: 100%;
+	    color: #fff;
+	    font-size: 15px;
+	    box-sizing: border-box;
+	    border: none;
+	    border-radius: 0 rem(4px) rem(4px) 0;
+	    background: #EC5151;
+  	}
+  }
+
+  .search-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: rem(75px);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+    .swiper-scroll {
+      background: #fff;
+    }
+
+    .search-content {
+    	position: relative;
+    	padding: rem(10px) rem(15px) rem(52px) rem(15px);
+    	width: 100%;
+    	height: 100%;
+    	background: #fff;
+    	overflow-y: auto;
+
+    	.search-list {
+    		position: relative;
+    		padding-top: rem(20px);
+
+    		> h3 {
+			    font-size: rem(15px);
+			    color: #999;
+    		}
+
+    		.search-main {
+    			padding-top: rem(20px);
+
+    			&:after {
+    				display: block;
+    				content: ' ';
+    				clear: both;
+    			}
+
+    			.item {
+    				display: block;
+    				float: left;
+    				padding: 0 rem(7.5px);
+    				width: rem(115px);
+
+    				> span {
+    					display: block;
+    					margin-bottom: rem(15px);
+    					padding: rem(6px);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+    					text-align: center;
+							border: 1px solid #efefef;
+						  border-radius: rem(4px);
+    				}
+    			}
+    		}
+
+        .noHistory {
+          font-size: $fontM;
+          line-height: rem(200px);
+          text-align: center;
+          color: #888;
+        }
+    	}
+
+    }
+  }
+}

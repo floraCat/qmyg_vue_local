@@ -1,0 +1,41 @@
+@import "~assets/styles/_bootstrap";
+
+.home-act{
+	width: 100%;
+
+	.act-bg {
+
+		> a {
+			display: block;
+			padding-top: rem(5px);
+			width: 100%;
+			//height: rem(128px);
+
+			> img {
+				width: 100%;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+
+	.act-list {
+		padding-top: rem(2px);
+
+		&:after {
+			display: block;
+			content: ' ';
+			clear: both;
+		}
+
+		> a {
+			float: left;
+			width: 50%;
+			border: rem(1px) solid #fff;
+
+			> img {
+				width: 100%;
+			}
+		}
+	}
+}

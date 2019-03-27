@@ -1,0 +1,100 @@
+{
+  "state": "success",
+  "desc": "获取商品详情成功",
+  "data": {
+    "goods_id": 36918,
+    "goods_sn": "F109E581F1F8F16A",
+    "goods_name": "双鹿 5号电池五号碱性电池5号AA电池40粒装 儿童玩具剃须刀收音机遥控挂钟鼠标键盘电池",
+    "is_on_sale": 1,
+    "sales_volume": 324,
+    "comment": 12,
+    "market_price": "0.00",
+    "shop_price": "59.90",
+    "goods_thumb": "http://img13.360buyimg.com/n1/jfs/t3331/250/1327320259/181751/c6cb5da0/5822c5ebNe9fa1ef7.jpg",
+    "goods_img": "http://img13.360buyimg.com/imgzone/jfs/t3331/250/1327320259/181751/c6cb5da0/5822c5ebNe9fa1ef7.jpg",
+    "gallery": [
+      "http://img13.360buyimg.com/n1/jfs/t3331/250/1327320259/181751/c6cb5da0/5822c5ebNe9fa1ef7.jpg",
+      "http://img13.360buyimg.com/n1/jfs/t2890/309/1630502938/152577/4667a80d/57442d56Nb4ae290f.jpg",
+      "http://img13.360buyimg.com/n1/jfs/t2824/130/1619437218/157565/6924af14/57442d57Nd818d581.jpg",
+      "http://img13.360buyimg.com/n1/jfs/t2653/293/1612912854/177087/38023fd4/57442d56N62c1bec3.jpg",
+      "http://img13.360buyimg.com/n1/jfs/t2659/179/1603559410/103704/92d61863/57442d55Nbb4b79c7.jpg"
+    ],
+    "attrs": [
+      {
+        "attr_id": 66,
+        "attr_name": "颜色",
+        "data": [
+          {
+            "goods_attr_id": 24362,
+            "attr_id": 66,
+            "attr_value": "5号",
+            "attr_img_file": ""
+          }
+        ]
+      },
+      {
+        "attr_id": 103,
+        "attr_name": "版本",
+        "data": [
+          {
+            "goods_attr_id": 24363,
+            "attr_id": 103,
+            "attr_value": "40粒装",
+            "attr_img_file": ""
+          }
+        ]
+      }
+    ],
+    "is_collected": true,
+    "comment_list": [
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "很喜欢，同事都说好看，还会再来买的，店家好热情",
+        "add_time": "2017-04-12 04:58:31"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "物流超快，服务好，很喜欢，大赞",
+        "add_time": "2017-04-07 04:57:33"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "东西超好，费心了，很不错的商家，服务超好的",
+        "add_time": "2017-04-29 22:56:05"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "价钱不贵，东西却物超所值，很精致上档次",
+        "add_time": "2017-04-19 03:27:40"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "看上去高端大气上档次，宝贝很漂亮！物流也很快",
+        "add_time": "2017-05-29 00:15:51"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "宝贝收到了很好，店家服务态度也很好，物流也好给力，32个赞?走起。",
+        "add_time": "2017-05-22 21:40:42"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "东西收到了，打开包装一看。非常的喜欢，很不错。以后还会来光顾，会介绍给朋友！赞，而且包装和宝贝真的都好好看啊，敲开心哦",
+        "add_time": "2017-04-21 02:45:38"
+      },
+      {
+        "comment_rank": 4,
+        "user_name": "匿名",
+        "content": "很漂亮，很喜欢！快递隔天就到达了，很快！希望以后再次光顾你们店！",
+        "add_time": "2017-04-03 21:05:38"
+      }
+    ]
+  }
+}

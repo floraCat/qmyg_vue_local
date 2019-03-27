@@ -1,0 +1,16 @@
+{
+	"state":"success",
+	"data": {
+		"brands":[
+			{
+				"name":"aaa"
+			},
+			{
+				"name":"bbb"
+			},
+			{
+				"name":"ccc"
+			}
+		]
+	}
+}

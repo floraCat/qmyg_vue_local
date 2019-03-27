@@ -1,0 +1,114 @@
+@import "~assets/styles/_bootstrap";
+
+.common-address-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  opacity: 0;
+  transition: all .5s;
+
+  &.on {
+    left: 0;
+    opacity: 1;
+  }
+
+  .header {
+    padding: 0 rem(10px);
+    height: rem(45px);
+    line-height: rem(45px);
+    background: linear-gradient(#fefefe, #f1f1f1);
+    border-bottom: 1px solid #bfbfbf;
+
+    .icon {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: rem(36px);
+      height: 100%;
+
+      &:before {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: rem(20px);
+        height: rem(20px);
+        content: ' ';
+        background: url('~assets/images/svg/icon-back.svg') no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .title {
+      margin: 0 auto;
+      width: rem(100px);
+      text-align: center;
+      font-size: rem(16px);
+    }
+
+    > button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: rem(10px);
+      margin: auto 0;
+      padding: 0 rem(5px);
+      height: rem(25px);
+    }
+
+  }
+
+  .address-container {
+    height: 100%;
+
+    .address-nav {
+      border-bottom: 1px solid $lineCol;
+
+      &:after {
+        display: block;
+        content: ' ';
+        clear: both;
+      }
+
+      .nav-item {
+        float: left;
+        width: 25%;
+        height: rem(45px);
+        line-height: rem(45px);
+        text-align: center;
+
+        &.active {
+          color: #f23030;
+
+          &:after {
+            display: block;
+            margin: -1px auto 0 auto;
+            width: 60%;
+            content: ' ';
+            border-bottom: rem(2px) solid #f23030;
+          }
+        }
+      }
+    }
+
+    .address-content {
+      padding-bottom: rem(90px);
+      height: 100%;
+
+      .item {
+        padding: 0 rem(10px);
+        height: rem(45px);
+        line-height: rem(45px);
+        border-bottom: 1px solid $lineCol;
+      }
+    }
+  }
+}

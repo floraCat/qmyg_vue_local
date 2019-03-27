@@ -1,0 +1,234 @@
+@import "~assets/styles/_bootstrap";
+
+body {
+	height: 100%;
+}
+
+.share-page {
+	padding-top: rem(100px);
+
+	&:before {
+		position: absolute;
+		display: block;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 100%;
+		height: rem(100px);
+		content: ' ';
+		background: url('~assets/images/pay_banner_02.jpg') no-repeat;
+		background-size: 100%;
+	}
+
+	.money {
+    height: rem(77px);
+    line-height: rem(77px);
+    text-align: center;
+    color: #fff;
+    font-size: rem(30px);
+    background: #ea5151;
+    border-bottom: 1px solid #ec6262;
+
+    > span {
+    	font-size: rem(20px);
+    }
+	}
+
+	.share-main {
+		padding: rem(30) rem(15px) rem(15px);
+
+		.head {
+    	padding-bottom: rem(10px);
+    	font-size: rem(16px);
+    	border-bottom: 1px solid #e8e8e8;
+
+			&:before {
+				display: inline-block;
+				content: ' ';
+				margin-right: rem(5px);
+				width: rem(5px);
+				height: rem(25px);
+				background: #EA5151;
+				vertical-align: middle;
+			}
+		}
+
+		.list {
+			display: block;
+
+			.item {
+				width: 100%;
+				height: rem(50px);
+				line-height: rem(50px);
+				border-bottom: 1px solid #e8e8e8;
+
+				&:before {
+					display: inline-block;
+					margin-right: rem(10px);
+					width: rem(35px);
+					height: rem(35px);
+					content: ' ';
+					vertical-align: middle;
+				}
+
+				&:after {
+					position: absolute;
+					display: inline-block;
+			    top: 0;
+			    bottom: 0;
+			    right: 0;
+			    margin: auto;
+					content: ' ';
+					width: rem(22px);
+					height: rem(22px);
+					background: url('~assets/images/mg_notick.png') no-repeat;
+					background-size: 100%;
+					vertical-align: middle;
+				}
+
+				&.active {
+					&:after {
+						background: url('~assets/images/mg_tick.png') no-repeat;
+						background-size: 100%;
+					}
+				}
+			}
+
+			.item-alipay {
+				&:before {
+					background: url('~assets/images/alipay.png') no-repeat;
+					background-size: 100%;
+				}
+			}
+
+			.item-money {
+				&:before {
+					background: url('~assets/images/money_type.png') no-repeat;
+					background-size: 100%;
+				}
+			}
+
+			.item-unionpay {
+				&:before {
+					background: url('~assets/images/unionpay.png') no-repeat;
+					background-size: 100%;
+				}
+			}
+		}
+
+		.input-group {
+			padding-top: rem(30px);
+
+			&:before {
+		    position: absolute;
+				display: block;
+		    top: rem(-8px);
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    transform: rotate(-45deg);
+				content: ' ';
+				width: rem(15px);
+				height: rem(15px);
+				background: #efeff4;
+		    border-left: 1px solid #e5e5e5;
+		    border-bottom: 1px solid #e5e5e5;
+			}
+
+			> input {
+		    padding: 0 10px;
+				width: rem(200px);
+				height: rem(35px);
+		    background: #f6f6f9;
+				border: 1px solid #ccc;
+		    border-radius: rem(5px);
+			}
+
+			> i.icon {
+				vertical-align: middle;
+
+				&:before {
+					font-size: rem(18px);
+					color: #999;
+				}
+			}
+		}
+
+		.footer {
+			margin: rem(30px) auto 0 auto;
+			width: rem(330px);
+			height: rem(40px);
+
+			&:before, &:after {
+				position: absolute;
+				display: block;
+				content: ' ';
+				width: 100%;
+				height: rem(20px);
+			}
+
+			&:before {
+				top: 0;
+				background: #fc7c7c;
+				border-radius: rem(5px) rem(5px) 0 0;
+			}
+
+			&:after {
+				bottom: 0;
+				background: #EA5151;
+				border-radius: 0 0 rem(5px) rem(5px);
+			}
+
+			> button {
+		    position: absolute;
+				display: block;
+		    top: 0;
+		    left: 0;
+		    z-index: 2;
+				width: 100%;
+				height: 100%;
+				font-size: rem(16px);
+		    color: #fff;
+				border: none;
+				border-radius: rem(5px);
+				background: inherit;
+		    cursor: pointer;
+
+			}
+		}
+
+  	.checkbox {
+  		padding-top: rem(20px);
+
+  		> label {
+  			display: block;
+  			color: #999;
+  			text-align: center;
+
+  			&:before {
+  				display: inline-block;
+  				width: rem(20px);
+  				height: rem(20px);
+  				content: ' ';
+  				background: url('~assets/images/mg_notick.png') no-repeat;
+  				background-size: 100%;
+					vertical-align: middle;
+  			}
+
+  			> a {
+  				color: #ca4c4c;
+  			}
+
+  			&.checked {
+	  			&:before {
+	  				background: url('~assets/images/mg_tick.png') no-repeat;
+	  				background-size: 100%;
+	  			}
+  			}
+  		}
+		}
+	}
+}

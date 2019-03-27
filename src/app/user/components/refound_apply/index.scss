@@ -1,0 +1,361 @@
+@import "~assets/styles/_bootstrap";
+
+.applyRefound {
+
+	section {
+		margin-bottom: rem(12px);
+		padding: rem(12px);
+		background: #fff;
+		overflow: hidden;
+
+		h3 {
+			margin-bottom: rem(10px);
+			font-size: $fontM;
+			font-weight: bold;
+			line-height: rem(21px);
+			color: $grayDark;
+
+			i {
+				color: $mainCol;
+				padding-left: rem(3px);
+			}
+		}
+	}
+
+	.good {
+
+		.img {
+			float: left;
+			width: rem(115px);
+			height: rem(115px);
+
+			img {
+				width: rem(115px);
+				height: rem(115px);
+			}
+		}
+
+		ol {
+			margin: rem(5px) rem(5px) 0 rem(130px);
+
+			.ttl {
+				height: rem(42px);
+				line-height: rem(21px);
+				display: -webkit-box!important;
+				overflow: hidden;
+				word-break:break-all;
+				-webkit-box-orient:vertical;
+				-webkit-line-clamp:2;
+				text-overflow:ellipsis;
+				-o-text-overflow:ellipsis;
+			}
+
+			.price {
+				overflow: hidden;
+				line-height: rem(28px);
+
+				em {
+					float: left;
+					color: $mainCol;
+				}
+
+				i {
+					float: right;
+					color: $grayDark;
+				}
+			}
+
+			.attrTxt {
+				font-size: $fontS;
+				color: $grayLight;
+			}
+		}
+	}
+
+	.apply {
+
+		ol {
+			overflow: hidden;
+
+			li {
+				margin-right: rem(5px);
+				float: left;
+				width: rem(70px);
+				height: rem(36px);
+				line-height: rem(34px);
+				text-align: center;
+				border: $lineCol 1px solid;
+				border-radius: rem(5px);
+
+				&.active {
+					color: $mainCol;
+					border-color: $mainCol;
+				}
+			}
+		}
+	}
+
+	.attrs {
+
+		.attr {
+
+			> label {
+				margin-bottom: rem(6px);
+				font-weight: bold;
+				line-height: rem(26px);
+			}
+
+			> ul {
+				overflow: hidden;
+
+				> li {
+					position: relative;
+					float: left;
+					margin: 0 rem(10px) rem(10px) 0;
+					padding: 0 rem(12px);
+					height: rem(38px);
+					line-height: rem(36px);
+					border: $lineCol 1px solid;
+					border-radius: rem(5px);
+
+					&.active {
+						color: $mainCol;
+						border-color: $mainCol;
+					}
+
+					&.on {
+						color: $mainCol;
+						border-color: $mainCol;
+					}
+				}
+			}
+		}
+	}
+
+	.reason {
+		overflow: visible;
+	}
+
+	.explain {
+
+		textarea {
+			width: 100%;
+			height: rem(60px);
+			font-family: '微软雅黑';
+			font-size: $fontM;
+			line-height: rem(20px);
+			border: none;
+			outline: none;
+		}
+	}
+
+	.hasReport {
+		overflow: hidden;
+
+		label {
+			float: left;
+			font-size: $fontM;
+		}
+
+		span {
+			float: right;
+			display: block;
+			width: rem(24px);
+			height: rem(24px);
+			text-align: center;
+			background: #fbfbfb;
+			border:#eee 2px solid;
+			border-radius: rem(12px);
+
+			&.active {
+				background: $mainCol;
+				border: $mainCol 2px solid;
+
+				i {
+					display: block;
+				}
+			}
+
+			i {
+				display: none;
+				font-size: rem(20px);
+				line-height: rem(20px);
+				
+				&:before {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.upload {
+
+		.ctrl {
+			width: rem(92px);
+			height: rem(92px);
+			text-align: center;
+			border: #ddd 2px dashed;
+
+			.bg {
+
+				i {
+					margin-top: rem(12px);
+					display: block;
+					font-size: rem(55px);
+					line-height: rem(30px);
+					color: $grayDark;
+				}
+
+				p {
+					color: $grayLight;
+					line-height: rem(35px);
+				}
+			}
+
+			.file {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}			
+	}
+
+	.info {
+
+		.form {
+
+			li {
+				padding: rem(10px) 0;
+				border-bottom: #e5e5e5 1px solid;
+
+				input {
+					display: block;
+					height: rem(36px);
+					font-size: $fontM;
+					line-height: rem(36px);
+					border: none;
+				}
+
+				&.addr {
+	
+					overflow: hidden;
+					padding: rem(10px) 0;
+					height: rem(56px);
+					font-size: $fontM;
+					line-height: rem(36px);
+
+					label {
+						float: left;
+						width: rem(75px);
+					}
+
+					p {
+						margin-left: rem(85px);
+					}
+
+					i {
+						position: absolute;
+						top: 0;
+						right: 0;
+						line-height: rem(50px);
+
+					}
+				}
+
+				&.txt {
+					overflow: hidden;
+
+					label {
+						float: left;
+						width: rem(75px);
+						font-size: $fontM;
+						line-height: rem(22px);
+					}
+
+					textarea {
+						float: left;
+						display: block;
+						width: rem(270px);
+						height: rem(66px);
+						font-family: '微软雅黑';
+						font-size: $fontM;
+						line-height: rem(22px);
+						border: none;
+						outline: none;
+					}
+
+					&.msg {
+
+						label {
+							width: rem(45px);
+						}
+
+						textarea {
+							width: rem(300px);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.service {
+		background: $bgCol;
+		padding-bottom: rem(65px);
+
+		h3 {
+			font-weight: normal;
+			padding-bottom: rem(8px);
+			border-bottom: #e5e5e5 1px solid;
+		}
+
+		.content {
+			font-size: $fontS;
+			line-height: rem(19px);
+			color: $grayLight;
+
+			> p {
+				margin-bottom: rem(5px);
+			}
+		}
+	}
+
+	.submit {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: rem(10px);
+		border-top: $lineCol 1px solid;
+		background: #fefefe;
+
+		a {
+			display: block;
+			height: rem(44px);
+			font-size: $fontL;
+			line-height: rem(44px);
+			text-align: center;
+			color: #fff;
+			background: $mainCol;
+			border-radius: rem(5px);
+		}
+	}
+}
+
+
+.icon-selected {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+	font-size: rem(14px);
+
+	&:before {
+		color: $mainCol;
+	}
+}
+.active .icon-selected{
+	display: block;
+}

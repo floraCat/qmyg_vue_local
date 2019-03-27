@@ -1,0 +1,243 @@
+@import "~assets/styles/_bootstrap";
+
+.eGoodSel {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding-bottom: rem(74px);
+	z-index: 9990;
+	width: 100%;
+	font-size: $fontM;
+	color: $blk;
+	background: #fff;
+
+	> .main {
+		overflow: hidden;
+		padding: rem(12px);
+		border-bottom: $lineCol 1px solid;
+
+		> .img {
+			float: left;
+			margin-right: rem(15px);
+			width: rem(117px);
+			height: rem(117px);
+			border: $lineCol 1px solid;
+
+			> img {
+				width: rem(115px);
+				height: rem(115px);
+			}
+		}
+
+		> .rt {
+			float: left;
+			width: rem(190px);
+
+			> .ttl {
+				margin-bottom: rem(10px);
+				line-height: rem(22px);
+			}
+
+			> .price {
+				margin-bottom: rem(10px);
+				font-size: rem(20px);
+
+				> em {
+					margin-right: rem(5px);
+					color: $mainCol;
+				}
+
+				> s {
+					margin-right: rem(5px);
+					line-height: rem(26px);
+					text-decoration: none;
+				}
+			}
+
+			> .priceSum {
+				margin-bottom: rem(10px);
+
+				> label {
+					float: left;
+					margin-right: rem(5px);
+				}
+
+				> em {
+					color: $mainCol;
+				}
+			}
+
+			> .dou {
+				overflow: hidden;
+
+				> i {
+					float: left;
+					padding: 0 rem(2px);
+					margin-right: rem(5px);
+					height: rem(18px);
+					font-size: $fontS;
+					line-height: rem(16px);
+					color: $mainCol;
+					border: $mainCol 1px solid;
+					border-radius: rem(4px);
+				}
+
+				> span {
+					float: left;
+					font-size: $fontS;
+					font-weight: bold;
+
+					> em {
+						padding: 0 rem(3px);
+						color: $mainCol;
+					}
+				}
+			}
+		}
+	}
+
+	> .wrap {
+		overflow: hidden;
+		padding: rem(12px);
+		height: rem(218px);
+
+		.swiper-slide {
+			height: auto;
+		}
+
+		.size {
+
+			> label {
+				margin-bottom: rem(6px);
+				font-weight: bold;
+				line-height: rem(26px);
+			}
+
+			> ul {
+				overflow: hidden;
+
+				> li {
+					position: relative;
+					float: left;
+					margin: 0 rem(10px) rem(10px) 0;
+					padding: 0 rem(12px);
+					height: rem(38px);
+					line-height: rem(36px);
+					border: $lineCol 1px solid;
+					border-radius: rem(5px);
+
+					> i {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						display: none;
+						font-size: $fontM;
+
+						&:before {
+							color: $mainCol;
+						}
+					}
+
+					&.on {
+						color: $mainCol;
+						border-color: $mainCol;
+
+						> i {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		.numSel {
+
+			> label {
+				margin-bottom: rem(6px);
+				font-weight: bold;
+				line-height: rem(26px);
+			}
+		}
+	}
+
+	> .btns {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		display: flex;
+		padding: rem(10px) rem(6px);
+		background: $bgCol;
+
+		&.hide {
+			display: none;
+		}
+
+		> li {
+			flex : 1;
+			padding: rem(4px);
+
+			> a {
+				display: block;
+				height: rem(46px);
+				font-size: rem(18px);
+				line-height: rem(44px);
+				color: #fff;
+				text-align: center;
+				border-radius: rem(5px);
+
+				&.yellow {
+					background: #f4a213;
+					border: 1px solid #e19511;
+				}
+
+				&.red {
+					background: $mainCol;
+					border: 1px solid #df4141;
+				}
+
+				&.gray {
+					background: #bbb;
+					border: 1px solid #bbb;
+				}
+			}
+		}
+	}
+
+	> .quit {
+		position: absolute;
+		top: rem(15px);
+		right: rem(15px);
+		font-size: rem(21px);
+	}
+}
+
+.pNum {
+	overflow: hidden;
+	width: rem(220px);
+	height: rem(52px);
+	border: $lineCol 2px solid;
+	border-radius: rem(4px);
+
+	> * {
+		float: left;
+		width: rem(72px);
+		line-height: rem(48px);
+		text-align: center;
+	}
+
+	> i {
+		font-size: rem(22px);
+
+		&:before {
+			color: $blk;
+		}
+	}
+
+	> .num {
+		width: rem(68px);
+		font-weight: bold;
+		border-left: $lineCol 2px solid;
+		border-right: $lineCol 2px solid;
+	}
+}

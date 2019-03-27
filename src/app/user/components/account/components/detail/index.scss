@@ -1,0 +1,69 @@
+@import "~assets/styles/_bootstrap";
+
+#user_withdtawals_detail {
+  width: 100%;
+  height: 100%;
+  font-size: rem(17px);
+  background-color: #F6F6F9;
+
+  .red_span {
+    color: $mainCol !important;
+  }
+
+  span.normal_span {
+    font-size: rem(14px);
+  }
+
+  span.gray_span {
+    color: #999;
+  }
+
+  .detail_con {
+    width: 100%;
+
+    > div {
+      display: flex;
+      width: 100%;
+      min-height: 10px;
+      padding: rem(12px) rem(15px);
+      background-color: #fff;
+
+      > p {
+        flex: 1;
+        max-width: rem(230px);
+
+        &:last-child {
+          flex: 0 0 rem(100px);
+          max-width: rem(100px);
+          text-align: center;
+        }
+
+        > span {
+          display: block;
+          line-height: rem(25px);
+        }
+      }
+    }
+
+    > ul {
+      width: 100%;
+      min-height: 20px;
+      padding: 0 rem(15px);
+      margin-top: rem(13px);
+      background-color: #fff;
+
+      > li {
+        min-height: rem(53px);
+        padding: rem(12px) 0;
+
+        > p > span {
+          margin-left: rem(10px);
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #e0e0e0;
+        }
+      }
+    }
+  }
+}

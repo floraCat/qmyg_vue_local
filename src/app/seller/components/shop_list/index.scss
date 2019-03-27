@@ -1,0 +1,64 @@
+@import "~assets/styles/_bootstrap";
+
+.eShopList {
+
+	.banner {
+		width: 100%;
+	}
+
+	.list {
+
+		li {
+			margin-top: rem(10px);
+			padding: rem(12px);
+			background: #fff;
+
+			section {
+				overflow: hidden;
+				margin-bottom: rem(15px);
+
+				.img {
+					padding: rem(2px);
+					float: left;
+					width: rem(84px);
+					height: rem(84px);
+					border: $lineCol 1px solid;
+
+					img {
+						width: rem(78px);
+						height: rem(78px);
+					}
+				}
+
+				.ttl {
+					margin: rem(10px) 0 0 rem(100px);
+					display: block;
+					font-size: $fontM;
+				}
+			}
+
+			footer {
+				display: flex;
+				width: 90%;
+
+				> p {
+					flex : 1;
+					text-align: center;
+					color: $grayDark;
+
+					span {
+						margin-left: rem(3px);
+						display: inline-block;
+						width: rem(21px);
+						height: rem(21px);
+						line-height: rem(21px);
+						font-size: rem(12px);
+						color: #fff;
+						background: $mainCol;
+						border-radius: rem(15px);
+					}
+				}
+			}
+		}
+	}
+}

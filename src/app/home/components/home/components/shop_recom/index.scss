@@ -1,0 +1,47 @@
+@import "~assets/styles/_bootstrap";
+
+.pShopRecom {
+
+	.hd {
+		margin-bottom: rem(10px);
+		width: 100%;
+		height: rem(70px);
+		color: #fff;
+		text-align: center;
+		line-height: rem(88px);
+		background: url(~assets/images/choice_bg.png) no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.list {
+		overflow: hidden;
+		font-size: rem(12px);
+
+		a {
+			float: left;
+			overflow: hidden;
+			padding: rem(10px);
+			width: rem(125px);
+			background: #fff;
+
+			> img {
+				width: rem(105px);
+				height: rem(105px);
+			}
+
+			> p {
+				overflow: hidden;
+				height: rem(24px);
+				line-height: rem(24px);
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+
+			> span {
+				display: block;
+				text-align: center;
+				color:$mainCol;
+			}
+		}
+	}
+}

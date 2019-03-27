@@ -1,0 +1,115 @@
+@import "~assets/styles/_bootstrap";
+
+#user_check_count {
+  width: 100%;
+  height: 100%;
+  font-size: rem(17px);
+  background-color: #F6F6F9;
+
+  >.check_count_con {
+    padding: 0 rem(15px);
+    background-color: #fff;
+
+    > li {
+      font-size: rem(16px);
+      padding: rem(12px) rem(19px) rem(12px) 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      > p {
+        height: rem(27px);
+        line-height: rem(27px);
+
+        &:last-child {
+          height: rem(20px);
+          font-size: rem(13px);
+          color: #999;
+          line-height: rem(20px);
+
+          > i {
+            position: absolute;
+            right: 0;
+            bottom: 2%;
+            display: inline-block;
+            width: rem(25px);
+            height: rem(25px);
+            margin: rem(5px);
+            content: '';
+            background: url(~assets/images/icon/icon_delete.png) no-repeat center;
+            background-size: 80% auto;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  > button {
+    display: block;
+    width: rem(270px);
+    height: rem(40px);
+    font-size: rem(16px);
+    color: #fff;
+    line-height: rem(40px);
+    margin: rem(20px) auto;
+    border: none;
+    border-radius: 5px;
+    background-color: $mainCol;
+    cursor: pointer;
+  }
+
+  >.marsk {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+  }
+
+  >.notice_box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: rem(250px);
+    height: rem(150px);
+    font-size: rem(17px);
+    background-color: #fff;
+    margin-left: rem(-125px);
+    margin-top: rem(-75px);
+    border-radius: 5px;
+
+    > p {
+      text-align: center;
+
+      &:first-child {
+        line-height: rem(100px);
+      }
+
+      &:last-child {
+        display: flex;
+        border-top: 1px solid #e0e0e0;
+
+        > button {
+          flex: 1;
+          font-size: rem(16px);
+          line-height: rem(49px);
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+
+          &:first-child {
+            border-radius: 0 0 0 5px;
+            border-right: 1px solid #e0e0e0;
+          }
+
+          &:last-child {
+            color: #ec5151;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"state":"success",
+	"data": [
+		{
+			"keyword":"aaa"
+		},
+		{
+			"keyword":"bbb"
+		},
+		{
+			"keyword":"ccc"
+		}
+	]
+}

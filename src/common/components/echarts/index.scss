@@ -1,0 +1,102 @@
+@import "~assets/styles/_bootstrap";
+
+.pEcharts {
+	#main {
+		height: rem(170px);
+		border-top: 1px solid #dedcdc;
+		background: #eff2f3!important;
+
+		canvas {
+			height: rem(150px)!important;
+		}
+	}
+
+	> .switchs {
+		margin: rem(10px) auto;
+		display: flex;
+		width: rem(221px);
+		border: $mainCol 1px solid;
+
+		> li {
+			flex: 1;
+			width: rem(74px);
+			height: rem(34px);
+			line-height: rem(34px);
+			text-align: center;
+
+			&.on {
+				background: $mainCol;
+				color: #fff;
+			}
+		}
+	}
+
+	> .showDate {
+		font-size: rem(12px);
+
+		> .minDate {
+			position: absolute;
+			top: rem(-35px);
+			left: rem(15px);
+		}
+
+		> .maxDate {
+			position: absolute;
+			top: rem(-35px);
+			right: rem(15px);
+		}
+	}
+		
+	> .tabs {
+		padding: rem(10px) 0;
+		margin-bottom: rem(12px);
+		display: flex;
+		text-align: center;
+		background: #fff;
+		box-shadow: 0 1px 1px #a9a9a9 inset;
+
+		> li {
+			flex:1;
+			padding: rem(5px) 0;
+
+			> p {
+				padding-left: rem(15px);
+				margin: 0 auto;
+				width: rem(72px);
+
+				&:before {
+					position: absolute;
+					top: rem(7px);
+					left: rem(0);
+					display: block;
+					width: rem(8px);
+					height: rem(8px);
+					border-radius: rem(4px);
+					content:'';
+				}
+			}
+
+			&.li1{
+				border-right: $lineCol 1px solid;
+
+				> p:before {
+					background: #54b4f1;
+				}
+			}
+
+			&.li2{
+
+				> p:before {
+					background: #ec5151;
+				}
+			}
+
+			> i {
+				display: block;
+				font-size: $fontL;
+				line-height: rem(40px);
+			}
+		}	
+	}
+}
+	

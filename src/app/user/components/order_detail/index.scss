@@ -1,0 +1,236 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+.order-detail-page {
+	height: 100%;
+
+	.content {
+		padding-bottom: rem(60px);
+
+		.user-info {
+			padding-top: rem(10px);
+			background: #fff;
+
+			&:after {
+				display: block;
+				content: ' ';
+				width: 100%;
+				height: rem(10px);
+				background: url('~assets/images/flow_check_03.png') bottom left repeat-x;
+				background-size: rem(80px) auto;
+			}
+
+			> p {
+				padding: 0 rem(10px);
+				font-size: rem(16px);
+				line-height: rem(30px);
+
+				&.addr {
+					font-size: rem(13px);
+					color: #666;
+				}
+
+				> span {
+					padding-left: rem(10px);
+				}
+
+			}
+		}
+
+		.goods-info {
+			.item {
+				margin-top: rem(10px);
+				padding: rem(10px);
+				background: #fff;
+				border-top: 1px solid $lineCol;
+				border-bottom: 1px solid $lineCol;
+
+				.head {
+					padding: rem(5px) 0 rem(10px) 0;
+					width: 100%;
+					border-bottom: 1px solid $lineCol;
+
+					.icon {
+						display: inline-block;
+						width: rem(24px);
+						height: rem(24px);
+						background: url('~assets/images/sce_myshop.png') no-repeat;
+						background-size: 100%;
+						vertical-align: middle;
+					}
+
+					.shop {
+						vertical-align: middle;
+					}
+
+				}
+
+				.main {
+					padding: rem(10px) 0;
+
+					> p {
+						font-size: rem(13px);
+						line-height: rem(25px);
+					}
+
+					.info {
+						padding-top: rem(10px);
+
+						.pic {
+							display: inline-block;
+							width: rem(86px);
+							height: rem(86px);
+
+							> img {
+								width: 100%;
+								height: 100%;
+								border: 1px solid #e8e8e8;
+							}
+						}
+
+						.text {
+							position: absolute;
+							top: rem(10px);
+							right: 0;
+							width: rem(250px);
+
+							> a {
+								display: block;
+							}
+
+							.title {
+								font-size: rem(14px);
+								overflow: hidden;
+								text-overflow:ellipsis;
+								white-space: nowrap;
+							}
+
+							.price {
+								line-height: rem(25px);
+								font-size: rem(13px);
+
+								> span {
+									padding-right: rem(10px);
+									color: #EC5151;
+								}
+							}
+
+							.obtain {
+								.box {
+									padding: rem(2px) rem(5px);
+									display: inline-block;
+									color: red;
+							    font-size: rem(12px);
+									border: 1px solid red;
+									border-radius: rem(3px);
+								}
+								.num {
+									color: #ec5151;
+								}
+							}
+
+							.remark {
+								line-height: rem(25px);
+								color: #999;
+
+								> span {
+									padding-left: rem(5px);
+								}
+							}
+						}
+
+					}
+				}
+
+			}
+		}
+
+		.block {
+			margin: rem(10px) 0;
+			padding: 0 rem(15px);
+			background: #fff;
+
+			.item {
+				padding: rem(12px) 0;
+				border-bottom: 1px solid $lineCol;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				.tips {
+					position: absolute;
+					right: 0;
+
+					&.money {
+						color: #EC5151;
+					}
+				}
+
+				.button {
+					padding: rem(8px) rem(10px);
+					border: 1px solid $lineCol;
+					border-radius: rem(5px);
+					background: #fff;
+					cursor: pointer;
+
+					&.success {
+						background: #EC5151;
+						color: #fff;
+					}
+				}
+			}
+
+			.item-right {
+				text-align: right;
+			}
+
+		}
+
+		.footer {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: rem(10px);
+			height: rem(60px);
+			border-top: 1px solid $lineCol;
+			background: #fff;
+			z-index: 1000;
+
+			> p {
+				width: rem(250px);
+
+				> span {
+					padding-right: rem(10px);
+				}
+			}
+
+			.money {
+				color: #EC5151;
+			}
+
+			.link {
+		    position: absolute;
+		    right: rem(15px);
+		    top: 0;
+		    bottom: 0;
+		    display: block;
+		    margin: auto 0;
+		    width: rem(100px);
+		    height: rem(40px);
+		    line-height: rem(40px);
+		    color: #fff;
+		    text-align: center;
+		    border: none;
+		    border-radius: rem(5px);
+		    background: #02a3eb;
+			}
+		}
+	}
+
+}

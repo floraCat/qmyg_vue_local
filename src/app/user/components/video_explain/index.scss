@@ -1,0 +1,129 @@
+@import "~assets/styles/_bootstrap";
+
+.videoExplain {
+	background: #fff;
+
+	.ttl {
+		padding: rem(20px) 0 0;
+		color: $grayLight;
+		text-align: center;
+
+		> h2 {
+			padding: 0 rem(3px);
+			display: inline;
+			font-size: rem(26px);
+			border-bottom: #bbb rem(2px) solid;
+		}
+
+		> p {
+			margin-top: rem(2px);
+			font-size: rem(12px);
+			line-height: rem(26px);
+			letter-spacing: rem(1px);
+			border-top: #ccc 1px solid;
+		}
+	}
+
+	.list {
+
+		> a {
+			padding: rem(20px) rem(10px);
+			display: block;
+			border-bottom: #666 1px dotted;
+			overflow: hidden;
+
+			> .img {
+				float: left;
+				width: rem(114px);
+				height: rem(75px);
+
+				> img {
+					width: rem(114px);
+					height: rem(75px);
+				}
+			}
+
+			> ol {
+				margin-left: rem(130px);
+				padding-right: rem(10px);
+
+				h4 {
+					padding-right: rem(30px);
+					font-weight: bold;
+					background: url(~assets/images/movie_icon_black.png) no-repeat right;
+					background-size: rem(20px) auto;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				.desc {
+					margin: rem(8px) 0;
+					font-size: rem(12px);
+					line-height: rem(20px);
+
+					> i {
+						margin:rem(2px) 0 0 rem(3px);
+						display: inline-block;
+						width: rem(46px);
+						height: rem(18px);
+						font-size: rem(11px);
+						line-height: rem(16px);
+						text-align: center;
+						background: #f0f0f0;
+						border: #ccc 1px solid;
+						border-radius: rem(3px);
+					}
+				}
+
+				.info {
+					display: flex;
+					font-size: rem(11px);
+					color: $grayLight;
+
+					span {
+						flex: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.foot {
+		padding: rem(15px) 0;
+		font-size: rem(12px);
+		line-height: rem(26px);
+		text-align: center;
+		color: $grayLight;
+	}
+}
+
+
+.hdVexplain {
+	z-index: 2;
+	height: rem(45px);
+	line-height: rem(45px);
+	color: #fff;
+	text-align: center;
+	background: #007cc2;
+
+	> h1 {
+		font-size: $fontL;
+	}
+
+	> .return {
+		z-index: 99;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: rem(45px);
+		font-size: rem(18px);
+		line-height: rem(45px);
+		text-align: center;
+
+		&:before {
+			color: #fff!important;
+		}
+	}
+}

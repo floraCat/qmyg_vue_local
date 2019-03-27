@@ -1,0 +1,21 @@
+﻿{
+	"state":"success",
+	"data":{
+		"data": [
+			{
+				"goods_id":1,
+				"goods_thumb":"http://localhost:8033/images/a1.jpg",
+				"goods_name":"aaaaabbbbbbcccccccaaaaaa",
+				"shop_price":"10",
+				"market_price":"20"
+			},
+			{
+				"goods_id":1,
+				"goods_thumb":"http://localhost:8033/images/a1.jpg",
+				"goods_name":"aaaaabbbbbbcccccccaaaaaa",
+				"shop_price":"10",
+				"market_price":"20"
+			}
+		]
+	}
+}

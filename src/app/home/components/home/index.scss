@@ -1,0 +1,70 @@
+@import "~assets/styles/_bootstrap";
+
+.eHome {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	// height: 100%;
+  padding-bottom: rem(52px);
+  height: 100%;
+  font-size: rem(14px);
+
+  .gHide {
+  	display: none!important;
+  }
+}
+
+/*店铺头部过渡效果*/
+.transShopHead-enter-active, .transShopHead-leave-active {
+	transition: opacity .4s;
+	opacity: 1;
+}
+.transShopHead-enter, .transShopHead-leave-active {
+	transition: opacity 0s;
+	opacity: 0;
+}
+
+.mShopHead {
+	z-index: 99;
+	display: block;
+
+	&.hide {
+		display: none;
+	}
+
+	&.fixed {
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	&.flow {
+
+		.top {
+			padding: rem(5px) rem(10px);
+			height: rem(42px);
+		}
+
+		.img {
+			top: rem(-12px)!important;
+		}
+	}
+}
+
+/*确定各模块高度防止加载顺序不一而错位闪动*/
+.indexBanner {
+	width: 100%;
+	height: rem(160px);
+	overflow: hidden;
+}
+.indexMenu {
+		width: 100%;
+		height: rem(190px);
+}
+.indexAct {
+	height: rem(446px);
+}
+

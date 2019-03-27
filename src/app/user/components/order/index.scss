@@ -1,0 +1,465 @@
+@import "~assets/styles/_bootstrap";
+
+html, body {
+	height: 100%;
+	background: #F6F6F9;
+}
+
+.order-page {
+	height: 100%;
+
+	.order-nav {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: rem(60px);
+		width: 100%;
+
+		.nav-search {
+			padding: rem(10px);
+			background: #e7e7eb;
+
+			.sea {
+				padding: rem(3px) rem(10px);
+				background: #fff;
+				border: 1px solid $lineCol;
+				border-radius: rem(50px);
+			}
+
+			.icon {
+				font-size: rem(30px);
+				color: #e8e8e8;
+			}
+
+			.keyword {
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    padding-left: rem(5px);
+		    color: #666;
+		    width: rem(245px);
+		    border: none;
+		    border-radius: rem(50px);
+			}
+
+			.button {
+		    position: absolute;
+		    top: 0;
+		    right: rem(10px);
+		    bottom: 0;
+		    margin: auto;
+		    padding: rem(3px);
+				width: rem(50px);
+		    height: rem(25px);
+		    color: #fff;
+		    border: none;
+		    border-radius: rem(5px);
+		    background: $mainCol;
+		    cursor: pointer;
+			}
+
+		}
+
+		.nav-link {
+			padding: rem(15px) 0;
+			width: 100%;
+			background: #fff;
+			border-bottom: 1px solid $lineCol;
+
+			.item {
+				float: left;
+				width: rem(75px);
+				text-align: center;
+
+				&.active {
+					color: $mainCol;
+				}
+			}
+
+			&:after {
+				display: block;
+				content: ' ';
+				clear: both;
+			}
+
+		}
+	}
+
+	.content {
+		top: rem(116px);
+		// height: (557px);
+
+		.order-list {
+			height: 100%;
+
+			.item {
+				margin-top: rem(10px);
+				padding: rem(10px);
+				background: #fff;
+				border-top: 1px solid $lineCol;
+				border-bottom: 1px solid $lineCol;
+
+				.head {
+					padding: rem(5px) 0 rem(10px) 0;
+					width: 100%;
+					border-bottom: 1px solid $lineCol;
+
+					.icon {
+						display: inline-block;
+						width: rem(24px);
+						height: rem(24px);
+						background: url('~assets/images/sce_myshop.png') no-repeat;
+						background-size: 100%;
+						vertical-align: middle;
+					}
+
+					.shop {
+						vertical-align: middle;
+					}
+
+					> span {
+						position: absolute;
+						top: rem(8px);
+						right: 0;
+						width: rem(50px);
+
+						&.success {
+							color: green;
+						}
+
+						&.await {
+							color: #F68A00;
+						}
+
+						&.no-pay {
+							color: red;
+						}
+					}
+
+				}
+
+				.main {
+					padding: rem(10px) 0;
+
+					> p {
+						font-size: rem(13px);
+						line-height: rem(25px);
+					}
+
+					.info {
+						padding-top: rem(10px);
+
+						.pic {
+							display: inline-block;
+							width: rem(86px);
+							height: rem(86px);
+
+							> img {
+								width: 100%;
+								height: 100%;
+								border: 1px solid #e8e8e8;
+							}
+						}
+
+						.text {
+							position: absolute;
+							top: rem(10px);
+							right: 0;
+							width: rem(250px);
+
+							> a {
+								display: block;
+
+								.title {
+									font-size: rem(14px);
+									overflow: hidden;
+									text-overflow:ellipsis;
+									white-space: nowrap;
+								}
+
+								.price {
+									line-height: rem(25px);
+									font-size: rem(13px);
+
+									> span {
+										padding-right: rem(10px);
+										color: #EC5151;
+									}
+								}
+							}
+
+
+							.obtain {
+								.box {
+									padding: rem(2px) rem(5px);
+									display: inline-block;
+									color: red;
+							    font-size: rem(12px);
+									border: 1px solid red;
+									border-radius: rem(3px);
+								}
+								.num {
+									color: #ec5151;
+								}
+							}
+
+							.handle {
+								line-height: rem(25px);
+								color: #999;
+
+								> span {
+									padding-left: rem(10px);
+									color: #2ebce8;
+								}
+							}
+						}
+
+
+					}
+				}
+
+				.foot {
+					padding-top: rem(10px);
+					border-top: 1px solid $lineCol;
+
+					.money {
+						color: #EC5151;
+					}
+
+					.bot-group {
+						position: absolute;
+						top: rem(10px);
+						right: 0;
+
+						> a {
+							margin-right: rem(10px);
+							padding: rem(3px) rem(8px);
+							width: auto;
+							border: 1px solid $lineCol;
+							border-radius: rem(5px);
+							color: #666;
+
+							&:last-child {
+								margin-right: 0;
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	// 使用说明弹出框
+
+	.modal {
+		.handle-context {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+	    background-color: rgba(0, 0, 0, .5);
+	    pointer-events: auto;
+	    z-index: 2000;
+		}
+
+
+		&.dummy {
+
+			.body > .section > .text {
+				margin: 0;
+				background: none;
+			}
+
+			ol {
+				position: absolute;
+				top: rem(400px);
+				left: 50%;
+				margin-left: rem(-123px);
+				width: rem(246px);
+
+				> p {
+					margin-bottom: rem(15px);
+				}
+			}
+
+			.power {
+				position: absolute;
+				top: rem(522px);
+				left: 0;
+				width: 100%;
+				font-size: rem(12px);
+				text-align: center;
+				color: $grayLight;
+			}
+
+			.close {
+		    position: absolute;
+		    top: rem(164px);
+    		right: rem(17px);
+		    display: block;
+				width: rem(32px);
+				height: rem(32px);
+				background: #ec5151;
+				border-radius: 50%;
+				z-index: 999;
+
+				&:before {
+			    position: absolute;
+					display: block;
+			    left: rem(7px);
+			    right: 0;
+			    top: rem(15px);
+			    bottom: 0;
+			    margin: auto;
+			    width: 100%;
+			    height: 100%;
+					color: #fff;
+					font-size: rem(18px);
+				}
+			}
+
+		}
+
+		.body {
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: table;
+			width: 100%;
+			height: 100%;
+			z-index: 2100;
+
+			.section {
+		    display: table-cell;
+		    vertical-align: middle;
+		    text-align: center;
+
+		    .text {
+			    margin: 0 10%;
+			    background: #fff;
+			    text-align: left;
+
+			    > h2 {
+				    width: 100%;
+				    height: rem(50px);
+				    line-height: rem(50px);
+				    text-align: center;
+				    font-size: rem(16px);
+			    	color: #fff;
+				    background: #0e90c9;
+			    }
+
+			    .main {
+			    	padding: 0 rem(10px) rem(10px) rem(10px);
+
+			    	.title {
+			    		padding: rem(10px) 0;
+			    		font-weight: bold;
+			    		font-size: rem(13px);
+			    		border-bottom: 1px solid $lineCol;
+			    	}
+
+			    	> p {
+			    		padding-top: rem(5px);
+			    		padding-left: rem(20px);
+			    		line-height: rem(20px);
+			    		font-size: rem(12px);
+
+			    		> span {
+			    			font-weight: bold;
+			    		}
+			    	}
+			    }
+		    }
+			}
+		}
+	}
+}
+
+.winSelect {
+	position: fixed;
+	z-index: 999;
+	bottom: 0;	
+	left: 0;
+	width: 100%;
+	font-size: $fontM;
+	background: #fff;
+
+	> h5 {
+		height: rem(50px);
+		font-size: $fontM;
+		line-height: rem(50px);
+		text-indent: rem(10px);
+		border-bottom: $lineCol 1px solid;
+	}
+
+	> ol {
+		padding: rem(10px) 0;
+
+		li {
+			overflow: hidden;
+			height: rem(40px);
+			line-height: rem(40px);
+
+			p {
+				float: left;
+				text-indent: rem(10px);
+				color: $grayDark;
+			}
+
+			i {
+				float: right;
+				display: none;
+				width: rem(50px);
+				font-size: rem(22px);
+				line-height: rem(40px);
+				text-align: center;
+
+				&:before {
+					color: $mainCol;
+				}
+			}
+				
+			&.active {
+
+				i {
+					display: block;
+				}
+			}
+		}
+	}
+
+	> .quit {
+		position: absolute;
+		top: rem(12px);
+		right: rem(10px);
+		font-size: rem(26px);
+
+		&:before {
+			color: $grayLight;
+		}
+	}
+}
+
+.winSelect-enter-active, .winSelect-leave-active {
+	transition: bottom 0.4s;
+	bottom: 0!important;
+}
+.winSelect-enter, .winSelect-leave-active {
+	transition: bottom 0.4s;
+	bottom: -100%!important;
+}
+
+.winMask {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $blk;
+	opacity: $opa;
+}

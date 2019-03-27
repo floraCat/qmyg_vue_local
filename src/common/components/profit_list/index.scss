@@ -1,0 +1,168 @@
+@import "~assets/styles/_bootstrap";
+
+.profit-list {
+	height: 100%;
+
+	.income-box {
+		position: absolute;
+		top: 0;
+		// padding-top: rem(55px);
+		width: 100%;
+		height: 100%;
+
+		.head {
+			position: absolute;
+			padding: rem(15px) rem(20px);
+			width: 100%;
+			background: #f3f3f3;
+			border-bottom: 1px solid #d8d8d8;
+			z-index: 98;
+
+			.head-left {
+				width: auto;
+				display: inline-block;
+				font-size: rem(14px);
+				line-height: rem(20px);
+
+				.money {
+					color: #666;
+				}
+			}
+
+			.head-right {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: rem(20px);
+				margin: auto 0;
+				height: rem(30px);
+
+				.screen {
+					.type {
+				    display: inline-block;
+				    padding: rem(3px) rem(10px);
+				    color: #666;
+				    border: 1px solid #666;
+				    border-radius: rem(5px);
+				    vertical-align: middle;
+				    cursor: pointer;
+					}
+					.time {
+						display: inline-block;
+						margin-left: rem(5px);
+						width: rem(25px);
+						height: rem(25px);
+						background: url('~assets/images/icon_select.png') center center no-repeat;
+						background-size: 100%;
+						vertical-align: middle;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		.income-list {
+			position: absolute;
+			top: 0;
+			padding-top: rem(71px);
+			width: 100%;
+			height: 100%;
+
+			.item {
+				padding: rem(15px) rem(20px);
+				border-bottom: 1px solid $lineCol;
+				background: #fff;
+
+				.item-left {
+					display: inline-block;
+					width: auto;
+					font-size: rem(14px);
+					line-height: rem(20px);
+
+					.time {
+						font-size: rem(13px);
+						color: #999;
+					}
+				}
+
+				.item-right {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: rem(20px);
+					margin: auto 0;
+					height: rem(30px);
+
+					> span {
+						color: #ec5151;
+						font-size: rem(23px);
+					}
+				}
+
+			}
+		}
+	}
+
+	.mask {
+
+
+    &.in {
+			position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    bottom: 0;
+	    top: 0;
+	    z-index: 999;
+
+			.mask-bg {
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    bottom: 0;
+		    position: fixed;
+		    background: rgba(0, 0, 0, .6);
+			}
+
+			.mask-content {
+		    position: absolute;
+		    bottom: 0;
+		    padding: rem(20px) 0;
+		    background: #fff;
+		    text-align: center;
+		    z-index: 999;
+
+		    &.type {
+			    > span {
+			    	display: inline-block;
+			    	padding: rem(10px);
+			    	width: auto;
+			    	cursor: pointer;
+			    }
+		    }
+
+		    &.month {
+		    	width: 100%;
+
+		    	.head {
+		    		font-size: rem(14px);
+		    	}
+
+		    	.month-list {
+		    		padding: rem(10px) rem(10px) 0 rem(10px);
+
+		    		> span {
+					    display: inline-block;
+					    padding: rem(5px) rem(12px);
+					    width: auto;
+					    cursor: pointer;
+		    		}
+		    	}
+		    }
+
+			}
+    }
+
+
+	}
+
+}

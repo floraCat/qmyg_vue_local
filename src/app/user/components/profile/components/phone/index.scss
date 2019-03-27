@@ -1,0 +1,177 @@
+@import "~assets/styles/_bootstrap";
+
+.phone-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 100;
+
+	.header {
+		display: flex;
+		padding-right: rem(55px);
+		border-bottom: 1px solid #eae9e9;
+
+		> i {
+			flex: 0 0 rem(55px);
+			width: rem(55px);
+			line-height: rem(55px);
+
+			&:after{
+				content: "";
+		    display: block;
+		    width: 0.75rem;
+		    height: 0.75rem;
+		    border-bottom: 2px solid #848383;
+		    border-left: 2px solid #848383;
+		    position: absolute;
+		    top: 50%;
+		    margin-top: -0.5rem;
+		    left: 50%;
+		    margin-left: -0.5rem;
+		    -webkit-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		    -webkit-transform-origin: 50% 50%;
+		    transform-origin: 50% 50%;
+			}
+		}
+
+		.title {
+			flex: 1;
+			height: rem(55px);
+			line-height: rem(55px);
+			font-size: rem(18px);
+			text-align: center;
+		}
+	}
+
+	.content {
+		padding: rem(30px) rem(20px) 0;
+
+		.phone-box {
+
+			.phone-info {
+				display: flex;
+				padding: rem(10px) 0;
+				border-bottom: 1px solid #eae9e9;
+
+				.phone {
+					position: relative;
+					flex: 1;
+					height: rem(42px);
+					padding-right: rem(10px);
+
+					> input {
+						display: block;
+				    width: 100%;
+				    height: 100%;
+				    padding: rem(10px) rem(30px);
+				    border: 1px solid #ccc;
+				    border-radius: rem(4px);
+					}
+
+					> .icon-phone {
+				    display: block;
+				    position: absolute;
+				    height: 100%;
+				    width: rem(30px);
+				    top: 0;
+				    left: 0;
+				    line-height: rem(42px);
+				    text-align: center;
+				    font-size: rem(22px);
+				    color: #666;
+					}
+
+					.icon-close2 {
+						position: absolute;
+				    top: 0;
+				    right: rem(10px);
+				    height: 100%;
+				    line-height: rem(42px);
+				    width: rem(30px);
+				    text-align: center;
+				    font-size: rem(18px);
+				    color: #999;
+					}
+				}
+
+				.phone-code {
+					flex: 0 0 rem(120px);
+					width: rem(120px);
+					height: rem(42px);
+					line-height: rem(42px);
+					background-color: #df4141;
+			    color: #fff;
+			    font-size: rem(14px);
+			    border-radius: rem(4px);
+			    text-align: center;
+				}
+			}
+
+			.code-info {
+				padding: rem(10px) 0;
+				border-bottom: 1px solid #eae9e9;
+
+				.code{
+					position: relative;
+					height: rem(42px);
+
+					> input {
+						display: block;
+				    width: 100%;
+				    height: 100%;
+				    padding: rem(10px) rem(30px);
+				    border: 1px solid #ccc;
+				    border-radius: rem(4px);
+					}
+
+					> .icon-email {
+				    display: block;
+				    position: absolute;
+				    height: 100%;
+				    width: rem(30px);
+				    top: 0;
+				    left: 0;
+				    line-height: rem(42px);
+				    text-align: center;
+				    font-size: rem(14px);
+				    color: #666;
+					}
+
+					.icon-close2 {
+						position: absolute;
+				    top: 0;
+				    right: 0;
+				    height: 100%;
+				    line-height: rem(42px);
+				    width: rem(30px);
+				    text-align: center;
+				    font-size: rem(18px);
+				    color: #999;
+					}
+				}
+			}
+		}
+
+		.btn {
+			padding-top: rem(100px);
+
+			> button {
+				display: block;
+		    margin-bottom: rem(20px);
+				width: 100%;
+				height: rem(42px);
+		    line-height: rem(42px);
+		    background: #EC5151;
+		    text-align: center;
+		    font-size: rem(16px);
+		    color: #fff;
+		    border: none;
+		    border-radius: rem(5px);
+			}
+		}
+	}
+}

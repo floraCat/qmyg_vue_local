@@ -1,0 +1,80 @@
+@import "~assets/styles/_bootstrap";
+
+.editpassword-wrapper {
+	min-height: 100vh;
+	background: #fff;
+
+	.content {
+		padding: rem(20px);
+
+		.input-wrapper {
+			padding: rem(10px) 0;
+			border-bottom: 1px solid #e0e0e0;
+
+			.input-box {
+				position: relative;
+
+				> input {
+					width: 100%;
+					height: rem(36px);
+					padding: 0 rem(65px) 0 rem(35px);
+					font-size: rem(15px);
+					border: none;
+				}
+
+				> i {
+					position: absolute;
+					top: 0;
+					width: rem(30px);
+					height: rem(36px);
+					line-height: rem(36px);
+					text-align: center;
+					color: #999;
+					font-size: rem(20px);
+				}
+
+				.icon-edit_password {
+					left: 0;
+				}
+
+				.icon-eye {
+					right: 0;
+					font-size: rem(24px);
+					&.on{
+						color: #EC5151;
+					}
+				}
+
+				.icon-close2 {
+					right: rem(35px);
+				}
+			}
+		}
+
+		.forget {
+			padding: rem(24px) 0;
+
+			> a {
+				display: block;
+				height: rem(20px);
+				line-height: rem(20px);
+				text-align: right;
+				color: #999;
+			}
+		}
+
+		.submit {
+
+			> a {
+				display: block;
+		    height: rem(42px);
+		    line-height: rem(42px);
+		    background: #EC5151;
+		    text-align: center;
+		    font-size: rem(16px);
+		    color: #fff;
+		    border-radius: rem(4px);
+			}
+		}
+	}
+}

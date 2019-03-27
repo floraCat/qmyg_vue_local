@@ -1,0 +1,70 @@
+{
+	"state":"success",
+	"desc":"获取商品详情成功",
+	"sumPage":3,
+	"length":10,
+		"data": {
+			"data":[
+			{
+				"comment_rank":3,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			},
+			{
+				"comment_rank":5,
+				"user_name":"匿名",
+				"add_time":"2017-06-20 03:01:07",
+				"content":"质量非常好！"
+			}
+		]
+		}
+}

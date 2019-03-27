@@ -1,0 +1,52 @@
+@import "~assets/styles/_bootstrap";
+
+.eBean {
+	position: fixed;
+	top: rem(-50px);
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background: url(~assets/images/TCBG.png) no-repeat;
+	background-size: 100%;
+
+	> ol {
+		position: absolute;
+		top: rem(430px);
+		left: 50%;
+		margin-left: rem(-122px);
+		width: rem(244px);
+
+		> .cont {
+			margin-bottom: rem(30px);
+
+			> p {
+				margin-bottom: rem(10px);
+				color: $blk;
+			}
+		}
+
+		> .right {
+			font-size: rem(11px);
+			color: $grayLight;
+			text-align: center;
+		}
+	}
+
+	> .quit {
+		position: absolute;
+		top: rem(190px);
+		right: rem(18px);
+		width: rem(32px);
+		height: rem(32px);
+		background: $mainCol;
+		font-size: rem(26px);
+		line-height: rem(32px);
+		text-align: center;
+		border-radius: rem(16px);
+
+		&:before {
+			color: #fff;
+		}
+	}
+}
